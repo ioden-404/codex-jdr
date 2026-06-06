@@ -126,7 +126,7 @@
     const cardsHTML = featured.map(({ key, entry }) => {
       const sec = secs[key];
       const img = entry.image || ('img/' + entry.id + '.png');
-      const imgPos = key === 'personnages' ? 'top center' : 'center';
+      const imgPos = ['personnages', 'bestiaire'].includes(key) ? 'top center' : 'center';
       return `
         <div class="entry-card" onclick="location.hash='#/${esc(key)}/${esc(entry.id)}'">
           <div class="card-img" style="background-image:url('${esc(img)}');background-position:${imgPos}">
