@@ -16,9 +16,9 @@ const CODEX = {
       }
     ],
     recentNotes: [
-      { icon: "📓", title: "Carnet de Maître Célion",    when: "Session 2" },
-      { icon: "🌀", title: "Rapport sur Abzu",           when: "Session 2" },
-      { icon: "⚔️", title: "Le camp gobelin à l'ouest", when: "Session 2" }
+      { icon: "🔮", title: "La malédiction d'Obsidio",        when: "Session 5" },
+      { icon: "⚜️", title: "La bague des Tantalus",           when: "Session 5" },
+      { icon: "🐍", title: "Zolom absorbé dans la lanterne", when: "Session 3" }
     ],
     quickLinks: [
       { label: "Protagonistes",   href: "#/personnages" },
@@ -29,8 +29,8 @@ const CODEX = {
     sessions: 5,
     mj: "Shiki",
     status: "En cours",
-    location: "Malva — Principauté de Montario",
-    locationNote: "Après l'assaut du Fort de Corne Creuse. La horde gobeline principale reste intacte à l'ouest. Le bailli et le sanctor n'ont pas encore été confrontés.",
+    location: "Route vers Corel — Principauté d'Oceana",
+    locationNote: "Après une arrestation à Altabury et une fuite par la mer. Le groupe voyage avec Obsidio Kotabbos (père d'Onyxus), maudit par Astori Hojo — Berzim chante en boucle pour maintenir la malédiction en stase. Destination : Corel, pour trouver un guérisseur ami de Kael.",
     threads: [
       {
         id: "monastere",
@@ -78,6 +78,38 @@ const CODEX = {
         label: "Le grimoire conscient",
         desc: "Depuis le transfert de l'igniter, le grimoire de Veritas développe une forme de conscience propre.",
         who: "Veritas",
+        urgency: "moyenne"
+      },
+      {
+        id: "dren-solaria",
+        icon: "⛪",
+        label: "Dren Solaria",
+        desc: "Prélat clemar de Brilehaven apparu dans la grotte côtière. A invoqué le Zolom, muté des cadavres en lézards. Joren Sile dit que le groupe est traqué. L'aigle géant de la session 5 était peut-être Dren.",
+        who: "Groupe",
+        urgency: "haute"
+      },
+      {
+        id: "malédiction-obsidio",
+        icon: "💀",
+        label: "La malédiction d'Obsidio",
+        desc: "Obsidio Kotabbos est maudit par Astori Hojo. Berzim maintient la malédiction en stase par le chant. Trouver un guérisseur à Corel est urgent.",
+        who: "Onyxus & Kael",
+        urgency: "haute"
+      },
+      {
+        id: "tantalus-fil",
+        icon: "〰️",
+        label: "Les Tantalus",
+        desc: "Organisation secrète dont la bague porte trois vagues superposées traversées d'une barre. Obsidio Kotabbos et Maître Célion en faisaient partie. Leurs objectifs restent inconnus.",
+        who: "Groupe",
+        urgency: "moyenne"
+      },
+      {
+        id: "astori-hojo-fil",
+        icon: "🌈",
+        label: "Astori Hojo",
+        desc: "Mage Nidia aux cheveux arc-en-ciel violets, au service de l'armée à Altabury. A maudit Obsidio Kotabbos. Ses motivations et son lien avec Dren ou les Tantalus sont inconnus.",
+        who: "Groupe",
         urgency: "moyenne"
       }
     ]
@@ -162,6 +194,43 @@ const CODEX = {
 <p>Le cœur du culte est <strong>Altabury</strong>, en Montario. Là siège le <strong>Sanctifex</strong>, gardien suprême de la foi. Sous son autorité : prêtres, docteurs, moines, sanctors en province, et les <strong>Chevaliers-Moines</strong>, bras armé de l'Église.</p>
 <p>L'Église est présente dans les temples comme dans les tribunaux, dans les palais comme sur les champs de bataille. Elle peut étouffer des enquêtes, légitimer des inégalités, et justifier des persécutions — non pas comme une violence, mais comme un "devoir sacré envers un monde qui retomberait dans la fracture".</p>
 <blockquote>« Voilà pourquoi le Sanctisme n'est pas seulement une religion de consolation. Il est une religion de redressement. Il n'enseigne pas seulement à croire ; il enseigne à corriger. »</blockquote>`
+        },
+        {
+          id: "origine-ogres",
+          title: "L'Origine des Ogres",
+          subtitle: "Lore — Révélation session 3",
+          tags: ["gobelins", "ogres", "lore", "biologie"],
+          summary: "Les ogres ne sont pas une race distincte : ce sont des gobelins nés de mères d'autres races. La gestation gobeline déchire la mère, et l'enfant issu d'une autre race grandit plus grand, plus fort.",
+          content: `<h3>La Révélation</h3>
+<p>En session 3, le groupe a appris l'origine réelle des ogres. Ce ne sont pas des créatures indépendantes : ce sont des <strong>gobelins</strong> nés de mères appartenant à d'autres races.</p>
+<h3>Mécanisme</h3>
+<ul>
+<li>La gestation gobeline est extrêmement courte : environ <strong>une semaine</strong>.</li>
+<li>Le processus de naissance <strong>déchire la mère</strong> — les gobelins n'ont pas de notion de maternité protectrice.</li>
+<li>Un gobelin né d'une mère d'une autre race (Rhoag, Clemar, etc.) grandit plus grand et plus fort que la normale.</li>
+<li>Un gobelin atteint l'âge adulte en environ <strong>deux semaines</strong>.</li>
+</ul>
+<h3>Implications</h3>
+<p>Les ogres du camp gobelin de Malva sont des gobelins "améliorés" par leur naissance hors-race. Ce n'est pas une évolution naturelle : c'est une stratégie de la horde pour produire des combattants d'élite. Les disparitions de femmes à Malva prennent une signification encore plus sombre à la lumière de cette information.</p>`
+        },
+        {
+          id: "lien-humans-lezards",
+          title: "Le Lien Humans / Lézards",
+          subtitle: "Lore — Révélation session 4",
+          tags: ["Humans", "lézards", "Magla", "Dren", "lore"],
+          summary: "Confirmé par le Général Barion : les lézards mutés de Dren ressemblent physiologiquement aux Humans — deux types d'entités dépourvues de Magla. Cela éclaire peut-être le besoin de tonneaux de Magla liquide.",
+          content: `<h3>La Confirmation</h3>
+<p>Le <strong>Général Barion</strong> (Armée Royale, Rhoag) a confirmé en session 4 que les lézards humanoïdes mutés par Dren Solaria ressemblent physiologiquement aux <strong>Humans</strong> — les créatures des zones sauvages.</p>
+<h3>Le Point Commun</h3>
+<p>Les deux types d'entités — Humans et lézards mutés — seraient <strong>dépourvus de Magla</strong>. Dans un monde où le Magla est omniprésent, cette absence est une anomalie profonde.</p>
+<h3>Hypothèse</h3>
+<p><strong>Lysandra</strong> a proposé que c'est peut-être pour cela que Dren avait besoin des tonneaux de <strong>Magla liquide</strong> dans la grotte : pour compenser l'absence naturelle de Magla dans les corps qu'il transformait.</p>
+<h3>Questions ouvertes</h3>
+<ul>
+<li>Quelle est la relation réelle entre les Humans et les lézards mutés ?</li>
+<li>Les Humans ont-ils une origine artificielle — quelqu'un les crée-t-il ?</li>
+<li>Dren cherche-t-il à reproduire les Humans, à les comprendre, ou à s'en servir ?</li>
+</ul>`
         }
       ]
     },
@@ -360,6 +429,137 @@ const CODEX = {
 <p>La sœur de la première victime a dit qu'Elwenne "l'avait déjà réconfortée". Elle est proche des familles de victimes.</p>
 <h3>Comportement observé</h3>
 <p>En sortant de l'église, Kael croise son regard — elle tourne la tête vers lui, puis se remet à prier. Veritas note qu'elle sait probablement plus que Joren sur la situation réelle.</p>`
+        },
+        {
+          id: "hob-telmona",
+          image: "",
+          discovered: "Session 3",
+          group: "PNJ",
+          title: "Hob / Telmona",
+          subtitle: "Tueur à gages Paripus — Grand Trad",
+          tags: ["Paripus", "Grand Trad", "mercenaire", "traque"],
+          summary: "Présenté comme Hob dès le début, son vrai nom est Telmona. Tueur à gages Paripus de Grand Trad, il traque le groupe pour le compte d'un commanditaire non identifié.",
+          content: `<h3>Présentation</h3>
+<p>Telmona est un tueur à gages Paripus de Grand Trad, qui s'était présenté sous le nom de <strong>Hob</strong>. Son identité réelle a été révélée par <strong>Joren Sile</strong>, qui a averti le groupe qu'ils étaient traqués.</p>
+<h3>Ce qu'on sait</h3>
+<ul>
+<li>Paripus de Grand Trad, spécialiste des missions de traque.</li>
+<li>Opère sous contrat — commanditaire inconnu.</li>
+<li>Son vrai prénom est Telmona.</li>
+</ul>
+<h3>Statut</h3>
+<p>À surveiller. Son commanditaire et ses objectifs exacts restent inconnus. Pourrait être lié à Dren Solaria, aux Tantalus, ou à un autre acteur non encore identifié.</p>`
+        },
+        {
+          id: "dren-solaria",
+          image: "",
+          discovered: "Session 3",
+          group: "PNJ",
+          title: "Dren Solaria",
+          subtitle: "Prélat clemar — Brilehaven (antagoniste)",
+          tags: ["clemar", "Brilehaven", "antagoniste", "magie", "Église"],
+          summary: "Prélat clemar de Brilehaven, apparu dans la grotte côtière de Malva. A invoqué le Zolom et muté des cadavres en lézards. S'est enfui. Probablement à l'origine de la traque du groupe.",
+          content: `<h3>Apparence</h3>
+<p>Clemar aux cheveux blancs, vêtu d'une tenue ecclésiastique dorée. Stature et assurance d'un prélat habitué à l'autorité.</p>
+<h3>Ce qui s'est passé (Session 3)</h3>
+<p>Le groupe a découvert Dren dans la grotte côtière, au-dessus des cristaux de Magla. Il avait préparé trois cadavres torturés qu'il a mutés en lézards humanoïdes au moment critique. Il a également invoqué le <strong>Zolom</strong>, un serpent colossal lié aux lézards.</p>
+<p>Dren s'est enfui pendant le combat. L'aigle géant observé en session 5 pourrait être lui selon une note du MJ.</p>
+<h3>Connexion avec la campagne</h3>
+<ul>
+<li>A fabriqué des accusations contre le groupe, transmises au Général Barion via l'armée royale.</li>
+<li>Joren Sile a averti le groupe : <em>"Vous êtes traqués."</em></li>
+<li>Son implication dans l'incendie du monastère et son lien avec Célion restent à établir.</li>
+</ul>
+<h3>Note du MJ</h3>
+<p><em>"L'aigle géant en fait était Dren."</em></p>`
+        },
+        {
+          id: "barion",
+          image: "",
+          discovered: "Session 4",
+          group: "PNJ",
+          title: "Barion",
+          subtitle: "Général de l'Armée Royale — Rhoag",
+          tags: ["Rhoag", "armée", "Altabury"],
+          summary: "Général de l'Armée Royale, Rhoag aux longs cheveux blancs tressés. A arrêté le groupe à Altabury sur des charges fabriquées par Dren Solaria. Dur mais pas nécessairement corrompu.",
+          content: `<h3>Apparence</h3>
+<p>Rhoag imposant, longs cheveux blancs tressés. Tenue de général de l'Armée Royale. Maintien autoritaire.</p>
+<h3>L'arrestation (Session 4)</h3>
+<p>Le groupe a été arrêté par des soldats d'Altabury et conduit devant Barion pour interrogatoire. Les charges avaient été fabriquées par <strong>Dren Solaria</strong>. Barion a interrogé le groupe directement — il n'est pas présenté comme corrompu, mais comme un homme qui applique les ordres dans le cadre d'un système.</p>
+<h3>Information clé</h3>
+<p>Barion a confirmé que les lézards mutés de Dren ressemblent physiologiquement aux <strong>Humans</strong> — et que ceux-ci sont dépourvus de Magla. Cela éclaire peut-être le besoin de tonneaux de Magla liquide dans la grotte.</p>
+<h3>La fuite du groupe</h3>
+<p>Plutôt que de rester prisonniers, le groupe a simulé sa mort et fui par la mer. Pseudonymes adoptés : Kael → Alek, Veritas → Astren, Lysandra → Meredith, Onyxus → Xyno, Uma → Aang (Shakka a gardé son prénom).</p>`
+        },
+        {
+          id: "raho",
+          image: "",
+          discovered: "Session 4",
+          group: "PNJ",
+          title: "Raho",
+          subtitle: "Chef mercenaire Rhoag — Géomancien",
+          tags: ["Rhoag", "mercenaire", "géomancien"],
+          summary: "Chef d'un groupe de mercenaires, Rhoag géomancien capable d'invoquer deux golems de pierre. Mis KO par Shakka, interrogé en session 5, puis relâché.",
+          content: `<h3>Présentation</h3>
+<p>Rhoag géomancien, chef d'un groupe de mercenaires dont faisaient partie Obsidio Kotabbos et Lucie/Lucifer. A invoqué deux golems de pierre en posant les deux mains au sol — golems redevenus poussière dès sa mise KO.</p>
+<h3>L'interrogatoire (Session 5)</h3>
+<p>Capturé lors de l'affrontement en session 4, interrogé en session 5. Relâché après avoir fourni des informations.</p>
+<h3>Note tactique</h3>
+<p>Faiblesse absolue : ses golems disparaissent instantanément s'il perd conscience. Shakka l'a mis KO en priorité, neutralisant ses deux construits d'un seul coup. Toujours neutraliser le créateur en premier.</p>`
+        },
+        {
+          id: "lucie-lucifer",
+          image: "",
+          discovered: "Session 5",
+          group: "PNJ",
+          title: "Lucie / Lucifer",
+          subtitle: "Prêtresse Roussainte — Cheffe des mercenaires",
+          tags: ["Roussainte", "mercenaire", "prêtresse"],
+          summary: "Prêtresse Roussainte blonde, cheffe du groupe de mercenaires. Connue sous deux noms : Lucie au quotidien, Lucifer comme nom de guerre. Rencontrée en session 5.",
+          content: `<h3>Présentation</h3>
+<p>Roussainte aux cheveux blonds, prêtresse et cheffe d'un groupe de mercenaires. Elle utilise deux noms : <strong>Lucie</strong> en usage courant, <strong>Lucifer</strong> comme nom de guerre ou d'identité alternative.</p>
+<h3>Rôle</h3>
+<p>Dirige le groupe de mercenaires dont faisaient partie Raho (géomancien) et Obsidio Kotabbos. Ses commanditaires et objectifs précis restent à établir.</p>
+<h3>Statut</h3>
+<p>Rencontrée en session 5. Relation avec le groupe en cours d'établissement — ni clairement ennemie, ni alliée confirmée.</p>`
+        },
+        {
+          id: "obsidio-kotabbos",
+          image: "",
+          discovered: "Session 4",
+          group: "PNJ",
+          title: "Obsidio Kotabbos",
+          subtitle: "Père d'Onyxus — Ishkia, membre des Tantalus",
+          tags: ["Ishkia", "famille Kotabbos", "Tantalus", "maudit"],
+          summary: "Père d'Onyxus, retrouvé dans une cage de mercenaires en session 4. Membre de l'organisation secrète des Tantalus. Actuellement maudit par Astori Hojo — Berzim maintient la malédiction en stase.",
+          content: `<h3>Présentation</h3>
+<p>Ishkia, père d'<strong>Onyxus Kotabbos</strong>. Il avait reçu une lettre signée de Célion pointant vers Malva. Son carnet contient des notes et des dessins sur l'architecture gobeline — ce qui l'a amené à s'intéresser à cette région.</p>
+<h3>Découverte (Session 4)</h3>
+<p>Le groupe l'a retrouvé enfermé dans une cage, prisonnier du groupe de mercenaires de Lucie/Lucifer. Il était dans un état critique.</p>
+<h3>Les Tantalus</h3>
+<p>Obsidio est membre de l'organisation secrète des <strong>Tantalus</strong>. Leur bague représente trois vagues superposées traversées d'une barre. Célion en faisait également partie — ce qui éclaire rétrospectivement leur correspondance et les lettres envoyées vers Malva.</p>
+<h3>La Malédiction (Session 5)</h3>
+<p>Obsidio a été maudit par <strong>Astori Hojo</strong>, mage Nidia au service de l'armée d'Altabury. Berzim chante en boucle pour maintenir la malédiction en stase. Obsidio ne peut pas être déplacé pendant le chant, et Berzim doit prendre des pauses. La résolution de cette malédiction est l'urgence principale — d'où la route vers Corel.</p>`
+        },
+        {
+          id: "astori-hojo",
+          image: "",
+          discovered: "Session 5",
+          group: "PNJ",
+          title: "Astori Hojo",
+          subtitle: "Mage Nidia — Service de l'armée à Altabury",
+          tags: ["Nidia", "mage", "Altabury", "malédiction"],
+          summary: "Mage Nidia aux cheveux arc-en-ciel violets, au service de l'armée royale à Altabury. A maudit Obsidio Kotabbos. Ses motivations et ses liens avec les autres antagonistes sont inconnus.",
+          content: `<h3>Apparence</h3>
+<p>Nidia aux cheveux arc-en-ciel violets. Travaille pour l'armée royale stationnée à Altabury. Présence officielle — pas une opérative clandestine.</p>
+<h3>La Malédiction</h3>
+<p>Astori Hojo a maudit <strong>Obsidio Kotabbos</strong>. La nature exacte de la malédiction et ses effets à long terme ne sont pas encore entièrement compris par le groupe. Berzim peut la maintenir en stase, mais pas la lever.</p>
+<h3>Questions ouvertes</h3>
+<ul>
+<li>Pourquoi a-t-elle maudit spécifiquement Obsidio ?</li>
+<li>A-t-elle un lien avec Dren Solaria ou avec les Tantalus ?</li>
+<li>Agit-elle sur ordre ou de sa propre initiative ?</li>
+</ul>`
         }
       ]
     },
@@ -477,6 +677,44 @@ const CODEX = {
 <p>Les courants océaniques violents qui ceinturent Euchronia font de Brilehaven un point stratégique pour les rares zones navigables du continent. C'est ici que convergent les marchands qui souhaitent commercer avec l'extérieur — quand c'est possible.</p>
 <h3>Rôle dans la géopolitique</h3>
 <p>Oceana conserve sa vocation maritime et commerciale. Les rivalités d'influence s'y jouent discrètement : entre grandes maisons, entre intérêts commerciaux et politiques, entre ceux qui veulent regarder vers l'horizon et ceux qui préfèrent que le royaume reste tourné vers l'intérieur.</p>`
+        },
+        {
+          id: "grotte-cotiere-malva",
+          image: "",
+          discovered: "Session 3",
+          title: "Grotte Côtière de Malva",
+          subtitle: "Grotte cachée — Falaise côtière, sud de Malva",
+          tags: ["grotte", "Magla", "session 3", "exploré"],
+          summary: "Grotte cachée dans la falaise côtière de Malva. Abrite des cristaux de Magla géants. C'est là que le groupe a affronté Dren Solaria, le Zolom et les lézards mutés.",
+          content: `<h3>Localisation et accès</h3>
+<p>Cachée dans la falaise côtière au sud de Malva. L'entrée n'est pas visible depuis la mer ou depuis les terres. Elle a été localisée grâce aux informations collectées lors de l'enquête à Malva.</p>
+<h3>Ce qu'elle contient</h3>
+<ul>
+<li><strong>Cristaux de Magla massifs :</strong> des formations colossales de Magla pur cristallisé tapissent les parois et le sol. Leur présence explique pourquoi Dren utilisait ce lieu.</li>
+<li><strong>Trois cadavres torturés :</strong> préparés à l'avance par Dren, imprégnés de Magla pur. Ont muté en lézards humanoïdes pendant le combat.</li>
+<li><strong>Le Chaudron de Hyr :</strong> artefact présent dans la grotte, finalement absorbé par Zar (l'entité de la lanterne de Shakka).</li>
+<li><strong>Le Sac Sans Fond :</strong> objet magique récupéré dans la grotte.</li>
+<li><strong>Les Cartes de Nyx :</strong> création d'Onyxus — donnent +d4 à l'initiative, vision partagée de la carte, et permettent de lancer des sorts sans ligne de vue directe.</li>
+</ul>
+<h3>Ce qui s'est passé (Session 3)</h3>
+<p>Le groupe a confronté <strong>Dren Solaria</strong> ici. Il a invoqué le Zolom et activé les lézards mutés. Le Zolom a été absorbé par la lanterne de Shakka. Dren a fui avant d'être achevé.</p>
+<h3>Montée de niveau</h3>
+<p>Le groupe a atteint le <strong>niveau 4</strong> suite à cette session.</p>`
+        },
+        {
+          id: "corel",
+          image: "",
+          discovered: "Session 5",
+          title: "Corel",
+          subtitle: "Ville — Principauté d'Oceana (destination actuelle)",
+          tags: ["destination", "Oceana", "session 5"],
+          summary: "Destination actuelle du groupe. Un ami guérisseur de Kael y réside. Objectif : trouver de l'aide pour lever la malédiction imposée à Obsidio Kotabbos.",
+          content: `<h3>Présentation</h3>
+<p>Ville de la Principauté d'Oceana. Le groupe s'y dirige après leur fuite d'Altabury par la mer. La route terrestre depuis la côte a déjà réservé plusieurs rencontres : kobold, araignées-loups géantes, sorcières vertes, bugbear et hobgoblins.</p>
+<h3>Pourquoi Corel ?</h3>
+<p>Kael y a un ami guérisseur dont les compétences pourraient permettre de lever la malédiction imposée à <strong>Obsidio Kotabbos</strong> par Astori Hojo. Sans intervention, la stase maintenue par Berzim ne tiendra pas indéfiniment.</p>
+<h3>État actuel</h3>
+<p>Non encore atteinte. Le groupe est en route depuis la côte d'Oceana — session 5.</p>`
         }
       ]
     },
@@ -877,6 +1115,31 @@ const CODEX = {
 <p><strong>Abzu</strong>, l'abomination tuée au fort, appartient à une époque révolue. Son lien avec la horde reste à comprendre : une créature de Magla pur, non contemporaine, installée dans un nid gobelin ordinaire — ce n'est pas anodin.</p>
 <h3>Menace</h3>
 <p>Le groupe a éliminé la menace immédiate mais pas sa source. Le camp reste intact.</p>`
+        },
+        {
+          id: "tantalus",
+          image: "",
+          discovered: "Session 4",
+          title: "Les Tantalus",
+          subtitle: "Organisation secrète — Membres connus : Obsidio, Célion",
+          tags: ["secret", "mystère", "lore"],
+          summary: "Organisation secrète identifiée par leur bague : trois vagues superposées traversées d'une barre. Obsidio Kotabbos et Maître Célion en faisaient partie. Objectifs inconnus.",
+          content: `<h3>Le Symbole</h3>
+<p>La bague des Tantalus représente <strong>trois vagues superposées traversées d'une barre</strong>. Premier signalement : Shakka portait une lettre au sceau des trois triangles superposés décalés — le lien avec les Tantalus reste à établir.</p>
+<h3>Membres connus</h3>
+<ul>
+<li><strong>Obsidio Kotabbos</strong> — père d'Onyxus, chercheur sur l'architecture gobeline.</li>
+<li><strong>Maître Célion</strong> — mentor d'Uma, assassiné dans l'incendie du monastère.</li>
+</ul>
+<h3>Ce qu'on ignore</h3>
+<p>La présence de Célion — sage Ishkia, fondateur d'un monastère — et d'Obsidio — chercheur — dans la même organisation secrète suggère des intérêts liés au savoir ou à des enjeux qui dépassent la politique ordinaire d'Euchronia.</p>
+<h3>Questions ouvertes</h3>
+<ul>
+<li>Quel est le véritable but des Tantalus ?</li>
+<li>Y a-t-il un lien entre les Tantalus et Dren Solaria ?</li>
+<li>La lettre portée par Shakka est-elle liée aux Tantalus ?</li>
+<li>L'incendie du monastère visait-il à éliminer Célion en tant que membre ?</li>
+</ul>`
         }
       ]
     }
