@@ -378,7 +378,7 @@ html, body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, rgba(20,12,0,0.62) 55%, rgba(20,12,0,0.28) 100%);
+  background: linear-gradient(to right, rgba(14,8,0,0.48) 0%, rgba(14,8,0,0.18) 70%, rgba(14,8,0,0.05) 100%);
   pointer-events: none;
 }
 
@@ -386,11 +386,32 @@ html, body {
   position: relative;
   z-index: 1;
   padding: 52px 44px;
+  max-width: 560px;
 }
 
-.hero-banner .hero-title   { color: #f5ede0; }
-.hero-banner .hero-tagline { color: #d4b86a; }
-.hero-banner .hero-desc    { color: #c8bba4; }
+.hero-banner .hero-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-shadow: 0 2px 18px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.4);
+  margin-bottom: 10px;
+}
+
+.hero-banner .hero-tagline {
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  color: #e8c96a;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+  margin-bottom: 16px;
+}
+
+.hero-banner .hero-desc {
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.72);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.45);
+  line-height: 1.7;
+}
 
 .hero-left { padding: 34px 32px 34px 36px; }
 
