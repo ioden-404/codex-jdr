@@ -978,23 +978,36 @@ const CODEX = {
 <p>Nature des sorts : non observée. Dangerosité réelle : inconnue. À éviter jusqu'à avoir plus d'informations.</p>`
         },
         {
-          id: "bugbear-hobgoblins",
+          id: "bugbear",
           image: "",
           discovered: "Session 5",
           group: "observe",
-          title: "Bugbear & Hobgoblins",
-          subtitle: "Humanoïdes — Route vers Corel",
-          tags: ["gobelin", "humanoïde", "session 4", "session 5"],
-          summary: "Un bugbear et deux hobgoblins aperçus en train de se battre entre eux sur la route. Contournés discrètement. Ennemis entre eux — relation avec la horde gobeline de Malva inconnue.",
+          title: "Bugbear",
+          subtitle: "Humanoïde — Route vers Corel",
+          tags: ["humanoïde", "session 5"],
+          summary: "Humanoïde de grande taille aperçu en plein affrontement avec des hobgoblins sur la route de Corel. Contourné discrètement. Dangerosité réelle inconnue.",
           content: `<h3>Observation</h3>
-<p>Aperçus à l'heure du midi lors du voyage vers Corel. Un bugbear et deux hobgoblins étaient en plein affrontement entre eux. Onyxus a réussi un jet de discrétion et le groupe a contourné sans être repéré.</p>
-<h3>Nature des créatures</h3>
-<ul>
-<li><strong>Bugbear :</strong> humanoïde de grande taille, plus imposant qu'un gobelin ordinaire, force brute.</li>
-<li><strong>Hobgoblins :</strong> humanoïdes militarisés, plus disciplinés que les gobelins. Équipement supérieur.</li>
-</ul>
+<p>Aperçu à l'heure du midi lors du voyage vers Corel, en plein affrontement avec deux hobgoblins. Onyxus a réussi un jet de discrétion et le groupe a contourné sans être repéré.</p>
+<h3>Nature</h3>
+<p>Humanoïde de grande taille, nettement plus imposant qu'un gobelin ordinaire. Morphologie robuste, axé force brute. Plus proche du gobelin que du hobgoblin dans sa nature — mais plus grand et plus sauvage que les deux.</p>
 <h3>Note</h3>
-<p>Ils se battaient entre eux — pas de relation claire avec la horde gobeline de Malva. Présence dans la région à surveiller.</p>`
+<p>Il se battait contre des hobgoblins, pas avec eux. Relation avec la horde gobeline de Malva inconnue. Présence dans la région à surveiller.</p>`
+        },
+        {
+          id: "hobgoblins",
+          image: "",
+          discovered: "Session 5",
+          group: "observe",
+          title: "Hobgoblins",
+          subtitle: "Humanoïdes militarisés — Route vers Corel",
+          tags: ["humanoïde", "session 5"],
+          summary: "Deux hobgoblins aperçus en train de se battre contre un bugbear sur la route de Corel. Plus disciplinés et mieux équipés que les gobelins ordinaires.",
+          content: `<h3>Observation</h3>
+<p>Deux hobgoblins aperçus en plein affrontement avec un bugbear lors du voyage vers Corel. Le groupe a contourné discrètement sans intervenir ni être repéré.</p>
+<h3>Nature</h3>
+<p>Humanoïdes militarisés, nettement plus disciplinés que les gobelins ordinaires. Équipement supérieur, formation en combat apparente. Ressemblent à des soldats plutôt qu'à des pillards.</p>
+<h3>Note</h3>
+<p>Ils se battaient contre un bugbear, pas avec lui — factions distinctes ou simple rivalité territoriale. Lien avec la horde gobeline de Malva non établi.</p>`
         },
         {
           id: "aigle-geant",
