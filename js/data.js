@@ -600,10 +600,10 @@ const CODEX = {
           image: "",
           discovered: "Session 2",
           group: "observe",
-          title: "La Créature Ailée",
-          subtitle: "Race inconnue — Liée à Kael",
-          tags: ["inconnue", "mystère", "Kael", "alliée"],
-          summary: "Être minuscule doté d'ailes, d'une race que Veritas ne reconnaît pas. Combat aux dagues. Liée à Kael d'une façon non expliquée. Invisible à la plupart des membres du groupe.",
+          title: "Berzim — La Fée",
+          subtitle: "Fée — Compagnon de Kael",
+          tags: ["fée", "mystère", "Kael", "alliée"],
+          summary: "Fée minuscule dotée d'ailes, identifiée par Kael comme telle en session 3. Combat aux dagues. Liée à Kael. Peut chanter pour maintenir une stase magique. Invisible à la plupart.",
           content: `<h3>Description</h3>
 <p>Observée par Veritas depuis les remparts du fort. Minuscule, dotée d'ailes. D'une race qu'il ne reconnaît pas — ce qui est notable pour un scribe de l'Ordre des Archivistes. Se bat avec deux dagues.</p>
 <h3>Comportement observé</h3>
@@ -615,24 +615,164 @@ const CODEX = {
 </ul>
 <h3>Ce qu'elle sait</h3>
 <p>À Malva, elle a détecté quelque chose de magique "partout et diffus — trop faible pour localiser la source, mais vraiment partout". À la lanterne de Shakka, qui a détecté la même chose.</p>
-<h3>Mystère</h3>
-<p>Kael nie son existence ("Appelons ça une illusion."). Lysandra appuie. Veritas voit clairement qu'ils mentent tous les deux. La nature de leur lien n'a pas été expliquée.</p>`
+<h3>Révélation (Session 3)</h3>
+<p>Kael a présenté Berzim au groupe en session 3, confirmant qu'il s'agit d'une fée. Lysandra le connaissait déjà. Berzim a autorisé Kael à révéler sa présence, mais pas leurs objectifs communs. Onyxus lui a dit "Salut petit être" et a reçu un coup de pied invisible dans la joue.</p>
+<h3>Capacité spéciale (Session 5)</h3>
+<p>Sa magie primordiale, par le chant, peut maintenir un être maudit en stase et bloquer temporairement une malédiction. Utilisé sur Obsidio Kotabbos. Contrainte : Obsidio doit rester à proximité, ne peut pas être déplacé pendant le chant, et Berzim doit prendre des pauses.</p>`
         },
         {
-          id: "creatures-huit-pattes",
+          id: "zolom",
           image: "",
-          discovered: "Session 2",
+          discovered: "Session 3",
+          group: "combattu",
+          title: "Zolom — Serpent Géant",
+          subtitle: "Bête colossale — Grotte côtière de Malva",
+          tags: ["serpent", "boss", "session 3", "Magla"],
+          summary: "Serpent colossal invoqué par Dren Solaria dans la grotte. Crachat acide, regard psychique, et capacité de se ressusciter en absorbant le Magla des créatures liées à lui. Tué deux fois.",
+          content: `<h3>Description</h3>
+<p>Serpent d'une taille démesurée, surgi du sol de la grotte lors de la confrontation avec Dren. Ses écailles résistent aux attaques ordinaires. À sa première mort apparente, il s'est ressuscité en absorbant le Magla d'un lézard muté tombé au même moment.</p>
+<h3>Capacités observées</h3>
+<ul>
+<li><strong>Serpentine Gaze :</strong> attaque psychique ciblant un adversaire. Inflige des dégâts psychiques sur jet de sauvegarde raté.</li>
+<li><strong>Crachat acide :</strong> ligne droite infligeant des dégâts perçants et nécrotiques. La chair commence à se putréfier là où il mord.</li>
+<li><strong>Résurrection par absorption :</strong> à sa mort, absorbe le Magla d'une créature liée pour se relever et cicatriser complètement.</li>
+<li><strong>Queue :</strong> peut coller sa queue contre plusieurs adversaires pour les immobiliser ou les projeter.</li>
+</ul>
+<h3>Kill</h3>
+<p>Premier kill (temporaire) : Veritas avec un Chromatic Orb rebondissant (29 dégâts). Résurrection immédiate via absorption d'un lézard. Kill final : Shakka avec sa lance — la fumée de Zar (lanterne) a aspiré le serpent morceau par morceau. Il ne reste absolument rien du corps.</p>`
+        },
+        {
+          id: "lezards-mutes",
+          image: "",
+          discovered: "Session 3",
+          group: "combattu",
+          title: "Lézards Mutés",
+          subtitle: "Humanoïdes — Cadavres transformés par Dren Solaria",
+          tags: ["lézard", "humanoïde", "session 3", "Magla", "invoqué"],
+          summary: "Trois cadavres torturés dans la grotte qui ont muté en lézards humanoïdes à l'arrivée du groupe. Deux types : géomancien (manipulation de rochers) et chaman (sorts de séisme, téléportation). Le chaman a fui.",
+          content: `<h3>Origine</h3>
+<p>Trois cadavres trouvés dans la grotte de Malva, imprégnés de Magla pur non transformé selon le Detect Magic de Veritas. Au moment critique du combat, ils ont muté et se sont transformés en lézards humanoïdes — probablement préparés à l'avance par Dren Solaria.</p>
+<h3>Types identifiés</h3>
+<ul>
+<li><strong>Géomancien-lézard :</strong> manipule la terre et projette des rochers depuis une position en hauteur. Mort : Uma lui a fissuré le crâne d'un coup de pied descendant sur la mâchoire. Yeux explosés sous l'impact.</li>
+<li><strong>Chaman-lézard :</strong> plus magique, situé au fond de la cavité. Lance un sort de séisme (fait tomber et étourdit plusieurs combattants), sort Command (ordonne en langue ancienne), possède un igniter pour se téléporter. A fui avant d'être achevé malgré 9 dégâts de Magic Missiles de Veritas et 11 de True Strike d'Onyxus.</li>
+<li><strong>Lézard au corps à corps :</strong> s'est approché pour attaquer, tué en fuite par Kael (Guiding Bolt, désintégré).</li>
+</ul>
+<h3>Lien avec les Humans</h3>
+<p>Barion (Général de Grand Trad) a confirmé que ces lézards ressemblent physiologiquement aux Humans — des créatures dépourvues de Magla. Lysandra a suggéré que c'est peut-être pour cela que Dren avait besoin des tonneaux de Magla liquide.</p>`
+        },
+        {
+          id: "golems-pierre",
+          image: "",
+          discovered: "Session 4",
+          group: "combattu",
+          title: "Golems de Pierre",
+          subtitle: "Construits — Invoqués par le chef mercenaire Rhoag",
+          tags: ["golem", "session 4", "construit", "dépendant"],
+          summary: "Deux golems de pierre et de terre surgis du sol, invoqués par le chef mercenaire Rhoag. Dépendaient de la conscience de leur créateur : neutralisés automatiquement à sa perte de connaissance.",
+          content: `<h3>Description</h3>
+<p>Deux masses de pierre et de terre surgirent du sol quand le chef Rhoag posa ses deux mains au sol. Imposants, résistants aux attaques ordinaires. Lysandra a réussi à briser un éclat de roche dans la jambe du premier sans en venir à bout seule.</p>
+<h3>Capacités observées</h3>
+<ul>
+<li>Frappe au corps à corps puissante — ont touché Lysandra et Veritas.</li>
+<li>Résistance physique notable.</li>
+</ul>
+<h3>Faiblesse critique</h3>
+<p>Entièrement dépendants de la conscience de leur invocateur. Dès que Shakka a mis le chef Rhoag inconscient, les deux golems sont redevenus de simples tas de cailloux instantanément. Neutraliser le créateur en priorité.</p>`
+        },
+        {
+          id: "kobold",
+          image: "",
+          discovered: "Session 5",
+          group: "combattu",
+          title: "Kobold",
+          subtitle: "Humanoïde — Route vers Corel",
+          tags: ["humanoïde", "session 5", "faible"],
+          summary: "Petit humanoïde isolé repéré sur la route. 5 PV. Tué par Uma d'un seul coup avant qu'il ne puisse alerter des renforts.",
+          content: `<h3>Description</h3>
+<p>Petit humanoïde croisé seul entre des arbres sur la route vers Corel. N'avait pas repéré le groupe. Décision prise de l'éliminer discrètement pour éviter qu'il prévienne des renforts potentiels.</p>
+<h3>Combat</h3>
+<p>Shakka a tenté un Chill Touch mais a raté (jet de toucher : 9). Uma a couvert la distance en courant et lui a mis "une patate" : 5 dégâts. Le kobold avait exactement 5 PV. Mort sur le coup.</p>
+<h3>Note</h3>
+<p>Créature fragile en solo. Dangereux uniquement en groupe ou comme éclaireur d'une force plus grande. À neutraliser discrètement à vue.</p>`
+        },
+        {
+          id: "araignees-loups",
+          image: "",
+          discovered: "Session 5",
+          group: "combattu",
+          title: "Araignées-Loups Géantes",
+          subtitle: "Bêtes — Camp de nuit sur la route de Corel",
+          tags: ["araignée", "bête", "session 5", "venin"],
+          summary: "Six araignées-loups géantes ayant encerclé le camp à l'aube. Morsure venimeuse (dégâts de poison). Toutes tuées. Un aigle géant est venu dévorer les cadavres.",
+          content: `<h3>Description</h3>
+<p>Six araignées de grande taille qui ont encerclé silencieusement le camp pendant la nuit. Repérées à l'aube par Onyxus avant l'attaque. Capables de grimper sur les combattants (une a escaladé Lysandra, deux pattes sur ses épaules).</p>
+<h3>Capacités observées</h3>
+<ul>
+<li><strong>Morsure venimeuse :</strong> inflige des dégâts perçants + dégâts de poison (5 + 4 à Onyxus et Kael).</li>
+<li><strong>Escalade :</strong> peuvent monter sur les adversaires.</li>
+<li><strong>Discrétion :</strong> encerclement du camp effectué sans se faire repérer pendant toute la nuit.</li>
+</ul>
+<h3>Combat</h3>
+<p>Six araignées tuées : Uma (×2 dont un redirect de dégâts), Onyxus, Kael (Guiding Bolt CAC dans la gueule), Veritas (Ignis, brûlée), Shakka + Lysandra combinés sur la plus grosse.</p>
+<h3>Note</h3>
+<p>Un aigle géant est descendu dévorer les cadavres immédiatement après le combat. Les araignées valent 39 gold en ressources revendables (crochets, etc.).</p>`
+        },
+        {
+          id: "sorcieres-vertes",
+          image: "",
+          discovered: "Session 5",
           group: "observe",
-          title: "Créatures à Huit Pattes",
-          subtitle: "Inconnues — Ruines au nord du fort",
-          tags: ["inconnue", "forêt", "session 2", "ruines"],
-          summary: "Créatures nocturnes repérées dans des ruines anciennes au nord du Fort de Corne Creuse. Nature exacte inconnue. Évitées grâce à une diversion sonore de Shakka.",
+          title: "Sorcières Vertes",
+          subtitle: "Humanoïdes magiques — Marais sur la route de Corel",
+          tags: ["sorcière", "magie", "session 5", "marais"],
+          summary: "Trois sorcières vertes aperçues dans un marais. L'une a repéré le groupe et commencé à incanter. Évitées en cassant la ligne de vue.",
           content: `<h3>Observation</h3>
-<p>Shakka et Onyxus ont repéré ces créatures dans l'obscurité lors de leur pistage dans la forêt. Des formes se devinaient, et des bruits de huit pattes courant se faisaient entendre. Nature exacte indéterminée : araignées géantes, scorpions, ou autre chose.</p>
+<p>Trois silhouettes vertes repérées à environ 75 mètres dans un marais sur la route de Corel. L'une d'elles a repéré le groupe malgré leurs tentatives de discrétion (Lysandra : 1 naturel, désastreuse) et a commencé à incanter dans leur direction.</p>
 <h3>Contournement</h3>
-<p>Shakka a utilisé Minor Illusion pour créer un bruit d'animaux au nord, attirant les créatures dans cette direction. Le groupe a contourné par le sud, perdant les traces des gobelins en fuite mais évitant le contact.</p>
-<h3>Inconnues</h3>
-<p>Taille réelle, nombre, capacités : rien de confirmé. Les ruines où elles se trouvaient sont de nature indéterminée (village, château ou fort). À explorer avec précaution.</p>`
+<p>Le groupe a contourné par la gauche en cassant la ligne de vue. Lysandra tractait la charrette et a fait un échec critique sur la dextérité pour semer les sorcières — mais le MJ a tranché en leur faveur et aucun combat ne s'est déclenché.</p>
+<h3>Capacités inconnues</h3>
+<p>Nature des sorts : non observée. Dangerosité réelle : inconnue. À éviter jusqu'à avoir plus d'informations.</p>`
+        },
+        {
+          id: "bugbear-hobgoblins",
+          image: "",
+          discovered: "Session 5",
+          group: "observe",
+          title: "Bugbear & Hobgoblins",
+          subtitle: "Humanoïdes — Route vers Corel",
+          tags: ["gobelin", "humanoïde", "session 4", "session 5"],
+          summary: "Un bugbear et deux hobgoblins aperçus en train de se battre entre eux sur la route. Contournés discrètement. Ennemis entre eux — relation avec la horde gobeline de Malva inconnue.",
+          content: `<h3>Observation</h3>
+<p>Aperçus à l'heure du midi lors du voyage vers Corel. Un bugbear et deux hobgoblins étaient en plein affrontement entre eux. Onyxus a réussi un jet de discrétion et le groupe a contourné sans être repéré.</p>
+<h3>Nature des créatures</h3>
+<ul>
+<li><strong>Bugbear :</strong> humanoïde de grande taille, plus imposant qu'un gobelin ordinaire, force brute.</li>
+<li><strong>Hobgoblins :</strong> humanoïdes militarisés, plus disciplinés que les gobelins. Équipement supérieur.</li>
+</ul>
+<h3>Note</h3>
+<p>Ils se battaient entre eux — pas de relation claire avec la horde gobeline de Malva. Présence dans la région à surveiller.</p>`
+        },
+        {
+          id: "aigle-geant",
+          image: "",
+          discovered: "Session 5",
+          group: "observe",
+          title: "Aigle Géant",
+          subtitle: "Bête — Camp de nuit sur la route de Corel",
+          tags: ["bête", "session 5", "intelligent"],
+          summary: "Aigle géant qui tournoyait au-dessus du camp pendant le combat contre les araignées, puis est descendu dévorer les cadavres. Plus intelligent que la moyenne — comprend le commun. A attaqué Onyxus.",
+          content: `<h3>Description</h3>
+<p>Grand rapace ayant observé le combat contre les araignées-loups depuis les airs sans intervenir. Descendu dévorer les cadavres une fois le combat terminé. Wingspan imposant.</p>
+<h3>Capacités</h3>
+<ul>
+<li>Ergots puissants : 5 + 4 dégâts perçants sur Onyxus.</li>
+<li>Intelligence supérieure à la normale : comprend le commun selon un jet de Nature d'Onyxus (13).</li>
+</ul>
+<h3>Incident</h3>
+<p>Onyxus, persuadé d'un échec critique d'Insight (1 naturel) que l'aigle était son ami, lui a tendu la main. L'aigle a planté ses deux ergots dans son bras. Uma a arraché des plumes pour 10 dégâts. Kael a tenté de le caresser. Lysandra, à bout de patience, a attrapé ses ailes, le a secoué, lui a mis une tape sur le bec et l'a jeté en l'air en criant "dégage !". L'aigle est parti.</p>
+<h3>Note du MJ</h3>
+<p><em>"L'aigle en fait était Dren."</em> — à interpréter.</p>`
         },
         {
           id: "humans",
