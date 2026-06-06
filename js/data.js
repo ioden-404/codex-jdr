@@ -736,7 +736,7 @@ const CODEX = {
       entries: [
         {
           id: "gobelin",
-          image: "",
+          image: "img/Gobelin.jpg",
           discovered: "Session 1",
           group: "combattu",
           title: "Gobelin",
@@ -758,7 +758,7 @@ const CODEX = {
         },
         {
           id: "warg",
-          image: "",
+          image: "img/Warg.jpg",
           discovered: "Session 1",
           group: "combattu",
           title: "Warg",
@@ -778,7 +778,7 @@ const CODEX = {
         },
         {
           id: "groki",
-          image: "",
+          image: "img/Reine Gobeline.jpg",
           discovered: "Session 2",
           group: "combattu",
           title: "Groki — Reine Gobeline",
@@ -799,7 +799,7 @@ const CODEX = {
         },
         {
           id: "abzu",
-          image: "",
+          image: "img/Abzu.jpg",
           discovered: "Session 2",
           group: "combattu",
           title: "Abzu — Abomination de Magla",
@@ -824,7 +824,7 @@ const CODEX = {
         },
         {
           id: "ogres-camp",
-          image: "",
+          image: "img/Ogres du camp.jpg",
           discovered: "Session 2",
           group: "observe",
           title: "Ogres du Camp",
@@ -865,7 +865,7 @@ const CODEX = {
         },
         {
           id: "zolom",
-          image: "",
+          image: "img/Zolom.jpg",
           discovered: "Session 3",
           group: "combattu",
           title: "Zolom — Serpent Géant",
@@ -886,7 +886,7 @@ const CODEX = {
         },
         {
           id: "lezards-mutes",
-          image: "",
+          image: "img/Lézards Mutés.jpg",
           discovered: "Session 3",
           group: "combattu",
           title: "Lézards Mutés",
@@ -906,7 +906,7 @@ const CODEX = {
         },
         {
           id: "golems-pierre",
-          image: "",
+          image: "img/Golems de pierre.jpg",
           discovered: "Session 4",
           group: "combattu",
           title: "Golems de Pierre",
@@ -925,7 +925,7 @@ const CODEX = {
         },
         {
           id: "kobold",
-          image: "",
+          image: "img/Kobold.jpg",
           discovered: "Session 5",
           group: "combattu",
           title: "Kobold",
@@ -941,7 +941,7 @@ const CODEX = {
         },
         {
           id: "araignees-loups",
-          image: "",
+          image: "img/Araignées-Loups Géantes.jpg",
           discovered: "Session 5",
           group: "combattu",
           title: "Araignées-Loups Géantes",
@@ -979,7 +979,7 @@ const CODEX = {
         },
         {
           id: "bugbear",
-          image: "",
+          image: "img/Bugbear.jpg",
           discovered: "Session 5",
           group: "observe",
           title: "Bugbear",
@@ -995,7 +995,7 @@ const CODEX = {
         },
         {
           id: "hobgoblins",
-          image: "",
+          image: "img/Hobgoblin.jpg",
           discovered: "Session 5",
           group: "observe",
           title: "Hobgoblins",
@@ -1011,7 +1011,7 @@ const CODEX = {
         },
         {
           id: "aigle-geant",
-          image: "",
+          image: "img/Aigle géant.jpg",
           discovered: "Session 5",
           group: "observe",
           title: "Aigle Géant",
@@ -1114,7 +1114,7 @@ const CODEX = {
         },
         {
           id: "horde-gobeline",
-          image: "",
+          image: "img/La horde gobeline.jpg",
           discovered: "Session 2",
           title: "La Horde Gobeline",
           subtitle: "Faction antagoniste — région de Malva",
