@@ -353,7 +353,13 @@
     const groupLabel = sec.groups && entry.group
       ? sec.groups.find(g => g.key === entry.group) : null;
 
-    const facts = [
+    const isSession = key === 'sessions';
+
+    const facts = isSession ? [
+      { label: 'Section', value: sec.label },
+      entry.discovered ? { label: 'Date',   value: entry.discovered } : null,
+      entry.subtitle   ? { label: 'Scènes', value: entry.subtitle }   : null,
+    ].filter(Boolean) : [
       { label: 'Section',    value: sec.label },
       entry.subtitle   ? { label: 'Rôle',      value: entry.subtitle } : null,
       groupLabel       ? { label: 'Catégorie', value: groupLabel.icon + ' ' + groupLabel.label } : null,
@@ -371,7 +377,7 @@
       </div>` : '';
 
     const entryImg = entry.image || ('img/' + entry.id + '.png');
-    const imgBlock = `
+    const imgBlock = isSession ? '' : `
       <div class="info-card">
         <div class="info-card-header">Illustration</div>
         <div class="card-img" style="height:160px;border-radius:0;background-image:url('${esc(entryImg)}')">
