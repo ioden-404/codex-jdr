@@ -29,6 +29,7 @@
     setActiveNav(sectionKey || 'home');
     if (!sectionKey)                       renderHome();
     else if (sectionKey === 'calendrier')  renderCalendrier();
+    else if (sectionKey === 'notes')       renderNotes();
     else if (entryId)                      renderEntry(sectionKey, entryId);
     else                                   renderSection(sectionKey);
   }
@@ -86,7 +87,7 @@
       html += `<div class="widget">
         <div class="widget-header"><i class="fa-solid fa-bars"></i> Notes récentes</div>
         ${rows}
-        <div class="widget-footer"><a href="#">Voir toutes les notes &rsaquo;</a></div>
+        <div class="widget-footer"><a href="#/notes">Voir toutes les notes &rsaquo;</a></div>
       </div>`;
     }
 
@@ -244,6 +245,41 @@
             <i class="fa-solid fa-scroll"></i> Historique des sessions
           </div>
           ${pastRows}
+        </div>
+      </div>
+    `);
+  }
+
+  // ── Page notes ──────────────────────────────────────────────────────────
+
+  function renderNotes() {
+    const notes = CODEX.meta.recentNotes || [];
+
+    const rows = notes.length
+      ? notes.map(n => `
+        <div class="note-full-row">
+          <span class="note-full-icon">${n.icon || '📝'}</span>
+          <div class="note-full-body">
+            <strong>${esc(n.title)}</strong>
+            <span class="note-full-when">${esc(n.when)}</span>
+          </div>
+        </div>`).join('')
+      : '<p class="cal-empty">Aucune note pour l\'instant.</p>';
+
+    setContent(`
+      <div class="section-page">
+        <div class="view-header">
+          <div>
+            <h2>📝 Notes</h2>
+            <p>Récapitulatif des événements et découvertes notables.</p>
+          </div>
+          <span class="view-count">${notes.length} note${notes.length !== 1 ? 's' : ''}</span>
+        </div>
+        <div class="cal-block">
+          <div class="cal-block-title">
+            <i class="fa-regular fa-file-lines"></i> Toutes les notes
+          </div>
+          ${rows}
         </div>
       </div>
     `);
