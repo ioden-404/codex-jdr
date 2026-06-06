@@ -27,9 +27,10 @@
     const raw = location.hash.replace(/^#\/?/, '');
     const [sectionKey = '', entryId = ''] = raw.split('/');
     setActiveNav(sectionKey || 'home');
-    if (!sectionKey)   renderHome();
-    else if (entryId)  renderEntry(sectionKey, entryId);
-    else               renderSection(sectionKey);
+    if (!sectionKey)                       renderHome();
+    else if (sectionKey === 'calendrier')  renderCalendrier();
+    else if (entryId)                      renderEntry(sectionKey, entryId);
+    else                                   renderSection(sectionKey);
   }
 
   function setActiveNav(view) {
@@ -68,7 +69,7 @@
       html += `<div class="widget">
         <div class="widget-header"><i class="fa-regular fa-calendar"></i> Événements à venir</div>
         ${rows}
-        <div class="widget-footer"><a href="#">Voir le calendrier complet &rsaquo;</a></div>
+        <div class="widget-footer"><a href="#/calendrier">Voir le calendrier complet &rsaquo;</a></div>
       </div>`;
     }
 
@@ -185,6 +186,66 @@
       const thumb = document.querySelector('.map-thumb');
       if (thumb) thumb.addEventListener('click', function() { openMapModal(mapImg); });
     }
+  }
+
+  // ── Page calendrier ─────────────────────────────────────────────────────
+
+  function renderCalendrier() {
+    const m = CODEX.meta;
+
+    const upcomingRows = (m.upcoming && m.upcoming.length)
+      ? m.upcoming.map(e => `
+        <div class="cal-event-row">
+          <div class="event-date">
+            <span class="event-day">${esc(e.day)}</span>
+            <span class="event-month">${esc(e.month)}</span>
+          </div>
+          <div class="event-info">
+            <strong>${esc(e.title)}</strong>
+            <p>${e.desc ? esc(e.desc) : 'Date confirmée'}</p>
+          </div>
+          <span class="cal-badge upcoming">À venir</span>
+        </div>`).join('')
+      : '<p class="cal-empty">Aucun événement planifié.</p>';
+
+    const pastRows = Array.from({ length: m.sessions }, (_, i) => i + 1).reverse().map(n => `
+      <div class="cal-event-row">
+        <div class="event-date session-date">
+          <span class="event-day">${n}</span>
+          <span class="event-month">Sess.</span>
+        </div>
+        <div class="event-info">
+          <strong>Session ${n}</strong>
+          <p>Session jouée</p>
+        </div>
+        <span class="cal-badge done">Terminée</span>
+      </div>`).join('');
+
+    setContent(`
+      <div class="section-page">
+        <div class="view-header">
+          <div>
+            <h2>📅 Calendrier</h2>
+            <p>Suivi des sessions et événements à venir.</p>
+          </div>
+          <span class="view-count">${m.sessions} session${m.sessions !== 1 ? 's' : ''} jouée${m.sessions !== 1 ? 's' : ''}</span>
+        </div>
+
+        <div class="cal-block">
+          <div class="cal-block-title">
+            <i class="fa-regular fa-clock"></i> Événements à venir
+          </div>
+          ${upcomingRows}
+        </div>
+
+        <div class="cal-block">
+          <div class="cal-block-title">
+            <i class="fa-solid fa-scroll"></i> Historique des sessions
+          </div>
+          ${pastRows}
+        </div>
+      </div>
+    `);
   }
 
   // ── Page section (liste d'entrées) ───────────────────────────────────────
