@@ -1142,6 +1142,197 @@ const CODEX = {
 </ul>`
         }
       ]
+    },
+
+    sessions: {
+      label: "Sessions",
+      icon: "📖",
+      description: "Retranscriptions complètes des sessions de campagne.",
+      entries: [
+        {
+          id: "session-1",
+          day: "6",
+          month: "Avr.",
+          discovered: "06 Avril",
+          title: "Session 1",
+          subtitle: "Arrivée à Malva — Fort de Corne Creuse",
+          tags: ["session 1", "Malva", "Fort de Corne Creuse"],
+          summary: "Le groupe se retrouve à Malva pour enquêter sur des disparitions. Un bailli corrompu, un fort gobelin et une nuit de révélations — dont la mort de Célion, mentor d'Uma.",
+          content: `<h3>Arrivée à Malva</h3>
+<p>Veritas Varn et Onyxus Kotabbos arrivent ensemble au village côtier. Un garde note leurs noms et les redirige vers la taverne où l'on entend une femme en pleurs : <em>"Qu'est-ce qu'ils ont fait à ma sœur ?"</em></p>
+<h3>La taverne — Retrouvailles</h3>
+<p>Quatre voyageurs les y attendent : <strong>Lysandra</strong> (roussainte, épée et bouclier, capuche baissée pour cacher ses oreilles) avec <strong>Kael</strong> (prêtre rhoag au visage tatoué) ; et <strong>Uma</strong> (rhoag en tenue moniale) avec <strong>Shakka</strong> (rhoag à la lance dorée et à la lanterne mystérieuse). Onyxus reconnaît Uma et se précipite — retrouvailles tendues, elle lui coupe la parole quand il mentionne une lettre. Veritas reconnaît Lysandra ; elle lui saute dans les bras, il ne lui rend pas vraiment l'étreinte.</p>
+<h3>Le bailli Oren Vale</h3>
+<p>Ishkia corpulent, couvert de bagues, son opulence détonne. Il présente le corps d'une jeune femme comme une affaire de gobelins. Kael découvre à l'examen qu'elle a subi un accouchement forcé — fait soigneusement tu par le bailli.</p>
+<h3>Le capitaine Joren Sile</h3>
+<p>Roussainte épuisé, cape verte déchirée. Une vingtaine de disparitions. Les gobelins occupent le Fort de Corne Creuse au nord. Le bailli interdit d'attaquer. Ses gardes sont des paysans — l'un se coupe le doigt en tenant sa propre arme. Lysandra passe l'après-midi à les former.</p>
+<h3>Scènes parallèles</h3>
+<p><strong>Kael à l'église :</strong> Berzim (invisible) lui chuchote que le village <em>"pue le magla, partout et diffus"</em>. Il rencontre <strong>Belric Thane</strong>, sanctor clemar de Grand Trad, trop bien habillé pour un village de pêcheurs, qui affirme avec certitude que les gobelins sont responsables de tout. En partant : <em>"L'émotion n'a jamais sauvé un village."</em></p>
+<p><strong>Uma et Onyxus en forêt :</strong> Uma révèle la mort de Célion et l'incendie criminel du monastère, un an plus tôt. Les corps portaient des marques d'armes. Elle compare les écritures de la lettre reçue par Obsidio et du carnet de Célion : elles correspondent. Les deux documents convergent vers Malva.</p>
+<p><strong>Shakka :</strong> Zar (entité de la lanterne) confirme quelque chose de menaçant dans le village : <em>"Méfie-toi. C'est vraiment partout."</em></p>
+<h3>La nuit — Uma chez le bailli</h3>
+<p>Uma s'introduit seule dans la maison du bailli. Il n'y est pas. Trois coffres à cadenas, nourriture en abondance, une pièce inutilisée depuis longtemps. Des voix dans une pièce adjacente. Une charrette part vers l'est dans la nuit. Kael, qui l'avait suivie discrètement, se montre. Même conclusion : le bailli cache quelque chose.</p>
+<h3>Le Fort de Corne Creuse — Premier combat</h3>
+<p>Douves profondes, fond invisible. Onyxus tente de s'infiltrer mais le warg le repère et hurle l'alerte. Veritas met le warg en fuite (Firebolt). Lysandra décapite deux gobelins dont un avec Divine Smite (lumière sortant des yeux, traversant l'épée — le gobelin explose). Onyxus empale le mage gobelin depuis les remparts. Veritas brûle un chariot et pulvérise un gobelin à l'Orbe Chromatique. Les gobelins de la cour tombent. Des cris montent de l'intérieur.</p>
+<h3>Statistiques</h3>
+<ul>
+<li><strong>Kills :</strong> Lysandra ×2 gobelins, Onyxus ×2 gobelins, Veritas ×1 gobelin, Shakka ×1 warg</li>
+<li><strong>Soins :</strong> Kael — Cure Wounds 8 HP sur Uma</li>
+<li><strong>Échec critique :</strong> Uma — investigation chez le bailli (1 naturel)</li>
+</ul>`
+        },
+        {
+          id: "session-2",
+          day: "12",
+          month: "Avr.",
+          discovered: "12 Avril",
+          title: "Session 2",
+          subtitle: "Abzu, Groki, et le camp principal",
+          tags: ["session 2", "Fort de Corne Creuse", "Abzu", "Groki"],
+          summary: "Le groupe affronte Abzu (une abomination d'une époque révolue) et Groki (la reine gobeline). Puis Shakka et Onyxus découvrent l'énorme camp principal à l'ouest — avec deux ogres.",
+          content: `<h3>Reprise au Fort — Abzu</h3>
+<p>Butin de la cour récupéré : 500 po et un bâton-racine magique (<strong>Staff of Healing</strong>, identifié par Identify de Veritas). Une énorme créature surgit des remparts : <strong>Abzu</strong>, monstre massif à la peau pustuleuse dégageant une odeur de charogne. La grosse gobeline de l'intérieur hurle son nom en boucle.</p>
+<h3>Combat contre Abzu</h3>
+<p>Veritas agrandit Uma à 3 mètres. Onyxus place un Faerie Fire sur Abzu (avantage pour tout le monde). Uma frappe en premier — ses poings pénètrent la surface mais s'arrêtent net, le corps est trop résistant. Lysandra prend son épée à deux mains, même constat. Kael tente Sacred Flame : n'arrive pas à percer les pustules. Abzu draine la vitalité de Shakka en le mordant et se régénère. Shakka active Armor of Agathys et deux gobelins meurent en l'attaquant.</p>
+<h3>Les gobelins — La créature ailée</h3>
+<p>La grande porte s'ouvre : masse de gobelins dont <strong>Groki</strong>. Le mage gobelin lance deux attaques psychiques sur Veritas (critique sur la première : 13 dégâts psychiques) — Uma rétrécit instantanément. Veritas observe depuis le mur une petite créature ailée retirer ses dagues du corps du mage et se retourner vers les autres gobelins.</p>
+<h3>Kill d'Abzu — Onyxus</h3>
+<p>Onyxus tire un carreau final (7 dégâts). Abzu s'effondre et libère en tombant des dizaines de cadavres en décomposition — toutes races confondues — qu'il stockait à l'intérieur de lui-même. <em>Kill final : Onyxus.</em></p>
+<h3>Kill de Groki — Uma</h3>
+<p>Uma retrouve la vue (elle avait été aveuglée par Blindness), saute des remparts en Feather Fall, et en descente lente abat un coup de pied marteau sur la nuque de Groki. Mort instantanée. <em>Kill : Uma.</em> Groki n'était qu'une jeune reine satellite — le vrai problème est ailleurs.</p>
+<h3>Après le combat</h3>
+<p>L'intérieur contient uniquement du matériel gobelin en décomposition. Sous-sol : ancienne prison vide à cages fermées. Dépendance nord-ouest : jeune Roussainte gorge tranchée, grange aménagée en prison de fortune avec menottes et sang séché. Shakka recouvre le corps et le transporte jusqu'à la charrette.</p>
+<p>Onyxus identifie Abzu comme une <em>"abomination non contemporaine"</em> — une créature d'une époque révolue. Une musique sans source résonnait pendant tout le combat.</p>
+<p>Veritas interroge le groupe sur la créature ailée. Kael : <em>"Appelons ça une illusion."</em> Lysandra confirme. La plume enchantée de Veritas écrit d'elle-même dans le grimoire : <em>"Je ne vois pas ce que vous voulez dire."</em></p>
+<h3>Pistage — Shakka et Onyxus</h3>
+<p>Le groupe se sépare. Shakka et Onyxus suivent les traces de fuite vers l'ouest. Ils contournent des créatures à huit pattes dans des ruines anciennes via une diversion sonore. Puis ils trouvent le <strong>camp principal gobelin</strong> — comparable au village de Malva en taille. Entre 50 et 100 gobelins actifs. <strong>Deux ogres</strong> visibles : l'un près du feu, l'autre sortant de la grande tente. Probablement roi et reine du camp. Groki n'était qu'un nid satellite.</p>
+<h3>Retour à Malva</h3>
+<p>Joren révèle que <strong>Sœur Elwenne</strong> avait pointé lors d'un conseil que certaines disparitions venaient de l'<em>intérieur</em> du village — le bailli l'avait fait taire avec l'appui de Belric. Aucune enquête n'a suivi. Dans sa chambre, Veritas transfère son igniter de son bâton vers son grimoire : le livre commence à prendre conscience.</p>
+<h3>Statistiques</h3>
+<ul>
+<li><strong>Kills :</strong> Onyxus ×1 (Abzu), Uma ×1 (Groki), Kael ×1 (gobelin, Guiding Bolt), Veritas ×1 (gobelin, éclair), Shakka ×2 (gobelins par Armor of Agathys), Créature ailée ×1 (mage gobelin)</li>
+<li><strong>Critique :</strong> Uma — coup critique sur Abzu | <strong>Échec :</strong> Onyxus — tir raté (1 naturel)</li>
+</ul>`
+        },
+        {
+          id: "session-3",
+          day: "20",
+          month: "Avr.",
+          discovered: "20 Avril",
+          title: "Session 3",
+          subtitle: "Les Cartes de Nyx, la grotte côtière et Dren Solaria",
+          tags: ["session 3", "Malva", "grotte", "Dren", "Zolom", "niveau 4"],
+          summary: "Berzim présenté au groupe, les Cartes de Nyx créées par Onyxus, découverte de la grotte côtière et confrontation avec Dren Solaria. Le groupe passe niveau 4.",
+          content: `<h3>Matin — Kael et Uma</h3>
+<p>Kael s'excuse auprès d'Uma pour son emportement de la veille. Uma ne se laisse pas amadouer : <em>"Tu ne m'as pas rendu la pareille."</em> Elle perçoit (jet 21) quelque chose d'invisible sur l'épaule droite de Kael — elle note sans rien dire. Peu après, Berzim autorise Kael à révéler sa présence au groupe, mais pas leurs objectifs communs.</p>
+<h3>Les Cartes de Nyx</h3>
+<p>Onyxus a travaillé toute la nuit. Il distribue à chaque membre une carte magique personnalisée. Chaque carte, liée à son porteur, confère : <strong>+d4 à l'initiative</strong>, vision partagée type Carte du Maraudeur, et possibilité de <strong>lancer des sorts sans ligne de vue directe</strong> (à portée du sort). Uma reçoit une carte à motif monastique — elle devient brièvement triste en reconnaissant les ornements.</p>
+<h3>Révélation : l'origine des ogres</h3>
+<p>Veritas et Lysandra examinent les cadavres de gobelins. Le grimoire Buki révèle : les gobelins kidnappent des femmes pour les engrosser. La gestation dure une semaine et <strong>déchire la mère</strong>. Les <strong>ogres sont des gobelins nés de mères d'autres races</strong> — plus grands, plus costauds. Le groupe en voit la preuve directement sur les cadavres du fort.</p>
+<h3>Berzim présenté au groupe</h3>
+<p>Kael présente officiellement Berzim : une <strong>fée</strong>, alliée. Onyxus lui dit "Salut petit être" dans le vide et reçoit un coup de pied invisible dans la joue.</p>
+<h3>Retour à Malva — Hob / Telmona</h3>
+<p>Lysandra croise sur le parvis de l'église un Paripus imposant qui se présente comme <strong>Hob</strong>. Plus tard, Joren et Sœur Elwenne révèlent qu'il surveille le maître de quai et se rend à l'église pour des rendez-vous avec Belric. Lysandra se souvient alors : Hob s'appelle <strong>Telmona</strong>, tueur à gages de Grand Trad, jamais raté une cible.</p>
+<h3>Filature et interception de Hob</h3>
+<p>Le groupe intercepte Hob transportant des tonneaux depuis la plage. Il enlève sa capuche — Lysandra l'appelle par son vrai nom, il la reconnaît. Il a été payé pour livrer la cargaison. Ils le laissent passer. Il décharge tout dans une cabane à trois mètres de là et repart calmement. Dans la nuit, une vingtaine de cavaliers en armure d'Altabury récupèrent les tonneaux — direction Altabury via la côte.</p>
+<h3>La grotte côtière</h3>
+<p>Le groupe escalade 30 mètres de falaise. L'entrée s'ouvre <em>"comme une blessure dans la roche"</em>. Des cristaux de magla gigantesques émettent une lueur vert et bleu pâle. Picotements dans les doigts, odeur de sel et d'algues, humidité écrasante. Résolution d'une énigme de porte (réponse : un igniter) et entrée dans la cavité principale.</p>
+<h3>Confrontation avec Dren Solaria</h3>
+<p>Devant un chaudron : un <strong>clemar aux cheveux blancs en tenue ecclésiastique dorée</strong>. Il se retourne, voit Uma : <em>"Tu es encore vivant, toi ? Tu aurais dû cramer avec tous les autres."</em> Uma reconnaît le chaudron — il vient de son monastère. Elle fonce. Dren dresse une barrière de magla dense. Il traite Uma de <em>"chienne"</em>, appelle Lysandra <em>"la traître à son sang"</em>, révèle à Veritas qu'il était censé être tué par l'Ordre des Archivistes.</p>
+<h3>Combat — Zolom, Lézards, Dren</h3>
+<p>Le sol tremble. Le <strong>Zolom</strong>, serpent colossal, jaillit du sous-sol. Les trois cadavres se muent en lézards humanoïdes (géomancien, chaman, corps à corps). Initiative. Lysandra ouvre avec un critique + Divine Smite (~26 dégâts sur Zolom). Veritas tue le Zolom avec un Chromatic Orb rebondissant (29 dégâts) — mais le Zolom absorbe le magla d'un lézard tombé et ressuscite complètement.</p>
+<p>Le chaman invoque un séisme : Shakka et Lysandra tombent inconscients. Le Zolom crache un jet acide (chair putréfiante). Lysandra s'effondre une deuxième fois. Kael plante son Ling Staff au sol : <strong>Mass Cure Wounds (198 HP, puis 216 HP)</strong>. Total soigné par Kael : ~414 HP.</p>
+<p>Uma tue le géomancien d'un coup de pied descendant sur la mâchoire (yeux explosés sous l'impact). Le chaman fuit par téléportation. Kael désintègre un lézard en fuite (Guiding Bolt, désintégration identique à la session 1). Shakka achève le Zolom — la fumée de la lanterne l'aspire morceau par morceau. Il ne reste rien du serpent.</p>
+<p>Dren fuit pendant le chaos. Le groupe trouve le <strong>Chaudron de Hyr</strong> (absorbe le magla en liquide ultra-concentré, extrêmement instable) et un <strong>Sac Sans Fond</strong>. Shakka absorbe le chaudron dans sa lanterne.</p>
+<h3>Alerte — Niveau 4</h3>
+<p>De retour à Malva à 8h du matin, Joren court vers eux : <em>"Restez pas là, ils ont envoyé du monde, ils sont en train de vous chercher."</em> Le groupe passe <strong>niveau 4</strong>.</p>
+<h3>Statistiques</h3>
+<ul>
+<li><strong>Kills :</strong> Veritas ×1 (Zolom, Chromatic Orb rebond), Shakka ×1 (Zolom final via lanterne), Uma ×1 (géomancien, coup de pied mâchoire), Kael ×1 (lézard en fuite, Guiding Bolt)</li>
+<li><strong>Soins Kael :</strong> ~414 HP totaux (deux Mass Cure Wounds au Ling Staff)</li>
+<li><strong>Critiques :</strong> Lysandra (ouverture sur Zolom), Veritas (Chromatic Orb), Onyxus (perception, point faible barrière)</li>
+<li><strong>Échecs :</strong> Dren (dague sur Shakka), Lysandra (stealth en armure lourde)</li>
+</ul>`
+        },
+        {
+          id: "session-4",
+          day: "2",
+          month: "Mai",
+          discovered: "02 Mai",
+          title: "Session 4",
+          subtitle: "Arrestation, Barion et les mercenaires",
+          tags: ["session 4", "Altabury", "Barion", "Obsidio", "Tantalus"],
+          summary: "Le groupe est arrêté par les soldats d'Altabury sur des charges fabriquées par Dren. Le Général Barion les fait passer pour morts. Plus tard, ils trouvent Obsidio Kotabbos prisonnier de mercenaires.",
+          content: `<h3>Encerclement à Malva</h3>
+<p>À peine sortis de la grotte, une vingtaine de soldats en armure d'Altabury et cinq cavaliers encerclent le groupe. Joren tente de plaider avant de recevoir un coup. Le groupe, épuisé et couvert de sang, met genou à terre. Leurs affaires sont entièrement saisies.</p>
+<h3>La cellule — Histoires personnelles</h3>
+<p>Cellule en pierre humide, sans fenêtre. Lysandra s'excuse. Veritas, sec : <em>"Tout ne tourne pas autour de toi."</em> Kael raconte son passé : prêtre d'une petite église qui a refusé d'accueillir un Paripus et une Eugief malades, il a quitté sa communauté en cachette pour les aider, rencontré Berzim, puis Lysandra alors qu'elle combattait des loups près de Laëk. Un Rhoag de haute stature les observe entre les barreaux.</p>
+<h3>Barion — Général de l'Armée Royale</h3>
+<p>Le Rhoag aux <strong>longs cheveux blancs tressés en quatre dreads</strong> s'avère être <strong>Barion</strong>, Général de l'Armée Royale de Grand Trad, héros populaire de la capitale. Les charges sont d'une gravité telle qu'elles ont nécessité son déplacement personnel. Accusations du <strong>prélat Dren Solaria</strong> de Brilehaven : kidnapping et torture d'habitants dans les grottes, tentative d'assassinat sur sa personne. Appuyées par Oren Vale et Belric Thane.</p>
+<p>Le groupe donne sa version. Barion révèle que les lézards mutés ressemblent physiologiquement aux <strong>Humans</strong> — tous deux dépourvus de magla. Lysandra : peut-être pour ça que Dren avait besoin des tonneaux. Uma, face au mur tout du long, se retourne : <em>"La seule chose que vous devez savoir, c'est que quand je sortirai d'ici, je tuerai votre prélat."</em></p>
+<h3>Le pacte</h3>
+<p>Barion baisse sa garde : <em>"Quelque chose se passe. Des personnes haut placées veulent profiter de la faiblesse de notre roi. Dren n'est qu'un maillon."</em> Plan : les faire passer pour morts cette nuit. Faux enterrement le lendemain. Recommandation : Brilehaven pour traquer Dren. Barion a une dette envers <strong>Valendris</strong>, frère aîné de Lysandra — c'est aussi pour lui qu'il intervient.</p>
+<p>Lysandra lui glisse entre les barreaux : <em>"Dites à Valendris que tout ira bien et que mentir à la famille n'est pas si grave."</em></p>
+<h3>Confession d'Uma</h3>
+<p>Uma révèle au groupe : Onyxus est un cousin adoptif, et c'est <strong>Célion</strong>, son oncle à lui, qui l'a élevée au monastère. Elle s'agenouille le front contre le sol et demande leur aide pour traquer et tuer le prélat. Lysandra la relève d'un avant-bras tendu. Une larme roule sur la joue d'Uma. Tout le monde accepte.</p>
+<h3>Évasion et pseudonymes</h3>
+<p>Un soldat de confiance guide le groupe par un tunnel souterrain de 30 minutes jusqu'en pleine nature. Leurs affaires les attendaient. Pseudonymes pour la route : Kael → <strong>Alek</strong>, Veritas → <strong>Astren</strong>, Lysandra → <strong>Meredith</strong> (en hommage à sa nourrice), Onyxus → <strong>Xyno</strong>, Uma → <strong>Aang</strong>. Shakka conserve son nom.</p>
+<h3>Le campement de mercenaires</h3>
+<p>Au deuxième jour de route, un campement : grande cage tirée par deux chevaux, un Ishkia encagoulé à l'intérieur, sept personnes armées. Chef : grand Rhoag aux longs cheveux blancs tressés (Raho). Il transporte un <em>"terroriste des <strong>Tantalus</strong>"</em> jusqu'à Grand Trad, mais un human bloque la route. Il propose un échange — escorte contre cheval. Le groupe refuse.</p>
+<p>Onyxus reconnaît immédiatement la pochette que Raho tient : cuir brodé d'une spirale, identique à celle de son père. Raho finit par cracher : <em>"Cette pochette, c'était la sienne. Donc son père, c'est un terroriste."</em> Onyxus court vers la cage en appelant son père. Veritas lance Reduce sur une roue de charrette — la cage bascule, les chevaux paniquent.</p>
+<h3>Combat des golems</h3>
+<p>Raho pose les deux mains au sol : deux golems de pierre surgissent. Kael lance Silence sur lui. Lysandra attaque les golems. Onyxus s'effondre inconscient sous les coups de mercenaires (~25 dégâts). Il réussit son save contre la mort au <strong>20 naturel</strong> et se relève immédiatement. Veritas lance Chromatic Orb (Onyxus lui offre une relance critique en criant <em>"ils ont pris mon père !"</em>) : 15 acide sur Raho + rebond 14 sur le golem. Shakka assomme Raho. Les golems → tas de cailloux. Kael : Mass Cure Wounds (38 HP).</p>
+<p>Raho ligoté, tête plongée dans l'eau pour le réveiller. Shakka : <em>"Qui était ton prisonnier ?"</em></p>
+<h3>Statistiques</h3>
+<ul>
+<li><strong>Kills :</strong> Aucun PNJ tué (mercenaires en fuite, Raho inconscient pour interrogatoire)</li>
+<li><strong>Critique :</strong> Onyxus — save contre la mort (20 naturel, relevé à 1 HP)</li>
+<li><strong>Échecs :</strong> Shakka ×2 (attaques), mercenaire ennemi ×1</li>
+</ul>`
+        },
+        {
+          id: "session-5",
+          day: "10",
+          month: "Mai",
+          discovered: "10 Mai",
+          title: "Session 5",
+          subtitle: "Les Tantalus, la malédiction d'Obsidio et la route vers Corel",
+          tags: ["session 5", "Obsidio", "Tantalus", "Corel", "araignées"],
+          summary: "Raho révèle Astori Hojo. Obsidio est récupéré — maudit. Berzim maintient la stase. Le groupe prend la route vers Corel, traversant sorcières, kobold et araignées-loups géantes.",
+          content: `<h3>Interrogatoire de Raho</h3>
+<p>Raho révèle : le prisonnier s'appelle <strong>Obsidio</strong>, destiné à Grand Trad. Commanditaire : <strong>Astori Hojo</strong>, mage Nidia influente au service de l'armée à Altabury, spécialiste des malédictions. Prix : 1500 po. Pour négocier la libération, il faut parler à <strong>Lucie</strong> (alias Lucifer), prêtresse Roussainte blonde cheffe du groupe.</p>
+<h3>Négociation avec Lucie</h3>
+<p>Uma part en éclaireur dans des ruines et confirme que le groupe est gérable. Lysandra négocie : 300 po + libération de Raho contre Obsidio. Lucie accepte sous condition d'une bonne couverture pour sa réputation. Lysandra improvise : un human les a attaqués sur la route, ils ont tout perdu dans la lutte. Jet de persuasion réussi. L'échange se conclut.</p>
+<h3>Obsidio — Les Tantalus</h3>
+<p>Obsidio est dans un état critique : liquide noir suintant sous ses bandages aux yeux, peau marquée, marchant à peine. Veritas lance Detect Magic : flux de magla extrêmement perturbé. Shakka reconnaît le type de malédiction fortement modifiée : pour la défaire, il faut soit que le lanceur l'annule, soit qu'il meure. Ce n'est pas mortel — c'est de la torture pure.</p>
+<p>Kael lance Resistance sur Obsidio. Le liquide reflue brièvement. Obsidio reprend conscience, attrape Onyxus par les cheveux et raconte :</p>
+<ul>
+<li>Il est parti vers Malva pour retrouver son fils</li>
+<li>À son arrivée, il a vu le groupe emmené en charrette</li>
+<li>Une Nidia aux <strong>cheveux arc-en-ciel violets</strong> (Astori Hojo) l'a maudit en reconnaissant sa bague</li>
+<li>Elle a déclaré qu'il faisait partie des <strong>Tantalus</strong></li>
+</ul>
+<p>Le mot prononcé, ses yeux explosent à nouveau de liquide noir. Dans son sac : une bague portant un sceau identique à celui des lettres de Célion — <strong>trois vagues superposées traversées d'une barre</strong>. Le nom "Tantalus" ne dit rien à personne.</p>
+<h3>Berzim intervient — Route vers Corel</h3>
+<p>Berzim propose : sa magie primordiale, par le chant, peut maintenir Obsidio en stase. Contrainte : Obsidio doit rester à proximité, ne pas être déplacé pendant le chant, et Berzim doit prendre des pauses. Kael propose un détour vers <strong>Corel</strong> (~36h de marche) pour trouver un prêtre supérieur ami de Kael qui partage ses idéaux. Le groupe valide. Veritas et Onyxus reconstituent la charrette mercenaire en brancard à roues avec Mending.</p>
+<h3>Voyage vers Corel — Rencontres</h3>
+<p><strong>Sorcières vertes :</strong> Trois silhouettes dans un marais. L'une repère le groupe et commence à incanter (Lysandra : 1 naturel en discrétion). Contournement par la gauche. Lysandra fait un échec critique sur la charrette. Le MJ est clément — aucun combat.</p>
+<p><strong>Bugbear et hobgoblins :</strong> Un bugbear et deux hobgoblins en plein combat entre eux. Onyxus réussit un jet de discrétion. Le groupe contourne sans être repéré.</p>
+<p><strong>Kobold isolé :</strong> Un kobold seul entre des arbres, n'a pas vu le groupe. Shakka rate Chill Touch (jet : 9). Uma court et lui met "une patate" : 5 dégâts. Le kobold avait exactement 5 PV. Mort sur le coup.</p>
+<h3>Embuscade — Araignées-Loups Géantes</h3>
+<p>Camp de nuit dans des ruines. Shakka, Kael et Uma font trois <strong>20 naturels consécutifs</strong> sur leur tour de garde. Au petit matin, Onyxus (qui veillait son père) réalise que le groupe est cerné par six araignées-loups géantes. Un aigle géant tournoie au-dessus sans intervenir.</p>
+<p>Onyxus lance Sanctuary sur Berzim et joue en premier. Onyxus et Kael sont mordus (5 perçants + 4 poison chacun). Uma écrase la tête d'une araignée d'un coup de talon (kill). Onyxus projette une araignée grimpée sur Lysandra d'un bolt magique bleu (12 dégâts, kill). Kael plante son bâton dans la gueule d'une araignée au corps à corps (Guiding Bolt, 9 radiants, kill). Uma redirige une morsure sur l'attaquante (11 dégâts, kill). Veritas brûle la suivante (Ignis, 8 dégâts, kill). Shakka et Lysandra achèvent ensemble la grosse sur la tente. Toutes les six mortes.</p>
+<h3>L'aigle géant — Onyxus et son "ami"</h3>
+<p>L'aigle descend dévorer les cadavres (39 gold en ressources revendables). Onyxus (Insight : 1 naturel) est convaincu que l'aigle est son meilleur ami et lui tend la main. L'aigle lui plante ses ergots dans le bras (5+4 perçants). Uma lui arrache des plumes (10 dégâts). Lysandra, excédée, attrape l'aigle, le secoue, lui tape sur le bec et le jette en l'air en criant <em>"Dégage !"</em> L'aigle part. Onyxus ramasse une plume tombée au sol.</p>
+<p><em>Note du MJ à la fin de session : "L'aigle en fait était Dren."</em></p>
+<h3>Statistiques</h3>
+<ul>
+<li><strong>Kills :</strong> Uma ×3 (kobold + araignée talon + araignée redirect), Onyxus ×1 (araignée bolt), Kael ×1 (araignée Guiding Bolt CAC), Veritas ×1 (araignée Ignis), Shakka ×1 (araignée + Lysandra ensemble)</li>
+<li><strong>Critiques :</strong> Shakka/Kael/Uma — 20 naturels en garde ×3</li>
+<li><strong>Échecs :</strong> Lysandra ×2 (sorcières), Onyxus ×2 (initiative, Insight aigle), Shakka ×1</li>
+</ul>`
+        }
+      ]
     }
   }
 };

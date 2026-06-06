@@ -192,6 +192,7 @@
 
   function renderCalendrier() {
     const m = CODEX.meta;
+    const sessionEntries = (CODEX.sections.sessions && CODEX.sections.sessions.entries) || [];
 
     const upcomingRows = (m.upcoming && m.upcoming.length)
       ? m.upcoming.map(e => `
@@ -208,17 +209,17 @@
         </div>`).join('')
       : '<p class="cal-empty">Aucun événement planifié.</p>';
 
-    const pastRows = Array.from({ length: m.sessions }, (_, i) => i + 1).reverse().map(n => `
-      <div class="cal-event-row">
-        <div class="event-date session-date">
-          <span class="event-day">${n}</span>
-          <span class="event-month">Sess.</span>
+    const pastRows = sessionEntries.slice().reverse().map(s => `
+      <div class="cal-event-row cal-event-link" onclick="location.hash='#/sessions/${esc(s.id)}'">
+        <div class="event-date">
+          <span class="event-day">${esc(s.day)}</span>
+          <span class="event-month">${esc(s.month)}</span>
         </div>
         <div class="event-info">
-          <strong>Session ${n}</strong>
-          <p>Session jouée</p>
+          <strong>${esc(s.title)}</strong>
+          <p>${esc(s.subtitle)}</p>
         </div>
-        <span class="cal-badge done">Terminée</span>
+        <span class="cal-badge done">Voir →</span>
       </div>`).join('');
 
     setContent(`

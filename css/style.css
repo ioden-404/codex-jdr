@@ -845,6 +845,9 @@ html, body {
 .cal-badge.done     { background: rgba(42,30,10,0.05); color: var(--muted); border: 1px solid var(--border); }
 
 .cal-empty { font-size: 0.83rem; color: var(--muted); padding: 16px 0; font-style: italic; }
+.cal-event-link { cursor: pointer; transition: border-color 0.12s, box-shadow 0.12s, transform 0.12s; }
+.cal-event-link:hover { border-color: var(--gold); box-shadow: var(--shadow-md); transform: translateX(3px); }
+.cal-event-link:hover .cal-badge.done { background: var(--gold-soft); color: var(--gold); border-color: rgba(124,104,48,0.25); }
 
 
 /* ══════════════════════════════════
