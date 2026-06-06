@@ -246,7 +246,7 @@ const CODEX = {
       entries: [
         {
           id: "uma",
-          image: "",
+          image: "img/uma.png",
           discovered: "Session 1",
           group: "PJ",
           title: "Uma",
@@ -271,6 +271,7 @@ const CODEX = {
         },
         {
           id: "onyxus",
+          image: "img/Onyxus.png",
           group: "PJ",
           title: "Onyxus Kotabbos",
           subtitle: "Jeune Ishkia, arbalétrier",
@@ -287,6 +288,7 @@ const CODEX = {
         },
         {
           id: "lysandra",
+          image: "img/Lyssandra.png",
           group: "PJ",
           title: "Lysandra",
           subtitle: "Guerrière Roussainte, ancienne de l'académie",
@@ -306,6 +308,7 @@ const CODEX = {
         },
         {
           id: "kael",
+          image: "img/Kael.png",
           group: "PJ",
           title: "Kael",
           subtitle: "Prêtre itinérant Rhoag",
@@ -326,6 +329,7 @@ const CODEX = {
         },
         {
           id: "veritas-varn",
+          image: "img/Veritas.png",
           group: "PJ",
           title: "Veritas Varn",
           subtitle: "Scribe de l'Ordre des Archivistes",
@@ -345,6 +349,7 @@ const CODEX = {
         },
         {
           id: "shakka",
+          image: "img/Shakka.png",
           group: "PJ",
           title: "Shakka",
           subtitle: "Rhoag d'ailleurs, porteur de la Lanterne",

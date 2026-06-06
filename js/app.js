@@ -123,9 +123,10 @@
     const cardsHTML = featured.map(({ key, entry }) => {
       const sec = secs[key];
       const img = entry.image || ('img/' + entry.id + '.png');
+      const imgPos = key === 'personnages' ? 'top center' : 'center';
       return `
         <div class="entry-card" onclick="location.hash='#/${esc(key)}/${esc(entry.id)}'">
-          <div class="card-img" style="background-image:url('${esc(img)}')">
+          <div class="card-img" style="background-image:url('${esc(img)}');background-position:${imgPos}">
           </div>
           <div class="card-body">
             <span class="card-cat">${esc(sec.label)}</span>
@@ -385,10 +386,11 @@
       </div>` : '';
 
     const entryImg = entry.image || ('img/' + entry.id + '.png');
+    const imgPos = key === 'personnages' ? 'top center' : 'center';
     const imgBlock = isSession ? '' : `
       <div class="info-card">
         <div class="info-card-header">Illustration</div>
-        <div class="card-img" style="height:160px;border-radius:0;background-image:url('${esc(entryImg)}')">
+        <div class="card-img" style="height:160px;border-radius:0;background-image:url('${esc(entryImg)}');background-position:${imgPos}">
         </div>
       </div>`;
 
