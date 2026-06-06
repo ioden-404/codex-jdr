@@ -112,13 +112,16 @@
     const m    = CODEX.meta;
     const secs = CODEX.sections;
 
-    // 4 entrées mises en avant (une par section)
-    const featured = [
-      { key: 'lieux',       entry: secs.lieux.entries.find(e => e.id === 'malva')           || secs.lieux.entries[0] },
-      { key: 'personnages', entry: secs.personnages.entries.find(e => e.id === 'uma')        || secs.personnages.entries[0] },
-      { key: 'factions',    entry: secs.factions.entries.find(e => e.id === 'horde-gobeline')|| secs.factions.entries[0] },
-      { key: 'lore',        entry: secs.lore.entries.find(e => e.id === 'magla-igniters')    || secs.lore.entries[0] },
-    ].filter(f => f.entry);
+    // 4 entrées aléatoires piochées dans toutes les sections (hors sessions)
+    const pool = [];
+    ['lore', 'personnages', 'lieux', 'bestiaire', 'factions'].forEach(key => {
+      (secs[key] ? secs[key].entries : []).forEach(entry => pool.push({ key, entry }));
+    });
+    for (let i = pool.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+    const featured = pool.slice(0, 4);
 
     const cardsHTML = featured.map(({ key, entry }) => {
       const sec = secs[key];
