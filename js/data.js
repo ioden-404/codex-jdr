@@ -252,21 +252,18 @@ const CODEX = {
           title: "Uma",
           subtitle: "Moinesse combattante — Rhoag élevée Ishkia",
           tags: ["Rhoag", "Ishkia"],
-          summary: "Élevée dans un monastère de montagne par Maître Célion, Uma a perdu son mentor dans un incendie criminel il y a un an. Elle cherche des réponses — avec ses poings si nécessaire.",
+          summary: "Moinesse combattante au passé discret. Rhoag élevée dans la culture Ishkia, elle frappe vite et parle peu. Ce qu'elle cherche, elle le garde pour elle.",
           content: `<h3>Apparence</h3>
-<p>À dix-neuf ans, Uma porte déjà la trentaine dans ses traits. Les rides précoces de son sang Rhoag se mêlent aux marques vives laissées par sa fougue : sourcils froncés, sourire carnassier, regard qui brûle avant de comprendre. Son corps est solide, durci, noueux comme un tronc de pin battu par les vents. Ses bras musclés portent des tatouages qu'elle s'est elle-même ajoutés, cherchant à faire dialoguer sa nature Rhoag et sa culture Ishkia. Elle marche comme un jeune loup affamé.</p>
-<h3>Histoire</h3>
-<p>Uma vint au monde sous un ciel immobile, abandonnée sans nom, sans berceau, sans histoire. C'est <strong>Maître Célion</strong>, vieil ermite Ishkia, qui la trouva sur les marches de son monastère de montagne et la recueillit. Elle grandit dans un univers tissé de chants sacrés, de méditations interminables et de rouleaux de parchemins empilés jusqu'au plafond — et avançait dedans comme un orage.</p>
-<h3>La Perte</h3>
-<p>Il y a un an, le monastère brûla. Un incendie criminel : les corps portaient des marques d'armes, pas seulement de feu. Uma était absente au moment des faits, sortie s'entraîner, et porte cette culpabilité. Célion fut le premier corps retrouvé, à sa place habituelle, comme s'il avait attendu qu'elle revienne.</p>
-<p>La veille, Célion avait remis un carnet à une aubergiste proche du monastère — une précaution. Ce carnet, combiné à une lettre reçue par Obsidio Kotabbos (père d'Onyxus), portant la même écriture, pointe vers Malva. Célion savait apparemment ce qui allait arriver.</p>
-<h3>Aujourd'hui</h3>
-<p>Des mois de combats illégaux dans les bas-fonds lui ont appris à observer, écouter, mémoriser. Elle ne fait confiance qu'à Onyxus. Elle trinquera quand ils reviendront vivants.</p>
-<h3>Ce qu'elle cherche</h3>
+<p>À dix-neuf ans, Uma porte déjà la trentaine dans ses traits. Les rides précoces de son sang Rhoag se mêlent aux marques vives laissées par sa fougue : sourcils froncés, sourire carnassier, regard qui brûle avant de comprendre. Son corps est solide, durci, noueux comme un tronc de pin battu par les vents. Ses bras musclés portent des tatouages qu'elle s'est elle-même ajoutés. Elle marche comme un jeune loup affamé.</p>
+<h3>Manière d'être</h3>
+<p>Directe, impulsive, économe en mots. Elle observe avant de parler et frappe avant de douter. Elle ne s'explique pas et ne s'excuse pas — sauf quand elle le décide vraiment. Une loyauté difficile à gagner, impossible à briser une fois acquise.</p>
+<h3>Capacités</h3>
+<p>Combat au corps à corps, arts martiaux monastiques. Mains nues ou bâton. Feather Fall, Sanctuary. Des mois d'entraînement intensif ont forgé un style efficace, sans fioritures.</p>
+<h3>Ce que les autres savent</h3>
 <ul>
-<li>Retrouver les assassins du monastère</li>
-<li>Comprendre ce que savait Célion et ce qu'il préparait</li>
-<li>Trouver sa place entre son héritage Rhoag et son éducation Ishkia</li>
+<li>Elle connaît Onyxus — ils ont une histoire commune, non détaillée</li>
+<li>Elle vient d'un monastère, quelque part au nord</li>
+<li>Elle a une raison d'être à Malva. Elle ne l'a pas encore partagée</li>
 </ul>`
         },
         {
