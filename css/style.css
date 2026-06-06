@@ -537,6 +537,20 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.card-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(14, 8, 0, 0.45);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card-img:hover::after {
+  opacity: 0;
 }
 
 .card-img-placeholder {
