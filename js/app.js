@@ -392,7 +392,7 @@
     const imgBlock = isSession ? '' : `
       <div class="info-card">
         <div class="info-card-header">Illustration</div>
-        <div class="card-img" style="height:160px;border-radius:0;background-image:url('${esc(entryImg)}');background-position:${imgPos}">
+        <div class="card-img card-img-zoomable" style="height:160px;border-radius:0;background-image:url('${esc(entryImg)}');background-position:${imgPos}" onclick="openMapModal('${esc(entryImg)}')">
         </div>
       </div>`;
 
