@@ -137,20 +137,28 @@
     }).join('');
 
     const heroImg   = m.heroImage || '';
-    const heroStyle = heroImg ? ` style="background-image:url('${esc(heroImg)}')"` : '';
     const mapImg    = m.mapImage  || '';
     const mapStyle  = mapImg  ? ` style="background-image:url('${esc(mapImg)}')"` : '';
 
     setContent(`
       <!-- HERO — pleine largeur, pas de border-radius ni de card -->
+      ${heroImg ? `
+      <div class="hero hero-banner" style="background-image:url('${esc(heroImg)}')">
+        <div class="hero-overlay"></div>
+        <div class="hero-left">
+          <h1 class="hero-title">${esc(m.title)}</h1>
+          <p class="hero-tagline">${esc(m.tagline || '')}</p>
+          <p class="hero-desc">${esc(m.description)}</p>
+        </div>
+      </div>` : `
       <div class="hero">
         <div class="hero-left">
           <h1 class="hero-title">${esc(m.title)}</h1>
           <p class="hero-tagline">${esc(m.tagline || '')}</p>
           <p class="hero-desc">${esc(m.description)}</p>
         </div>
-        <div class="hero-right${heroImg ? '' : ' empty'}"${heroStyle}></div>
-      </div>
+        <div class="hero-right empty"></div>
+      </div>`}
 
       <!-- SECTIONS avec padding -->
       <div class="home-sections">
