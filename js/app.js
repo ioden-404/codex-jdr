@@ -172,7 +172,6 @@
           <div class="section-header">
             <i class="fa-solid fa-feather"></i>
             <h2>Dernières Entrées</h2>
-            <a class="voir-tout" href="#/lore">Voir tout &rsaquo;</a>
           </div>
           <div class="recent-grid">${cardsHTML}</div>
         </div>
