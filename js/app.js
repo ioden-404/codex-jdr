@@ -171,8 +171,8 @@
             <i class="fa-solid fa-map"></i>
             <h2>Carte du Monde</h2>
           </div>
-          <div class="map-container"${mapStyle}>
-            ${mapImg ? '' : '<span class="map-placeholder">+ Ajouter une carte du monde</span>'}
+          <div class="map-container">
+            ${mapImg ? `<img src="${esc(mapImg)}" alt="Carte du monde" style="width:100%;height:100%;object-fit:cover;display:block;">` : '<span class="map-placeholder">+ Ajouter une carte du monde</span>'}
           </div>
         </div>
 
