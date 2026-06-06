@@ -258,7 +258,7 @@ const CODEX = {
 <h3>Manière d'être</h3>
 <p>Directe, impulsive, économe en mots. Elle observe avant de parler et frappe avant de douter. Elle ne s'explique pas et ne s'excuse pas — sauf quand elle le décide vraiment. Une loyauté difficile à gagner, impossible à briser une fois acquise.</p>
 <h3>Capacités</h3>
-<p>Combat au corps à corps, arts martiaux monastiques. Mains nues ou bâton. Feather Fall, Sanctuary. Des mois d'entraînement intensif ont forgé un style efficace, sans fioritures.</p>
+<p>Combat au corps à corps, arts martiaux monastiques. Mains nues ou bâton. Des mois d'entraînement intensif ont forgé un style rapide et brutal, sans fioritures. Elle peut enchaîner plusieurs frappes en un instant et a été vue dévier et rediriger des attaques adverses sur leurs propres auteurs.</p>
 <h3>Ce que les autres savent</h3>
 <ul>
 <li>Elle connaît Onyxus — ils ont une histoire commune, non détaillée</li>
