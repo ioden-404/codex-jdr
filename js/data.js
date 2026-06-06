@@ -5,7 +5,7 @@ const CODEX = {
     description: "Le recueil officiel de la campagne : lore, personnages, lieux et factions du Royaume d'Euchronia.",
     tagline: "Le monde. Son histoire. Ses Légendes.",
     heroImage: "",
-    mapImage: "",
+    mapImage: "cartedumonde.png",
     quote: "Ce qui n'est pas écrit est oublié. Ce qui est écrit devient éternel.",
     quoteAuthor: "Maître Célion",
     upcoming: [
