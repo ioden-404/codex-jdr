@@ -172,7 +172,9 @@
             <h2>Carte du Monde</h2>
           </div>
           <div class="map-container">
-            ${mapImg ? `<img src="${esc(mapImg)}" alt="Carte du monde" style="width:100%;height:100%;object-fit:cover;display:block;">` : '<span class="map-placeholder">+ Ajouter une carte du monde</span>'}
+            ${mapImg
+              ? `<img src="${esc(mapImg)}" alt="Carte du monde" class="map-thumb" style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in;" onclick="openMapModal('${esc(mapImg)}')">`
+              : '<span class="map-placeholder">+ Ajouter une carte du monde</span>'}
           </div>
         </div>
 
@@ -368,6 +370,21 @@
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
   }
+
+  window.openMapModal = function(src) {
+    const modal = document.createElement('div');
+    modal.id = 'map-modal';
+    modal.innerHTML = `
+      <div id="map-modal-overlay">
+        <button id="map-modal-close" onclick="document.getElementById('map-modal').remove()">✕</button>
+        <img src="${src}" alt="Carte du monde" id="map-modal-img">
+      </div>
+    `;
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal || e.target.id === 'map-modal-overlay') modal.remove();
+    });
+    document.body.appendChild(modal);
+  };
 
   document.addEventListener('DOMContentLoaded', init);
 })();
