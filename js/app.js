@@ -122,12 +122,10 @@
 
     const cardsHTML = featured.map(({ key, entry }) => {
       const sec = secs[key];
-      const img = entry.image || '';
-      const imgStyle = img ? ` style="background-image:url('${esc(img)}')"` : '';
+      const img = entry.image || ('img/' + entry.id + '.png');
       return `
         <div class="entry-card" onclick="location.hash='#/${esc(key)}/${esc(entry.id)}'">
-          <div class="card-img"${imgStyle}>
-            ${img ? '' : '<span class="card-img-placeholder">+ Image</span>'}
+          <div class="card-img" style="background-image:url('${esc(img)}')">
           </div>
           <div class="card-body">
             <span class="card-cat">${esc(sec.label)}</span>
@@ -372,13 +370,11 @@
         <div class="info-card-tags">${entry.tags.map(t => `<span class="tag">${esc(t)}</span>`).join('')}</div>
       </div>` : '';
 
-    const entryImg = entry.image || '';
-    const imgStyle = entryImg ? ` style="background-image:url('${esc(entryImg)}')"` : '';
+    const entryImg = entry.image || ('img/' + entry.id + '.png');
     const imgBlock = `
       <div class="info-card">
         <div class="info-card-header">Illustration</div>
-        <div class="card-img" style="height:160px;border-radius:0;${entryImg ? 'background-image:url(\'' + esc(entryImg) + '\')' : ''}">
-          ${entryImg ? '' : '<span class="card-img-placeholder">+ Image</span>'}
+        <div class="card-img" style="height:160px;border-radius:0;background-image:url('${esc(entryImg)}')">
         </div>
       </div>`;
 
