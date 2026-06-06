@@ -261,9 +261,9 @@ const CODEX = {
 <p>Combat au corps à corps, arts martiaux monastiques. Mains nues ou bâton. Des mois d'entraînement intensif ont forgé un style rapide et brutal, sans fioritures. Elle peut enchaîner plusieurs frappes en un instant et a été vue dévier et rediriger des attaques adverses sur leurs propres auteurs.</p>
 <h3>Ce que les autres savent</h3>
 <ul>
-<li>Elle connaît Onyxus — ils ont une histoire commune, non détaillée</li>
-<li>Elle vient d'un monastère, quelque part au nord</li>
-<li>Elle a une raison d'être à Malva. Elle ne l'a pas encore partagée</li>
+<li>Onyxus est son cousin adoptif — c'est Célion, l'oncle d'Onyxus, qui l'a élevée au monastère (révélé en session 4)</li>
+<li>Elle vient d'un monastère dans les montagnes de l'Est, détruit par un incendie criminel il y a un an</li>
+<li>Elle a demandé l'aide du groupe pour traquer et tuer le prélat Dren Solaria — responsable du massacre</li>
 </ul>`
         },
         {
@@ -281,7 +281,9 @@ const CODEX = {
 <h3>Ce qu'Uma lui a dit (en privé)</h3>
 <p>Célion est mort. Tout le monde au monastère est mort. Incendie criminel, il y a un an. Uma était absente. Elle a fait les sépultures seule.</p>
 <h3>Capacités</h3>
-<p>Arbalétrier précis. Utilise des carreaux spéciaux (dont Faerie Fire). A improvisé un grappin avec une corde et un crochet créé par magie. A soigné et protégé ses alliés avec Sanctuary et Feather Fall.</p>`
+<p>Arbalétrier précis. Utilise des carreaux spéciaux (dont Faerie Fire). A improvisé un grappin avec une corde et un crochet créé par magie. Sanctuary, Feather Fall, Mirror Image, Healing Word, Deflect Attack. Peut se téléporter via les Cartes de Nyx.</p>
+<h3>Les Cartes de Nyx</h3>
+<p>Créées par Onyxus dans la nuit précédant la session 3, ce sont des cartes magiques personnalisées aux ornements spécifiques à chaque porteur. Chaque carte confère : <strong>+d4 à l'initiative</strong>, vision partagée de type "Carte du Maraudeur" permettant de se localiser mutuellement, et la possibilité de <strong>lancer des sorts sans ligne de vue directe</strong> (à condition d'être à portée). Chaque carte est liée à son porteur et inséparable tant qu'Onyxus est en vie. Il a également fabriqué pour Uma une paire de bandages magiques (+1 à l'attaque et aux dégâts).</p>`
         },
         {
           id: "lysandra",
@@ -300,8 +302,10 @@ const CODEX = {
 <p>Sur les secrets : <em>"Je me doute que vous ne nous dites pas tout, tout comme moi. Tant que nous ne nous connaissons pas encore suffisamment, nous aurons quelques secrets. Mais pour ma part, ce ne sera rien qui puisse nuire à votre vie à mes côtés."</em></p>
 <h3>Pouvoirs notables</h3>
 <p>Châtiment Divin (Divine Smite) — une lumière sort de ses yeux, traverse l'épée. Sacred Weapon. Paladin.</p>
+<h3>Passé — Révélation session 4</h3>
+<p>Enfance à Grand Trad dans les Hautes Cités. Sa nourrice <strong>Méredith</strong>, Paripus, a été abattue par ses propres parents devant elle — parce qu'elle était Paripus. Exilée chez une tante, elle a fui. C'est le nom de Méredith qu'elle a choisi comme pseudonyme en fuyant Altabury. Son frère aîné <strong>Valendris</strong> est connu du Général Barion, qui lui doit une dette — c'est d'ailleurs pour Valendris qu'il a choisi d'aider le groupe. Lysandra lui a glissé entre les barreaux : <em>"Dites à Valendris que tout ira bien et que mentir à la famille n'est pas si grave."</em></p>
 <h3>Ce qu'elle cache</h3>
-<p>Elle sait quelque chose au sujet de la créature ailée liée à Kael. Elle a promis de ne pas parler à sa place.</p>`
+<p>Elle sait quelque chose au sujet de la créature ailée liée à Kael. Elle a promis de ne pas parler à sa place. Elle avait également, dans son baluchon, un paquet de lettres ficelées portant le nom "Veritas" — repéré brièvement par Onyxus sans explication.</p>`
         },
         {
           id: "kael",
@@ -316,6 +320,8 @@ const CODEX = {
 <h3>La Créature</h3>
 <p>Une petite entité invisible aux autres, perchée sur son épaule. Elle lui parle et peut détecter les présences magiques. À Malva, elle a senti <em>"quelque chose qui pue, de nature magique, partout et diffus — trop faible pour localiser la source, mais vraiment partout"</em>.</p>
 <p>Quand Veritas interroge sur la créature ailée vue combattre les gobelins au fort, Kael répond avec un sourire : <em>"Appelons ça une illusion."</em> Lysandra appuie. Veritas voit clairement qu'ils mentent tous les deux.</p>
+<h3>Passé — Révélation session 4</h3>
+<p>Ancien prêtre d'une petite église près de Malva. Son supérieur a un jour refusé d'accueillir un Paripus et une Eugief malades. Kael les a aidés en cachette et a quitté sa communauté. C'est en chemin qu'il a rencontré Berzim, puis Lysandra alors qu'elle se battait contre une meute de loups pour défendre Laëk le marchand. Il a un ami guérisseur à Corel dont les idéaux rejoignent les siens — c'est pour cette raison que le groupe fait le détour vers cette ville pour soigner Obsidio.</p>
 <h3>Observations au cours de l'enquête</h3>
 <ul>
 <li>A découvert que la première victime avait subi un accouchement forcé que le bailli avait tu</li>
@@ -360,6 +366,7 @@ const CODEX = {
 <p>Également fortement magique. Lance ouvragée à détails dorés. Sa boucle d'oreille est aussi magique.</p>
 <h3>Le Sceau d'Altabury</h3>
 <p>Il a montré discrètement à Veritas une lettre abîmée portant un sceau : <strong>trois triangles superposés et décalés</strong>. Veritas a confirmé qu'il s'agit d'un sceau d'Altabury, sans pouvoir identifier la famille. Shakka a demandé la discrétion. Ni le contenu ni la provenance de cette lettre n'ont été divulgués au groupe.</p>
+<p>En session 4, il a demandé à Barion de lui faire passer le contenu de cette lettre brûlée. Barion a accepté. Dans le tunnel d'évasion, une note de Barion l'attendait avec la signification de la lettre — que Shakka a aussitôt brûlée pour ne laisser aucune trace. Il sait désormais ce qu'elle disait, mais n'en a rien partagé.</p>
 <h3>Philosophie</h3>
 <p><em>"Les secrets des autres ne m'intéressent pas. S'ils ont quelque chose à nous dire, ils nous le diront. Chacun a eu sa vie avant et chacun ses objectifs."</em></p>`
         },
@@ -430,7 +437,9 @@ const CODEX = {
 <p>Lors d'un conseil municipal, elle a été la première à soulever que certaines disparitions concernaient des personnes enlevées de l'intérieur du village — ce qui contredisait la théorie gobeline. Le bailli l'a fait taire avec l'appui de Belric Thane.</p>
 <p>La sœur de la première victime a dit qu'Elwenne "l'avait déjà réconfortée". Elle est proche des familles de victimes.</p>
 <h3>Comportement observé</h3>
-<p>En sortant de l'église, Kael croise son regard — elle tourne la tête vers lui, puis se remet à prier. Veritas note qu'elle sait probablement plus que Joren sur la situation réelle.</p>`
+<p>En sortant de l'église, Kael croise son regard — elle tourne la tête vers lui, puis se remet à prier. Veritas note qu'elle sait probablement plus que Joren sur la situation réelle.</p>
+<h3>Session 3 — Surveillance de Hob</h3>
+<p>Quand le groupe est revenu à Malva en session 3 pour l'interroger, Elwenne était déjà partie avec Joren pour surveiller le maître de quai (Hob/Telmona), qu'ils avaient identifié comme suspect. Ils l'avaient vu entrer à l'église pour des rendez-vous avec Belric Thane. Le soir de la session 3, pendant que le groupe filait Hob au port, Joren et Elwenne surveillaient le bailli.</p>`
         },
         {
           id: "hob-telmona",
@@ -442,15 +451,17 @@ const CODEX = {
           tags: ["Paripus", "Grand Trad", "mercenaire", "traque"],
           summary: "Présenté comme Hob dès le début, son vrai nom est Telmona. Tueur à gages Paripus de Grand Trad, il traque le groupe pour le compte d'un commanditaire non identifié.",
           content: `<h3>Présentation</h3>
-<p>Telmona est un tueur à gages Paripus de Grand Trad, qui s'était présenté sous le nom de <strong>Hob</strong>. Son identité réelle a été révélée par <strong>Joren Sile</strong>, qui a averti le groupe qu'ils étaient traqués.</p>
+<p>Telmona est un tueur à gages Paripus de Grand Trad, qui s'était présenté sous le nom de <strong>Hob</strong> comme maître de quai à Malva. Son identité réelle a été reconnue par <strong>Lysandra</strong> lors de l'interception de la cargaison — elle l'avait côtoyé à Grand Trad et avait personnellement vu ses crimes. Grand, musclé, pelage blanc, traits félins et mâchoire carrée.</p>
 <h3>Ce qu'on sait</h3>
 <ul>
-<li>Paripus de Grand Trad, spécialiste des missions de traque.</li>
-<li>Opère sous contrat — commanditaire inconnu.</li>
-<li>Son vrai prénom est Telmona.</li>
+<li>Paripus de Grand Trad, l'un des tueurs à gages les plus expérimentés — jamais raté une cible, ses victimes ne sont jamais retrouvées.</li>
+<li>A transporté des tonneaux de Magla liquide depuis la grotte côtière jusqu'à une cabane, récupérés ensuite par une vingtaine de cavaliers en armure d'Altabury direction Altabury.</li>
+<li>A refusé de révéler son commanditaire. N'est pas le responsable direct des enlèvements — il était payé pour livrer.</li>
+<li>Installé à Malva quelques mois avant le début des disparitions, arrivé après la première disparition.</li>
+<li>Joren et Sœur Elwenne le surveillaient car il se rendait régulièrement à des rendez-vous avec Belric Thane à l'église.</li>
 </ul>
 <h3>Statut</h3>
-<p>À surveiller. Son commanditaire et ses objectifs exacts restent inconnus. Pourrait être lié à Dren Solaria, aux Tantalus, ou à un autre acteur non encore identifié.</p>`
+<p>À surveiller. Son commanditaire reste inconnu. Lysandra lui avait proposé 50 pièces d'or pour attaquer le camp gobelin — refus méprisant. Il l'a appelée "la rouquine" et évoqué son passé à Grand Trad avec hostilité.</p>`
         },
         {
           id: "dren-solaria",
@@ -464,13 +475,19 @@ const CODEX = {
           content: `<h3>Apparence</h3>
 <p>Clemar aux cheveux blancs, vêtu d'une tenue ecclésiastique dorée. Stature et assurance d'un prélat habitué à l'autorité.</p>
 <h3>Ce qui s'est passé (Session 3)</h3>
-<p>Le groupe a découvert Dren dans la grotte côtière, au-dessus des cristaux de Magla. Il avait préparé trois cadavres torturés qu'il a mutés en lézards humanoïdes au moment critique. Il a également invoqué le <strong>Zolom</strong>, un serpent colossal lié aux lézards.</p>
-<p>Dren s'est enfui pendant le combat. L'aigle géant observé en session 5 pourrait être lui selon une note du MJ.</p>
+<p>Le groupe a découvert Dren dans la grotte côtière, debout devant un chaudron sur des cristaux de Magla géants. Il avait préparé trois cadavres torturés qu'il a mutés en lézards humanoïdes au moment critique. Il a invoqué le <strong>Zolom</strong>, un serpent colossal. Shakka a tenté de l'attaquer par-derrière mais Dren a dévié le coup avec une dague d'une rapidité déconcertante. Il s'est enfui par téléportation pendant le combat.</p>
+<h3>Ce qu'il savait sur le groupe</h3>
+<p>Dren a démontré une connaissance troublante des secrets de chacun, ce qui laisse entrevoir une organisation ayant collecté des informations sur eux bien en amont :</p>
+<ul>
+<li>À <strong>Uma</strong> : <em>"Tu es encore vivant, toi ? Tu aurais dû cramer avec tous les autres."</em> — il connaissait l'incendie du monastère. Uma a reconnu le chaudron : il provenait de son monastère.</li>
+<li>À <strong>Lysandra</strong> : <em>"La traître à son sang"</em> — il connaît son passé et sa famille.</li>
+<li>À <strong>Veritas</strong> : <em>"Tu aurais dû mourir aussi. On m'a demandé d'envoyer quelqu'un pour te faire taire."</em> — une tentative d'assassinat commanditée par l'Ordre des Archivistes, que Veritas a survécue.</li>
+</ul>
 <h3>Connexion avec la campagne</h3>
 <ul>
-<li>A fabriqué des accusations contre le groupe, transmises au Général Barion via l'armée royale.</li>
-<li>Joren Sile a averti le groupe : <em>"Vous êtes traqués."</em></li>
-<li>Son implication dans l'incendie du monastère et son lien avec Célion restent à établir.</li>
+<li>A fabriqué des accusations contre le groupe (kidnapping, torture, tentative d'assassinat sur sa personne), transmises au Général Barion via l'armée royale. Appuyées par Oren Vale et Belric Thane.</li>
+<li>Son lien avec l'incendie du monastère d'Uma est fortement suspecté.</li>
+<li>Combat l'igniter-bracelet — utilise deux dagues très rapidement en corps à corps.</li>
 </ul>
 <h3>Note du MJ</h3>
 <p><em>"L'aigle géant en fait était Dren."</em></p>`
@@ -490,8 +507,10 @@ const CODEX = {
 <p>Le groupe a été arrêté par des soldats d'Altabury et conduit devant Barion pour interrogatoire. Les charges avaient été fabriquées par <strong>Dren Solaria</strong>. Barion a interrogé le groupe directement — il n'est pas présenté comme corrompu, mais comme un homme qui applique les ordres dans le cadre d'un système.</p>
 <h3>Information clé</h3>
 <p>Barion a confirmé que les lézards mutés de Dren ressemblent physiologiquement aux <strong>Humans</strong> — et que ceux-ci sont dépourvus de Magla. Cela éclaire peut-être le besoin de tonneaux de Magla liquide dans la grotte.</p>
+<h3>La dette envers Valendris</h3>
+<p>Barion a une dette envers <strong>Valendris</strong>, frère aîné de Lysandra — et c'est aussi pour Valendris qu'il a choisi d'intervenir en faveur du groupe. Il a indiqué qu'il devrait mettre Valendris dans la confidence.</p>
 <h3>La fuite du groupe</h3>
-<p>Plutôt que de rester prisonniers, le groupe a simulé sa mort et fui par la mer. Pseudonymes adoptés : Kael → Alek, Veritas → Astren, Lysandra → Meredith, Onyxus → Xyno, Uma → Aang (Shakka a gardé son prénom).</p>`
+<p>Barion les a fait passer pour morts. Un soldat de confiance les a guidés par un tunnel souterrain jusqu'en pleine nature. Puis le groupe a voyagé par mer vers la Principauté d'Oceana. Pseudonymes adoptés : Kael → Alek, Veritas → Astren, Lysandra → Meredith (en hommage à sa nourrice Paripus), Onyxus → Xyno, Uma → Aang (Shakka a gardé son prénom).</p>`
         },
         {
           id: "raho",
@@ -695,8 +714,7 @@ const CODEX = {
 <li><strong>Cristaux de Magla massifs :</strong> des formations colossales de Magla pur cristallisé tapissent les parois et le sol. Leur présence explique pourquoi Dren utilisait ce lieu.</li>
 <li><strong>Trois cadavres torturés :</strong> préparés à l'avance par Dren, imprégnés de Magla pur. Ont muté en lézards humanoïdes pendant le combat.</li>
 <li><strong>Le Chaudron de Hyr :</strong> artefact présent dans la grotte, finalement absorbé par Zar (l'entité de la lanterne de Shakka).</li>
-<li><strong>Le Sac Sans Fond :</strong> objet magique récupéré dans la grotte.</li>
-<li><strong>Les Cartes de Nyx :</strong> création d'Onyxus — donnent +d4 à l'initiative, vision partagée de la carte, et permettent de lancer des sorts sans ligne de vue directe.</li>
+<li><strong>Le Sac Sans Fond :</strong> objet magique récupéré dans la grotte par Lysandra lors de la fouille des cadavres de lézards.</li>
 </ul>
 <h3>Ce qui s'est passé (Session 3)</h3>
 <p>Le groupe a confronté <strong>Dren Solaria</strong> ici. Il a invoqué le Zolom et activé les lézards mutés. Le Zolom a été absorbé par la lanterne de Shakka. Dren a fui avant d'être achevé.</p>
