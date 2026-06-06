@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codex d'Euchronia</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- ── COLONNE GAUCHE : Sidebar ── -->
+    <aside id="sidebar">
+      <a class="sidebar-logo" href="#/" data-view="home">
+        <span class="logo-codex">Codex</span>
+        <span class="logo-campaign" id="brand-sub">Euchronia</span>
+      </a>
+
+      <div class="logo-divider"><span>✦</span></div>
+
+      <nav id="nav">
+        <p class="nav-label">Navigation</p>
+        <a class="nav-item" href="#/" data-view="home">
+          <i class="fa-solid fa-house"></i><span>Accueil</span>
+        </a>
+        <a class="nav-item" href="#/lore" data-view="lore">
+          <i class="fa-solid fa-book-open"></i><span>Lore &amp; Histoire</span>
+        </a>
+        <a class="nav-item" href="#/lieux" data-view="lieux">
+          <i class="fa-solid fa-map"></i><span>Lieux</span>
+        </a>
+        <a class="nav-item" href="#/factions" data-view="factions">
+          <i class="fa-solid fa-shield-halved"></i><span>Factions</span>
+        </a>
+        <a class="nav-item" href="#/personnages" data-view="personnages">
+          <i class="fa-solid fa-users"></i><span>Personnages</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sb-compass">✦</div>
+        <blockquote class="sb-quote" id="sidebar-quote"></blockquote>
+      </div>
+    </aside>
+
+    <!-- ── COLONNE CENTRALE : Contenu ── -->
+    <div id="main-wrap">
+      <main id="content"></main>
+      <footer id="site-footer">
+        <span id="footer-brand"></span>
+        <span>Campagne JDR</span>
+        <span>Tous droits réservés</span>
+      </footer>
+    </div>
+
+    <!-- ── COLONNE DROITE : Widgets ── -->
+    <aside id="right-panel">
+      <div id="rp-search">
+        <input id="search" type="search" placeholder="Rechercher…" autocomplete="off" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div id="right-widgets"></div>
+    </aside>
+
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
