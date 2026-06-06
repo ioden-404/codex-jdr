@@ -481,6 +481,180 @@ const CODEX = {
       ]
     },
 
+    bestiaire: {
+      label: "Bestiaire",
+      icon: "🐉",
+      description: "Créatures rencontrées, observées ou mentionnées au fil de la campagne d'Euchronia.",
+      groups: [
+        { key: "combattu", label: "Rencontrés & Combattus", icon: "⚔️" },
+        { key: "observe",  label: "Observés & Évités",      icon: "👁️" },
+        { key: "mythique", label: "Mythiques & Légendaires", icon: "📜" }
+      ],
+      entries: [
+        {
+          id: "gobelin",
+          image: "",
+          discovered: "Session 1",
+          group: "combattu",
+          title: "Gobelin",
+          subtitle: "Humanoïde — Horde de Malva",
+          tags: ["humanoïde", "horde", "session 1", "session 2"],
+          summary: "Petits humanoïdes organisés en hordes hiérarchisées. Armés d'arbalètes, lances et magie psychique. Capables de construire des camps permanents. Plus dangereux en groupe qu'en individuel.",
+          content: `<h3>Description</h3>
+<p>Humanoïdes de petite taille, rapides et nombreux. Individuellement faibles, ils deviennent une menace sérieuse en groupe coordonné. La horde de Malva comprenait des arbalétriers, des guerriers au corps à corps et au moins un mage.</p>
+<h3>Capacités observées</h3>
+<ul>
+<li><strong>Mage gobelin :</strong> attaques psychiques téléguidées (boules d'énergie violette), sort Blindness, sort de fermeture de porte. Efficace à distance.</li>
+<li><strong>Guerrier gobelin :</strong> combat au corps à corps, armes rouillées mais nombreux.</li>
+<li><strong>Reine gobeline :</strong> peut dévier les attaques reçues sur des alliés adjacents.</li>
+</ul>
+<h3>Organisation</h3>
+<p>Les gobelins construisent des camps permanents avec une architecture reconnaissable — documentée dans le carnet d'Obsidio Kotabbos. Ils établissent des <em>nids satellites</em> autour d'un camp principal, avec une reine par nid. Le fort n'était qu'un satellite. Le camp principal à l'ouest est bien plus grand.</p>
+<h3>Notes tactiques</h3>
+<p>Priorité au mage en premier. Le feu les perturbe (Veritas a terrorisé le warg et mis le feu à un chariot avec succès). Les tirs depuis une position surélevée sont efficaces.</p>`
+        },
+        {
+          id: "warg",
+          image: "",
+          discovered: "Session 1",
+          group: "combattu",
+          title: "Warg",
+          subtitle: "Bête — Fort de Corne Creuse",
+          tags: ["bête", "session 1", "sentinelle"],
+          summary: "Grand canidé utilisé comme sentinelle par les gobelins. Sens aiguisés, capable d'alerter tout un camp en hurlant. Terrorisé par le feu.",
+          content: `<h3>Description</h3>
+<p>Grand canidé sauvage, bien plus imposant qu'un loup ordinaire. Les gobelins l'utilisent comme chien de garde. Celui du fort montait la garde derrière une meurtrière et a repéré Onyxus malgré la discrétion de ce dernier.</p>
+<h3>Capacités observées</h3>
+<ul>
+<li>Sens de l'odorat et de l'ouïe très développés.</li>
+<li>Morsure puissante — a failli atteindre Onyxus à deux centimètres du visage.</li>
+<li>Hurlement d'alerte audible par tout le camp.</li>
+</ul>
+<h3>Faiblesses</h3>
+<p>Le feu le terrifie. Un Firebolt de Veritas l'a mis en fuite immédiate. Tué par Shakka (attaque radiale).</p>`
+        },
+        {
+          id: "groki",
+          image: "",
+          discovered: "Session 2",
+          group: "combattu",
+          title: "Groki — Reine Gobeline",
+          subtitle: "Boss — Nid satellite du Fort de Corne Creuse",
+          tags: ["gobelin", "boss", "session 2", "tuée"],
+          summary: "Jeune reine gobeline en train de développer un nid satellite. Capable de dévier des attaques sur ses alliés. Tuée par Uma d'un coup de pied marteau sur la nuque.",
+          content: `<h3>Description</h3>
+<p>Gobeline plus imposante que les autres, installée sur un trône improvisé dans le fort. Commandait la horde locale avec autorité. Sa mort à hurlé "Abzu !" — le monstre répondait à ses appels.</p>
+<h3>Capacités observées</h3>
+<ul>
+<li><strong>Déviation d'attaque :</strong> réaction permettant de dévier une attaque reçue sur un gobelin adjacent. A dévié l'épée de Lysandra sur un allié.</li>
+<li>Résistance physique : a encaissé plusieurs coups dont une attaque enchantée au froid avant de tomber.</li>
+</ul>
+<h3>Contexte</h3>
+<p>Groki n'était qu'une <em>jeune reine</em> développant un nid satellite. Elle travaillait sous l'autorité du camp principal à l'ouest, qui possède ses propres ogres. Sa mort n'a pas éliminé la menace globale.</p>
+<h3>Kill</h3>
+<p>Uma, aveuglée puis retrouvant la vue, a sauté des remparts en Feather Fall et abattu un coup de pied marteau sur la nuque de Groki. Mort instantanée.</p>`
+        },
+        {
+          id: "abzu",
+          image: "",
+          discovered: "Session 2",
+          group: "combattu",
+          title: "Abzu — Abomination de Magla",
+          subtitle: "Créature de Magla — Époque révolue",
+          tags: ["abomination", "Magla", "session 2", "non-contemporain", "tuée"],
+          summary: "Créature entièrement constituée de Magla pur, appartenant à une époque antérieure. Stockait des cadavres à l'intérieur de son corps. Se régénérait en drainant la vitalité. Résistante aux armes ordinaires.",
+          content: `<h3>Description</h3>
+<p>Monstre massif et répugnant, dégageant une odeur de charogne. Sa peau pustuleuse résiste aux lames et aux sorts ordinaires. À sa mort, son corps a libéré des dizaines de cadavres en décomposition — de toutes les races — qu'il stockait à l'intérieur de lui-même.</p>
+<h3>Capacités observées</h3>
+<ul>
+<li><strong>Résistance physique :</strong> lames et coups atteignent la surface mais ne pénètrent pas les organes sans une force exceptionnelle.</li>
+<li><strong>Résistance aux sorts :</strong> Sacred Flame de Kael n'a pas pénétré la peau pustuleuse.</li>
+<li><strong>Drain de vitalité :</strong> morsure qui régénère ses propres blessures en drainant la vitalité de la cible (testé sur Shakka).</li>
+<li><strong>Saisie :</strong> capable de soulever un combattant d'une seule griffe et de le rapprocher de sa gueule.</li>
+</ul>
+<h3>Origine</h3>
+<p>Identifiée par Onyxus comme "non contemporaine et hors des classifications connues". Appartient à une époque révolue — comment s'est-elle retrouvée dans un nid gobelin ordinaire ? Son lien avec Groki et la horde reste inexpliqué.</p>
+<h3>Anomalie</h3>
+<p>Une musique sans source identifiable résonnait pendant tout le combat, comme un écho venant de partout à la fois. Veritas pense que ce phénomène pourrait être lié à un être magique, sans pouvoir préciser.</p>
+<h3>Kill</h3>
+<p>Kill final d'Onyxus (carreau d'arbalète, 7 dégâts). Uma a été la principale contributrice aux dégâts, incluant un coup critique.</p>`
+        },
+        {
+          id: "ogres-camp",
+          image: "",
+          discovered: "Session 2",
+          group: "observe",
+          title: "Ogres du Camp",
+          subtitle: "Géants — Camp gobelin à l'ouest de Malva",
+          tags: ["géant", "camp gobelin", "session 2", "non combattu"],
+          summary: "Deux ogres repérés dans le camp principal à l'ouest. Probablement roi et reine du camp. Dangerosité estimée très élevée. Pas encore affrontés.",
+          content: `<h3>Observation</h3>
+<p>Shakka et Onyxus ont observé le camp depuis une position en hauteur. Deux ogres visibles : l'un près du feu central, l'autre sortant de la grande tente. D'après le carnet d'Obsidio Kotabbos, la grande tente correspond à celle d'un chef de camp.</p>
+<h3>Hypothèse</h3>
+<p>Onyxus pense qu'il s'agit du roi et de la reine du camp. Leur présence dans un camp de 50 à 100 gobelins suggère une organisation militaire sérieuse, pas une simple horde désorganisée.</p>
+<h3>Dangerosité estimée</h3>
+<p>Inconnue mais très élevée. Les ogres sont des créatures de grande taille et de force brute. Le groupe devra impérativement se préparer avant toute confrontation avec le camp.</p>`
+        },
+        {
+          id: "creature-ailee",
+          image: "",
+          discovered: "Session 2",
+          group: "observe",
+          title: "La Créature Ailée",
+          subtitle: "Race inconnue — Liée à Kael",
+          tags: ["inconnue", "mystère", "Kael", "alliée"],
+          summary: "Être minuscule doté d'ailes, d'une race que Veritas ne reconnaît pas. Combat aux dagues. Liée à Kael d'une façon non expliquée. Invisible à la plupart des membres du groupe.",
+          content: `<h3>Description</h3>
+<p>Observée par Veritas depuis les remparts du fort. Minuscule, dotée d'ailes. D'une race qu'il ne reconnaît pas — ce qui est notable pour un scribe de l'Ordre des Archivistes. Se bat avec deux dagues.</p>
+<h3>Comportement observé</h3>
+<ul>
+<li>A tué le mage gobelin en lui retirant ses deux dagues du corps.</li>
+<li>S'est ensuite retournée vers les autres gobelins.</li>
+<li>Perchée sur l'épaule de Kael. Lui parle. Lui signale les présences magiques.</li>
+<li>Invisible ou imperceptible pour la plupart des membres du groupe.</li>
+</ul>
+<h3>Ce qu'elle sait</h3>
+<p>À Malva, elle a détecté quelque chose de magique "partout et diffus — trop faible pour localiser la source, mais vraiment partout". À la lanterne de Shakka, qui a détecté la même chose.</p>
+<h3>Mystère</h3>
+<p>Kael nie son existence ("Appelons ça une illusion."). Lysandra appuie. Veritas voit clairement qu'ils mentent tous les deux. La nature de leur lien n'a pas été expliquée.</p>`
+        },
+        {
+          id: "creatures-huit-pattes",
+          image: "",
+          discovered: "Session 2",
+          group: "observe",
+          title: "Créatures à Huit Pattes",
+          subtitle: "Inconnues — Ruines au nord du fort",
+          tags: ["inconnue", "forêt", "session 2", "ruines"],
+          summary: "Créatures nocturnes repérées dans des ruines anciennes au nord du Fort de Corne Creuse. Nature exacte inconnue. Évitées grâce à une diversion sonore de Shakka.",
+          content: `<h3>Observation</h3>
+<p>Shakka et Onyxus ont repéré ces créatures dans l'obscurité lors de leur pistage dans la forêt. Des formes se devinaient, et des bruits de huit pattes courant se faisaient entendre. Nature exacte indéterminée : araignées géantes, scorpions, ou autre chose.</p>
+<h3>Contournement</h3>
+<p>Shakka a utilisé Minor Illusion pour créer un bruit d'animaux au nord, attirant les créatures dans cette direction. Le groupe a contourné par le sud, perdant les traces des gobelins en fuite mais évitant le contact.</p>
+<h3>Inconnues</h3>
+<p>Taille réelle, nombre, capacités : rien de confirmé. Les ruines où elles se trouvaient sont de nature indéterminée (village, château ou fort). À explorer avec précaution.</p>`
+        },
+        {
+          id: "humans",
+          image: "",
+          discovered: "Lore — Avant la campagne",
+          group: "mythique",
+          title: "Les Humans",
+          subtitle: "Créatures de Magla — Zones sauvages",
+          tags: ["Magla", "zones sauvages", "lore", "résistant"],
+          summary: "Entités surgissant là où le Magla se concentre. Massacrent sans discrimination. Résistantes aux armes ordinaires. Représentent la frontière entre le monde civilisé et l'immensité hostile.",
+          content: `<h3>Description</h3>
+<p>Les Humans ne sont pas des humains. Ce sont des créatures surgissant là où le Magla se concentre dans les zones non civilisées. Leur nom vient d'une corruption linguistique ancienne, dont l'origine est débattue par les savants.</p>
+<h3>Comportement</h3>
+<p>Ils massacrent sans distinction — humanoïdes, bêtes, créatures. Aucune discrimination, aucune négociation possible. Leur apparition est imprévisible et liée aux flux de Magla dans une région.</p>
+<h3>Résistance</h3>
+<p>Les armes ordinaires ont peu d'effet sur eux. Les récits de voyageurs et les rapports militaires s'accordent : les Humans ne tombent pas sous des coups normaux. Ce qui les affecte reste largement documenté par l'Ordre des Archivistes — sans être diffusé au grand public.</p>
+<h3>Rôle géopolitique</h3>
+<p>Leur existence est la raison pour laquelle le royaume gouverne les cités et les plaines cultivées — mais ni les marges, ni la mer, ni ce qui attend plus loin. Ce qu'il y a au-dehors n'est pas un espace à conquérir : c'est une immensité hostile.</p>`
+        }
+      ]
+    },
+
     factions: {
       label: "Factions",
       icon: "⚜️",
