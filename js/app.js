@@ -173,13 +173,18 @@
           </div>
           <div class="map-container">
             ${mapImg
-              ? `<img src="${esc(mapImg)}" alt="Carte du monde" class="map-thumb" style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in;" onclick="openMapModal('${esc(mapImg)}')">`
+              ? `<img src="${esc(mapImg)}" alt="Carte du monde" class="map-thumb" style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in;">`
               : '<span class="map-placeholder">+ Ajouter une carte du monde</span>'}
           </div>
         </div>
 
       </div>
     `);
+
+    if (mapImg) {
+      const thumb = document.querySelector('.map-thumb');
+      if (thumb) thumb.addEventListener('click', function() { openMapModal(mapImg); });
+    }
   }
 
   // ── Page section (liste d'entrées) ───────────────────────────────────────
