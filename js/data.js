@@ -457,7 +457,7 @@ const CODEX = {
         },
         {
           id: "dren-solaria",
-          image: "",
+          image: "img/Drenn_Solaria.png",
           discovered: "Session 3",
           group: "PNJ",
           title: "Dren Solaria",
@@ -480,7 +480,7 @@ const CODEX = {
         },
         {
           id: "barion",
-          image: "",
+          image: "img/Barion.png",
           discovered: "Session 4",
           group: "PNJ",
           title: "Barion",
@@ -530,7 +530,7 @@ const CODEX = {
         },
         {
           id: "obsidio-kotabbos",
-          image: "",
+          image: "img/Obsidio.png",
           discovered: "Session 4",
           group: "PNJ",
           title: "Obsidio Kotabbos",
@@ -548,7 +548,7 @@ const CODEX = {
         },
         {
           id: "astori-hojo",
-          image: "",
+          image: "img/Astori_Nidia.png",
           discovered: "Session 5",
           group: "PNJ",
           title: "Astori Hojo",
@@ -576,7 +576,7 @@ const CODEX = {
       entries: [
         {
           id: "malva",
-          image: "",
+          image: "img/Malva.png",
           discovered: "Session 1",
           title: "Malva",
           subtitle: "Village côtier — sud-est de Montario",
@@ -963,7 +963,7 @@ const CODEX = {
         },
         {
           id: "sorcieres-vertes",
-          image: "",
+          image: "img/Sorcière verte.jpg",
           discovered: "Session 5",
           group: "observe",
           title: "Sorcières Vertes",
