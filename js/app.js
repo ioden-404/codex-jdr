@@ -388,7 +388,7 @@
       </div>` : '';
 
     const entryImg = entry.image || ('img/' + entry.id + '.png');
-    const imgPos = key === 'personnages' ? 'top center' : 'center';
+    const imgPos = ['personnages', 'bestiaire'].includes(key) ? 'top center' : 'center';
     const imgBlock = isSession ? '' : `
       <div class="info-card">
         <div class="info-card-header">Illustration</div>
