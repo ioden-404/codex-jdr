@@ -8,17 +8,12 @@ const CODEX = {
     mapImage: "Cartedumonde.png",
     quote: "Ce qui n'est pas écrit est oublié. Ce qui est écrit devient éternel.",
     quoteAuthor: "Maître Célion",
-    upcoming: [
-      {
-        day: "7", month: "Juin",
-        title: "Session 6",
-        desc: ""
-      }
-    ],
+    upcoming: [],
     recentNotes: [
+      { icon: "🦁", title: "La chimère de la mine de Corel", when: "Session 6" },
+      { icon: "🩸", title: "Hob massacre le groupe de Raho", when: "Session 6" },
       { icon: "🔮", title: "La malédiction d'Obsidio",        when: "Session 5" },
-      { icon: "⚜️", title: "La bague des Tantalus",           when: "Session 5" },
-      { icon: "🐍", title: "Zolom absorbé dans la lanterne", when: "Session 3" }
+      { icon: "⚜️", title: "La bague des Tantalus",           when: "Session 5" }
     ],
     quickLinks: [
       { label: "Protagonistes",   href: "#/personnages" },
@@ -26,11 +21,11 @@ const CODEX = {
       { label: "Lieux explorés",  href: "#/lieux" },
       { label: "Fils narratifs",  href: "#/" }
     ],
-    sessions: 5,
+    sessions: 6,
     mj: "Shiki",
     status: "En cours",
-    location: "Route vers Corel — Principauté d'Oceana",
-    locationNote: "Après une arrestation à Altabury et une fuite par la mer. Le groupe voyage avec Obsidio Kotabbos (père d'Onyxus), maudit par Astori Hojo — Berzim chante en boucle pour maintenir la malédiction en stase. Destination : Corel, pour trouver un guérisseur ami de Kael.",
+    location: "Mine de Corel — Principauté d'Oceana",
+    locationNote: "Le groupe a confié Obsidio Kotabbos aux soins du père Jida Brez à l'église de Corel (Berzim veille sur lui en secret). Direction validée : régler la crise de la chimère qui a envahi la mine de Corel, puis filer vers Altabury voir Astori Hojo. Sur la route, Hob/Telmona a massacré tout le groupe de mercenaires de Raho sur la place de Corel avant d'interroger le groupe. Le combat contre la chimère commence à la prochaine séance.",
     threads: [
       {
         id: "monastere",
@@ -89,11 +84,27 @@ const CODEX = {
         urgency: "haute"
       },
       {
+        id: "hob-telmona-fil",
+        icon: "🐺",
+        label: "Hob / Telmona, le tueur",
+        desc: "À Corel, Hob a massacré seul tout le groupe de mercenaires de Raho à mains nues, sous les yeux du groupe. Il les a interrogés sur un prisonnier disparu, ne les a pas crus, et a juré qu'ils se reverraient. Ses canines anormalement pointues intriguent.",
+        who: "Groupe",
+        urgency: "haute"
+      },
+      {
         id: "malédiction-obsidio",
         icon: "💀",
         label: "La malédiction d'Obsidio",
-        desc: "Obsidio Kotabbos est maudit par Astori Hojo. Berzim maintient la malédiction en stase par le chant. Trouver un guérisseur à Corel est urgent.",
+        desc: "Obsidio Kotabbos est confié au père Jida Brez à l'église de Corel, qui le maintient stable sans pouvoir le guérir (environ deux semaines de répit). Berzim, présenté en secret à Jida, continue de l'aider. Direction décidée : régler la mine, puis foncer vers Altabury voir Astori Hojo.",
         who: "Onyxus & Kael",
+        urgency: "haute"
+      },
+      {
+        id: "chimere-mine-corel",
+        icon: "🦁",
+        label: "La chimère de la mine de Corel",
+        desc: "Une chimère (corps et tête de lion, queue de scorpion, ailes de chauve-souris) a envahi la mine de Corel, bloquant toute production. Le noble propriétaire refuse de payer pour la chasser. Le groupe vient d'entrer dans la mine quand un rugissement et un boom ont retenti — combat à venir.",
+        who: "Groupe",
         urgency: "haute"
       },
       {
@@ -371,6 +382,29 @@ const CODEX = {
 <p><em>"Les secrets des autres ne m'intéressent pas. S'ils ont quelque chose à nous dire, ils nous le diront. Chacun a eu sa vie avant et chacun ses objectifs."</em></p>`
         },
         {
+          id: "zar",
+          image: "",
+          discovered: "Session 1",
+          group: "PNJ",
+          title: "Zar",
+          subtitle: "Entité de la Lanterne — liée à Shakka",
+          tags: ["entité", "Shakka", "mystère", "lanterne"],
+          summary: "L'entité qui réside dans la lanterne de Shakka. Voix faible, perçoit les présences magiques. Bien plus ancienne qu'il n'y paraît : confiée jadis à la mère de Shakka, elle a maintenant faim de Magla — et le fait savoir.",
+          content: `<h3>Présentation</h3>
+<p>Une entité réside dans la <strong>lanterne</strong> de Shakka, fortement magique (détectée par le Detect Magic de Veritas). Sa voix est très faible. Elle peut percevoir les présences magiques de l'environnement — à Malva, elle avait prévenu Shakka : <em>"Méfie-toi, Shakka. C'est vraiment partout."</em></p>
+<h3>Le Chaudron de Hyr et le Zolom</h3>
+<p>Zar a absorbé le <strong>Chaudron de Hyr</strong> trouvé dans la grotte côtière (session 3), et a aspiré le <strong>Zolom</strong> morceau par morceau lors du coup de grâce de Shakka — il n'est rien resté du serpent.</p>
+<h3>Révélations (Session 6)</h3>
+<p>De nuit, à l'écart du groupe, Shakka fait sortir Zar de la lanterne. L'esprit se plaint d'avoir faim : la grosse quantité de Magla absorbée dans la grotte de Malva lui a ouvert l'appétit, et il en réclame davantage — menaçant à mots couverts de se servir sur un membre du groupe si Shakka ne le nourrit pas. Shakka lui interdit formellement de toucher à quiconque.</p>
+<p>Zar révèle alors qu'il est <strong>bien plus ancien qu'il n'y paraît</strong>, qu'il a été confié à la <strong>mère de Shakka</strong>, et que celle-ci le protégeait précisément pour éviter qu'on s'en serve à de mauvaises fins. Il prévient Shakka de ne pas le mettre en colère.</p>
+<h3>Questions ouvertes</h3>
+<ul>
+<li>Quelle est la véritable nature de Zar — et son âge réel ?</li>
+<li>Pourquoi la mère de Shakka le protégeait-elle, et de qui ?</li>
+<li>Que se passera-t-il si sa faim de Magla n'est jamais rassasiée ?</li>
+</ul>`
+        },
+        {
           id: "oren-vale",
           group: "PNJ",
           title: "Oren Vale",
@@ -449,9 +483,9 @@ const CODEX = {
           title: "Hob / Telmona",
           subtitle: "Tueur à gages Paripus — Grand Trad",
           tags: ["Paripus", "Grand Trad", "mercenaire", "traque"],
-          summary: "Présenté comme Hob dès le début, son vrai nom est Telmona. Tueur à gages Paripus de Grand Trad, il traque le groupe pour le compte d'un commanditaire non identifié.",
+          summary: "Présenté comme Hob dès le début, son vrai nom est Telmona. Tueur à gages Paripus de Grand Trad, redoutable à mains nues. À Corel, il a massacré seul tout le groupe de mercenaires de Raho et interrogé le groupe sur un prisonnier disparu.",
           content: `<h3>Présentation</h3>
-<p>Telmona est un tueur à gages Paripus de Grand Trad, qui s'était présenté sous le nom de <strong>Hob</strong> comme maître de quai à Malva. Son identité réelle a été reconnue par <strong>Lysandra</strong> lors de l'interception de la cargaison — elle l'avait côtoyé à Grand Trad et avait personnellement vu ses crimes. Grand, musclé, pelage blanc, traits félins et mâchoire carrée.</p>
+<p>Telmona est un tueur à gages Paripus de Grand Trad, qui s'était présenté sous le nom de <strong>Hob</strong> comme maître de quai à Malva. Son identité réelle a été reconnue par <strong>Lysandra</strong> lors de l'interception de la cargaison — elle l'avait côtoyé à Grand Trad et avait personnellement vu ses crimes. Grand, musclé, pelage blanc, traits félins et mâchoire carrée. On lui a remarqué, à Corel, des <strong>canines anormalement pointues</strong>.</p>
 <h3>Ce qu'on sait</h3>
 <ul>
 <li>Paripus de Grand Trad, l'un des tueurs à gages les plus expérimentés — jamais raté une cible, ses victimes ne sont jamais retrouvées.</li>
@@ -460,8 +494,12 @@ const CODEX = {
 <li>Installé à Malva quelques mois avant le début des disparitions, arrivé après la première disparition.</li>
 <li>Joren et Sœur Elwenne le surveillaient car il se rendait régulièrement à des rendez-vous avec Belric Thane à l'église.</li>
 </ul>
+<h3>Le massacre de Corel (Session 6)</h3>
+<p>Sur la place centrale de Corel, le groupe le retrouve en train de démembrer méthodiquement, à mains nues, tout le groupe de mercenaires qui les avait malmenés (celui de Raho et Lucie/Lucifer) : coups, suplex, nez et oreilles arrachés, sourire jusqu'aux oreilles malgré une épée à la ceinture qu'il n'utilise quasiment pas. Il coince le mercenaire Ishkia <strong>Nir</strong> en fuite, le soulève d'une main, lui dit qu'il était payé pour ça, et l'empale avant de le laisser tomber sans vie. Lucie tente de l'arrêter, en vain. Aucune garde n'intervient — il n'y a aucune force publique à Corel.</p>
+<h3>L'interrogatoire du groupe</h3>
+<p>Il rattrape ensuite le groupe, se plante devant Uma (qu'il dépasse d'une tête et demie), s'étonne qu'ils soient encore vivants alors qu'ils auraient dû être exécutés, et révèle son vrai motif : les mercenaires avaient un prisonnier qu'il n'a jamais retrouvé, et il cherche des renseignements. Le groupe nie tout savoir ; il ne les croit pas mais les laisse partir, sûr de les revoir. La terreur qu'il dégage paralyse Uma (tremblante, en sueur) jusqu'à son départ.</p>
 <h3>Statut</h3>
-<p>À surveiller. Son commanditaire reste inconnu. Lysandra lui avait proposé 50 pièces d'or pour attaquer le camp gobelin — refus méprisant. Il l'a appelée "la rouquine" et évoqué son passé à Grand Trad avec hostilité.</p>`
+<p>À surveiller de très près — confirmé extrêmement dangereux et patient. Son commanditaire reste inconnu. Lysandra lui avait proposé 50 pièces d'or pour attaquer le camp gobelin — refus méprisant. Il l'a appelée "la rouquine" et évoqué son passé à Grand Trad avec hostilité.</p>`
         },
         {
           id: "dren-solaria",
@@ -526,7 +564,9 @@ const CODEX = {
 <h3>L'interrogatoire (Session 5)</h3>
 <p>Capturé lors de l'affrontement en session 4, interrogé en session 5. Relâché après avoir fourni des informations.</p>
 <h3>Note tactique</h3>
-<p>Faiblesse absolue : ses golems disparaissent instantanément s'il perd conscience. Shakka l'a mis KO en priorité, neutralisant ses deux construits d'un seul coup. Toujours neutraliser le créateur en premier.</p>`
+<p>Faiblesse absolue : ses golems disparaissent instantanément s'il perd conscience. Shakka l'a mis KO en priorité, neutralisant ses deux construits d'un seul coup. Toujours neutraliser le créateur en premier.</p>
+<h3>Mort (Session 6)</h3>
+<p>Sur la place de Corel, Hob/Telmona a massacré tout son groupe de mercenaires à mains nues. Raho figurait probablement parmi les victimes — le groupe a choisi de ne pas intervenir.</p>`
         },
         {
           id: "lucie-lucifer",
@@ -542,7 +582,19 @@ const CODEX = {
 <h3>Rôle</h3>
 <p>Dirige le groupe de mercenaires dont faisaient partie Raho (géomancien) et Obsidio Kotabbos. Ses commanditaires et objectifs précis restent à établir.</p>
 <h3>Statut</h3>
-<p>Rencontrée en session 5. Relation avec le groupe en cours d'établissement — ni clairement ennemie, ni alliée confirmée.</p>`
+<p>Revue en session 6 sur la place de Corel : son groupe de mercenaires (dont Raho et l'Ishkia Nir) a été massacré sous ses yeux par Hob/Telmona, sans qu'elle parvienne à l'arrêter. Sort inconnu après cet événement.</p>`
+        },
+        {
+          id: "nir",
+          image: "",
+          discovered: "Session 6",
+          group: "PNJ",
+          title: "Nir",
+          subtitle: "Mercenaire Ishkia — groupe de Raho/Lucie",
+          tags: ["Ishkia", "mercenaire", "mort", "Hob"],
+          summary: "Mercenaire Ishkia du groupe de Raho et Lucie/Lucifer. Tente de fuir le massacre de Hob sur la place de Corel — rattrapé, soulevé d'une main et empalé après un bref interrogatoire.",
+          content: `<h3>Mort sur la place de Corel (Session 6)</h3>
+<p>Lors du massacre du groupe de mercenaires par <strong>Hob/Telmona</strong> sur la place centrale de Corel, Nir est le dernier à tenter de fuir. Hob le coince, le soulève d'une seule main, lui dit qu'il était payé pour ça, et l'empale de son épée avant de le laisser tomber sans vie — la seule victime que Hob achève à l'arme plutôt qu'à mains nues.</p>`
         },
         {
           id: "obsidio-kotabbos",
@@ -581,6 +633,42 @@ const CODEX = {
 <li>A-t-elle un lien avec Dren Solaria ou avec les Tantalus ?</li>
 <li>Agit-elle sur ordre ou de sa propre initiative ?</li>
 </ul>`
+        },
+        {
+          id: "jida-brez",
+          image: "",
+          discovered: "Session 6",
+          group: "PNJ",
+          title: "Jida Brez",
+          subtitle: "Prêtre Clemar — Église de Corel, allié de Kael",
+          tags: ["Clemar", "Sanctisme", "Corel", "allié"],
+          summary: "Ami d'études de Kael à l'église de Corel. Sérieux, perspicace, partage l'idée que le soin doit être prodigué à tous. Maintient Obsidio stable et accepte de protéger le secret de Berzim.",
+          content: `<h3>Présentation</h3>
+<p>Clemar à peu près de l'âge de Kael, sérieux et posé. Les deux hommes ont étudié ensemble à l'église avant que leurs chemins se séparent — Kael en quittant l'autorité de l'Église pour devenir prêtre itinérant, tout en gardant sa foi au Tout-Puissant. Jida est surpris mais visiblement heureux de le revoir.</p>
+<h3>Obsidio</h3>
+<p>Il examine Obsidio Kotabbos et reconnaît qu'il ne peut pas guérir sa malédiction, mais accepte de le maintenir stable — une équipe de quatre religieux se relaie pour repousser la putréfaction par tranches de vingt minutes. Il estime pouvoir le maintenir ainsi environ <strong>deux semaines</strong>.</p>
+<h3>Perspicacité</h3>
+<p>Il comprend vite que le groupe est recherché et mentionne avoir entendu parler de l'agression d'un prélat d'Oceana — une question qui met Veritas mal à l'aise et déclenche une passe d'armes avec Lysandra et Uma. Il se justifie : il veut seulement savoir à qui il a affaire.</p>
+<h3>Berzim</h3>
+<p>Présenté à la fée par Kael, il se montre d'abord incrédule, puis sent Berzim passer derrière sa tête et change d'expression. Il qualifie la fée d'hérétique mais accepte de s'occuper d'elle/lui en secret, à condition de n'être vu que par lui seul — sa présence devant rester confidentielle.</p>
+<h3>Bibliothèque</h3>
+<p>Autorise Kael à consulter la bibliothèque de l'église sur place, mais refuse qu'il en sorte des livres.</p>`
+        },
+        {
+          id: "alga",
+          image: "",
+          discovered: "Session 6",
+          group: "PNJ",
+          title: "Sœur Alga",
+          subtitle: "Prêtresse Nidia voilée — Église de Corel",
+          tags: ["Nidia", "Sanctisme", "Corel"],
+          summary: "Prêtresse Nidia voilée qui accueille le groupe à l'église de Corel. Méfiante mais finit par les conduire à un dortoir et chercher Jida Brez à la demande de Kael.",
+          content: `<h3>Présentation</h3>
+<p>Prêtresse Nidia voilée de l'église de Corel (notée "Alga" dans les notes du groupe). C'est elle qui ouvre la porte au groupe et accepte de les laisser entrer — méfiante quand Kael lui demande de n'annoncer sa présence qu'au seul père Jida Brez.</p>
+<h3>Tension avec Shakka</h3>
+<p>Shakka la met mal à l'aise en lui faisant remarquer qu'elle vient de laisser entrer six inconnus dans l'église sans poser de questions. Elle finit malgré tout par les conduire à un dortoir et part chercher Jida Brez.</p>
+<h3>Au chevet d'Obsidio</h3>
+<p>Elle fait partie des quatre religieux (avec une autre Nidia, une Clemar et un Paripus) qui se relaient pour maintenir Obsidio Kotabbos stable, repoussant la putréfaction par tranches de vingt minutes. C'est elle qui tient compagnie à Onyxus à son chevet — et qui se retrouve décontenancée quand il lui demande à apprendre à prier le Tout-Puissant.</p>`
         }
       ]
     },
@@ -726,15 +814,19 @@ const CODEX = {
           image: "",
           discovered: "Session 5",
           title: "Corel",
-          subtitle: "Ville — Principauté d'Oceana (destination actuelle)",
-          tags: ["destination", "Oceana", "session 5"],
-          summary: "Destination actuelle du groupe. Un ami guérisseur de Kael y réside. Objectif : trouver de l'aide pour lever la malédiction imposée à Obsidio Kotabbos.",
+          subtitle: "Ville minière — Principauté d'Oceana",
+          tags: ["ville", "Oceana", "minière", "session 6"],
+          summary: "Ville ouvrière vivant du minerai de magla, à quarante miles de sa mine. Le groupe y a confié Obsidio aux soins du père Jida Brez, assisté à un massacre commis par Hob, et pris la route de la mine envahie par une chimère.",
           content: `<h3>Présentation</h3>
-<p>Ville de la Principauté d'Oceana. Le groupe s'y dirige après leur fuite d'Altabury par la mer. La route terrestre depuis la côte a déjà réservé plusieurs rencontres : kobold, araignées-loups géantes, sorcières vertes, bugbear et hobgoblins.</p>
-<h3>Pourquoi Corel ?</h3>
-<p>Kael y a un ami guérisseur dont les compétences pourraient permettre de lever la malédiction imposée à <strong>Obsidio Kotabbos</strong> par Astori Hojo. Sans intervention, la stase maintenue par Berzim ne tiendra pas indéfiniment.</p>
+<p>Ville de la Principauté d'Oceana, atteinte en session 6 après la route depuis la côte (kobold, araignées-loups géantes, sorcières vertes, bugbear et hobgoblins). La ville vit du minerai de <strong>magla</strong> et tourne grâce à une classe ouvrière venue de partout pour envoyer de l'argent à des familles restées ailleurs. Peu de voyageurs, peu de commerçants, presque pas de quartiers nobles, beaucoup de baraquements surpeuplés. Aucune garde, aucune force publique.</p>
+<h3>L'église et le père Jida Brez</h3>
+<p>Kael y connaît <strong>Jida Brez</strong>, prêtre Clemar et ami d'études, qui accepte de maintenir Obsidio Kotabbos stable (environ deux semaines) et de protéger le secret de Berzim, la fée de Kael. C'est aussi là que le groupe a vécu une violente dispute interne sur la direction à prendre (Altabury via Astori Hojo vs. Brilehaven), finalement tranchée : régler la mine, puis foncer vers Altabury.</p>
+<h3>La crise de la mine</h3>
+<p>Les chariots de cristaux de magla sont tous stationnés et une foule mécontente gronde sur la place : des créatures — une <strong>chimère</strong> — ont envahi la mine à quarante miles de la ville, tuant les mineurs et arrêtant toute production (donc tous les salaires). Le noble propriétaire refuse de payer pour la faire chasser.</p>
+<h3>La démonstration de force de Hob</h3>
+<p>Sur la place centrale, le groupe a vu <strong>Hob/Telmona</strong> massacrer à mains nues tout le groupe de mercenaires de Raho, avant de les interroger sur un prisonnier disparu.</p>
 <h3>État actuel</h3>
-<p>Non encore atteinte. Le groupe est en route depuis la côte d'Oceana — session 5.</p>`
+<p>Le groupe a quitté la ville pour la mine, où l'attend la chimère — combat reporté à la session suivante.</p>`
         }
       ]
     },
@@ -1044,6 +1136,40 @@ const CODEX = {
 <p>Onyxus, persuadé d'un échec critique d'Insight (1 naturel) que l'aigle était son ami, lui a tendu la main. L'aigle a planté ses deux ergots dans son bras. Uma a arraché des plumes pour 10 dégâts. Kael a tenté de le caresser. Lysandra, à bout de patience, a attrapé ses ailes, le a secoué, lui a mis une tape sur le bec et l'a jeté en l'air en criant "dégage !". L'aigle est parti.</p>
 <h3>Note du MJ</h3>
 <p><em>"L'aigle en fait était Dren."</em> — à interpréter.</p>`
+        },
+        {
+          id: "triceratops",
+          image: "",
+          discovered: "Session 6",
+          group: "combattu",
+          title: "Tricératops",
+          subtitle: "Bête naturelle — Route de la mine de Corel",
+          tags: ["bête", "session 6", "naturelle", "tuée"],
+          summary: "Grosse bête cuirassée à quatre pattes et trois cornes, dépourvue de magla, croisée sur la route de la mine. Empale Shakka avant d'être achevée par tout le groupe.",
+          content: `<h3>Description</h3>
+<p>Une bête cuirassée massive, quatre pattes, deux cornes sur le front et une corne sur le nez. Charge en martelant le sol. Contrairement à la chimère qui ravage la mine, c'est une <strong>bête naturelle dépourvue de magla</strong>, croisée par hasard à mi-chemin (encore vingt miles de la mine).</p>
+<h3>Combat</h3>
+<p>Shakka plante sa lance sur sa trajectoire, Veritas l'agrandit (Enlarge) au moment de l'impact : la bête bascule et perd un tour à se relever. Onyxus l'illumine de Faerie Fire (avantage pour le groupe). Elle se relève en hurlant et empale Shakka d'un coup de corne, le mettant inconscient (28 dégâts) — Onyxus le ramène avec Healing Word.</p>
+<h3>Kill</h3>
+<p>Achevée en combiné : Uma lui brise la corne droite et lui crève l'œil (Flurry of Blows, ~34 dégâts cumulés), Lysandra plante son épée sous la mâchoire, Kael l'arrose d'un Guiding Bolt, et Shakka, glissant sous la bête, récupère sa lance tombée et l'empale pour le coup de grâce.</p>`
+        },
+        {
+          id: "chimere-corel",
+          image: "",
+          discovered: "Session 6",
+          group: "observe",
+          title: "Chimère de la mine de Corel",
+          subtitle: "Créature composite — Mine de Corel",
+          tags: ["chimère", "session 6", "mine", "boss à venir"],
+          summary: "Corps et tête de lion, queue de scorpion, ailes de chauve-souris : la créature qui a envahi la mine de Corel et bloqué toute la production. Décrite par les mineurs, pas encore affrontée.",
+          content: `<h3>Description (par ouï-dire)</h3>
+<p>D'après les ouvriers interrogés par Uma à la taverne de Corel : un corps et une tête de lion, une queue de scorpion, des ailes de chauve-souris. Kael l'identifie aussitôt comme une <strong>chimère</strong>.</p>
+<h3>Dégâts constatés</h3>
+<p>A fait son nid dans la mine, tuant ou blessant grièvement les mineurs qui s'y aventurent encore. Production entièrement arrêtée — donc plus de salaires, donc des familles affamées. Plusieurs petits groupes d'ouvriers ont tenté d'intervenir et sont revenus blessés mais vivants.</p>
+<h3>Indices à l'entrée de la mine</h3>
+<p>Porte défoncée de l'intérieur vers l'extérieur. Flaque violette corrosive (acide ou poison) près d'un tonneau de poudre vide — prélevée par Shakka. Traces au sol suggérant une bête aux membres avant plus puissants que les arrière. Au moment où le groupe entre dans le boyau, un rugissement résonne plus haut dans la montagne, suivi d'un gros boom à l'entrée derrière eux.</p>
+<h3>Statut</h3>
+<p>Pas encore affrontée — combat prévu à la prochaine séance.</p>`
         },
         {
           id: "humans",
@@ -1363,6 +1489,41 @@ const CODEX = {
 <li><strong>Kills :</strong> Uma ×3 (kobold + araignée talon + araignée redirect), Onyxus ×1 (araignée bolt), Kael ×1 (araignée Guiding Bolt CAC), Veritas ×1 (araignée Ignis), Shakka ×1 (araignée + Lysandra ensemble)</li>
 <li><strong>Critiques :</strong> Shakka/Kael/Uma — 20 naturels en garde ×3</li>
 <li><strong>Échecs :</strong> Lysandra ×2 (sorcières), Onyxus ×2 (initiative, Insight aigle), Shakka ×1</li>
+</ul>`
+        },
+        {
+          id: "session-6",
+          day: "7",
+          month: "Juin",
+          discovered: "07 Juin",
+          title: "Session 6",
+          subtitle: "Corel, Jida Brez, Hob et la chimère de la mine",
+          tags: ["session 6", "Corel", "Jida Brez", "Hob", "tricératops", "chimère"],
+          summary: "Le groupe atteint Corel, confie Obsidio au père Jida Brez, traverse une violente dispute interne, assiste au massacre du groupe de Raho par Hob, abat un tricératops sur la route, et entre dans la mine envahie par une chimère.",
+          content: `<h3>Arrivée à Corel</h3>
+<p>Après une longue route avec Obsidio dans la charrette, le groupe approche de Corel. Veritas a changé d'apparence pour passer pour un Nidia (cheveux recolorés, yeux iridescents, tenue sobre sans signe de l'Ordre). Ville ouvrière vivant du minerai de magla, sans quartiers nobles, pleine de baraquements. Deux anomalies frappent le groupe à l'entrée : les chariots de magla sont tous stationnés, et une foule mécontente gronde sur la place. Kael lance Resistance sur Obsidio pour masquer temporairement sa malédiction.</p>
+<h3>L'église et Jida Brez</h3>
+<p>Kael mène le groupe à l'église, où il retrouve <strong>Jida Brez</strong>, un Clemar avec qui il a étudié. Jida ne peut pas guérir Obsidio mais accepte de le stabiliser. Il comprend vite que le groupe est traqué — sa question sur "l'agression d'un prélat d'Oceana" met Veritas mal à l'aise et déclenche une passe d'armes avec Lysandra et Uma.</p>
+<h3>La crise de la mine</h3>
+<p>Au réfectoire, Jida explique : des créatures ont envahi la mine, la production est arrêtée, les salaires ont cessé, les familles meurent de faim, et le noble propriétaire refuse de payer pour chasser les bêtes. Kael obtient l'accès à la bibliothèque (lecture sur place uniquement).</p>
+<h3>Le différend dans le groupe</h3>
+<p>Le repas dégénère en dispute sur la direction à prendre : Altabury (Astori Hojo, soin d'Obsidio) contre Brilehaven (laver leur nom). Le ton monte entre Veritas, Lysandra et Uma — accusations d'hypocrisie, vieux reproches (le javelot sur Berzim). Lysandra quitte l'église en colère froide. Shakka tranche : repos, on en reparle à l'aube.</p>
+<h3>La nuit à Corel</h3>
+<p>Onyxus veille son père et demande à apprendre à prier le Tout-Puissant. Lysandra erre seule pour pleurer. Shakka fait sortir <strong>Zar</strong> de la lanterne : l'esprit, affamé après la grosse dose de magla reçue à Malva, révèle être bien plus ancien qu'il n'y paraît, confié autrefois à la mère de Shakka, et menace à mots couverts de se servir si on ne le nourrit pas. Kael obtient l'accord de Berzim pour veiller sur Obsidio en secret.</p>
+<h3>Décision et présentation de Berzim</h3>
+<p>Au matin, Uma apprend des ouvriers la description de la créature : corps et tête de lion, queue de scorpion, ailes de chauve-souris — une <strong>chimère</strong>, identifie Kael. Onyxus et Lysandra se réconcilient et décident de filer vers Altabury. Kael présente Berzim à Jida, qui accepte de garder le secret malgré son dégoût ("hérétique"). Le groupe se dispute encore sur l'opportunité de régler la mine d'abord — Uma conteste même l'idée qu'ils forment un vrai groupe. Compromis trouvé : la mine, puis Altabury.</p>
+<h3>La démonstration de force de Hob</h3>
+<p>En quittant l'église, le groupe assiste, sur la place centrale, au massacre méthodique du groupe de mercenaires de Raho par <strong>Hob/Telmona</strong> à mains nues — suplex, nez et oreilles arrachés, l'Ishkia Nir empalé d'un coup d'épée après interrogation. Le groupe choisit de ne pas intervenir. Hob les rattrape ensuite, s'étonne qu'ils soient vivants, cherche des renseignements sur un prisonnier disparu, ne les croit pas mais les laisse partir en jurant qu'ils se reverront. Sa terreur paralyse Uma.</p>
+<h3>Le tricératops</h3>
+<p>Sur la route de la mine (40 miles), une bête naturelle dépourvue de magla charge le groupe : un <strong>tricératops</strong>. Shakka plante sa lance sur sa trajectoire, Veritas l'agrandit (Enlarge) pour la faire trébucher, Onyxus l'illumine de Faerie Fire. Elle empale Shakka (inconscient, ramené par Onyxus) avant d'être achevée en combiné par tout le groupe — Shakka portant le coup de grâce avec sa lance.</p>
+<h3>Entrée dans la mine</h3>
+<p>Un cercle de pierre naturel intrigue brièvement Veritas et Kael sans rien révéler de magique. La mine apparaît : palissades, porte défoncée de l'intérieur, odeur de pourriture, flaque corrosive violette près d'un tonneau de poudre vide, traces d'une bête aux membres avant puissants. Au moment d'entrer, un rugissement résonne dans la montagne, puis un gros boom claque derrière eux à l'entrée. Le combat contre la chimère est reporté à la prochaine séance.</p>
+<h3>Statistiques</h3>
+<ul>
+<li><strong>Kills :</strong> Shakka ×1 (tricératops, coup de grâce à la lance) ; hors-groupe — Hob a massacré seul tout le groupe de mercenaires de Raho, dont Nir achevé à l'épée</li>
+<li><strong>Dégâts (tricératops) :</strong> Uma ~34 (Flurry of Blows, corne brisée + œil crevé), Lysandra ~18 (épée sous la mâchoire + Lay on Hands sur le groupe), Onyxus 12 (arbalète + Faerie Fire + Healing Word sur Shakka), Kael 12 (Guiding Bolt + Bless + Cure Wounds), Veritas 6 (Fire Bolt + Enlarge ×2 + Dancing Lights), Shakka 13 (lance, coup fatal — mais mis inconscient par la bête, 28 dégâts subis)</li>
+<li><strong>Échec critique (1 naturel) :</strong> Shakka — Perception devant l'église (4ᵉ échec critique d'affilée selon le joueur)</li>
+<li><strong>Réussites critiques (20 naturel) :</strong> Kael (Connaissance/Histoire sur le cercle de pierre), Onyxus (initiative, sans effet)</li>
 </ul>`
         }
       ]
