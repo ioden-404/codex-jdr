@@ -11,7 +11,7 @@ const CODEX = {
     upcoming: [],
     recentNotes: [
       { icon: "🦁", title: "La chimère de la mine de Corel", when: "Session 6" },
-      { icon: "🩸", title: "Hob massacre le groupe de Raho", when: "Session 6" },
+      { icon: "🩸", title: "Hobb massacre le groupe de Raou", when: "Session 6" },
       { icon: "🔮", title: "La malédiction d'Obsidio",        when: "Session 5" },
       { icon: "⚜️", title: "La bague des Tantalus",           when: "Session 5" }
     ],
@@ -25,7 +25,7 @@ const CODEX = {
     mj: "Shiki",
     status: "En cours",
     location: "Mine de Corel — Principauté d'Oceana",
-    locationNote: "Le groupe a confié Obsidio Kotabbos aux soins du père Jida Brez à l'église de Corel (Berzim veille sur lui en secret). Direction validée : régler la crise de la chimère qui a envahi la mine de Corel, puis filer vers Altabury voir Astori Hojo. Sur la route, Hob/Telmona a massacré tout le groupe de mercenaires de Raho sur la place de Corel avant d'interroger le groupe. Le combat contre la chimère commence à la prochaine séance.",
+    locationNote: "Le groupe a confié Obsidio Kotabbos aux soins du père Jida Brez à l'église de Corel (Berzim veille sur lui en secret). Direction validée : régler la crise de la chimère qui a envahi la mine de Corel, puis filer vers Altabury voir Astori Hojo. Sur la route, Hobb/Telmona a massacré tout le groupe de mercenaires de Raou sur la place de Corel avant d'interroger le groupe. Le combat contre la chimère commence à la prochaine séance.",
     threads: [
       {
         id: "monastere",
@@ -86,8 +86,8 @@ const CODEX = {
       {
         id: "hob-telmona-fil",
         icon: "🐺",
-        label: "Hob / Telmona, le tueur",
-        desc: "À Corel, Hob a massacré seul tout le groupe de mercenaires de Raho à mains nues, sous les yeux du groupe. Il les a interrogés sur un prisonnier disparu, ne les a pas crus, et a juré qu'ils se reverraient. Ses canines anormalement pointues intriguent.",
+        label: "Hobb / Telmona, le tueur",
+        desc: "À Corel, Hobb a massacré seul tout le groupe de mercenaires de Raou à mains nues, sous les yeux du groupe. Il les a interrogés sur un prisonnier disparu, ne les a pas crus, et a juré qu'ils se reverraient. Ses canines anormalement pointues intriguent.",
         who: "Groupe",
         urgency: "haute"
       },
@@ -472,20 +472,20 @@ const CODEX = {
 <p>La sœur de la première victime a dit qu'Elwenne "l'avait déjà réconfortée". Elle est proche des familles de victimes.</p>
 <h3>Comportement observé</h3>
 <p>En sortant de l'église, Kael croise son regard — elle tourne la tête vers lui, puis se remet à prier. Veritas note qu'elle sait probablement plus que Joren sur la situation réelle.</p>
-<h3>Session 3 — Surveillance de Hob</h3>
-<p>Quand le groupe est revenu à Malva en session 3 pour l'interroger, Elwenne était déjà partie avec Joren pour surveiller le maître de quai (Hob/Telmona), qu'ils avaient identifié comme suspect. Ils l'avaient vu entrer à l'église pour des rendez-vous avec Belric Thane. Le soir de la session 3, pendant que le groupe filait Hob au port, Joren et Elwenne surveillaient le bailli.</p>`
+<h3>Session 3 — Surveillance de Hobb</h3>
+<p>Quand le groupe est revenu à Malva en session 3 pour l'interroger, Elwenne était déjà partie avec Joren pour surveiller le maître de quai (Hobb/Telmona), qu'ils avaient identifié comme suspect. Ils l'avaient vu entrer à l'église pour des rendez-vous avec Belric Thane. Le soir de la session 3, pendant que le groupe filait Hobb au port, Joren et Elwenne surveillaient le bailli.</p>`
         },
         {
           id: "hob-telmona",
           image: "",
           discovered: "Session 3",
           group: "PNJ",
-          title: "Hob / Telmona",
+          title: "Hobb / Telmona",
           subtitle: "Tueur à gages Paripus — Grand Trad",
           tags: ["Paripus", "Grand Trad", "mercenaire", "traque"],
-          summary: "Présenté comme Hob dès le début, son vrai nom est Telmona. Tueur à gages Paripus de Grand Trad, redoutable à mains nues. À Corel, il a massacré seul tout le groupe de mercenaires de Raho et interrogé le groupe sur un prisonnier disparu.",
+          summary: "Présenté comme Hobb dès le début, son vrai nom est Telmona. Tueur à gages Paripus de Grand Trad, redoutable à mains nues. À Corel, il a massacré seul tout le groupe de mercenaires de Raou et interrogé le groupe sur un prisonnier disparu.",
           content: `<h3>Présentation</h3>
-<p>Telmona est un tueur à gages Paripus de Grand Trad, qui s'était présenté sous le nom de <strong>Hob</strong> comme maître de quai à Malva. Son identité réelle a été reconnue par <strong>Lysandra</strong> lors de l'interception de la cargaison — elle l'avait côtoyé à Grand Trad et avait personnellement vu ses crimes. Grand, musclé, pelage blanc, traits félins et mâchoire carrée. On lui a remarqué, à Corel, des <strong>canines anormalement pointues</strong>.</p>
+<p>Telmona est un tueur à gages Paripus de Grand Trad, qui s'était présenté sous le nom de <strong>Hobb</strong> comme maître de quai à Malva. Son identité réelle a été reconnue par <strong>Lysandra</strong> lors de l'interception de la cargaison — elle l'avait côtoyé à Grand Trad et avait personnellement vu ses crimes. Grand, musclé, pelage blanc, traits félins et mâchoire carrée. On lui a remarqué, à Corel, des <strong>canines anormalement pointues</strong>.</p>
 <h3>Ce qu'on sait</h3>
 <ul>
 <li>Paripus de Grand Trad, l'un des tueurs à gages les plus expérimentés — jamais raté une cible, ses victimes ne sont jamais retrouvées.</li>
@@ -495,9 +495,9 @@ const CODEX = {
 <li>Joren et Sœur Elwenne le surveillaient car il se rendait régulièrement à des rendez-vous avec Belric Thane à l'église.</li>
 </ul>
 <h3>Le massacre de Corel (Session 6)</h3>
-<p>Sur la place centrale de Corel, le groupe le retrouve en train de démembrer méthodiquement, à mains nues, tout le groupe de mercenaires qui les avait malmenés (celui de Raho et Lucie/Lucifer) : coups, suplex, nez et oreilles arrachés, sourire jusqu'aux oreilles malgré une épée à la ceinture qu'il n'utilise quasiment pas. Il coince le mercenaire Ishkia <strong>Nir</strong> en fuite, le soulève d'une main, lui dit qu'il était payé pour ça, et l'empale avant de le laisser tomber sans vie. Lucie tente de l'arrêter, en vain. Aucune garde n'intervient — il n'y a aucune force publique à Corel.</p>
+<p>Sur la place centrale de Corel, le groupe le retrouve en train de démembrer méthodiquement, à mains nues, tout le groupe de mercenaires qui les avait malmenés (celui de Raou et Lucie/Lucifer) : coups, suplex, nez et oreilles arrachés, sourire jusqu'aux oreilles malgré une épée à la ceinture qu'il n'utilise quasiment pas. Il coince le mercenaire Ishkia <strong>Nir</strong> en fuite, le soulève d'une main, lui dit qu'il était payé pour ça, et l'empale avant de le laisser tomber sans vie. Lucie tente de l'arrêter, en vain. Aucune garde n'intervient — il n'y a aucune force publique à Corel.</p>
 <h3>L'interrogatoire du groupe</h3>
-<p>Il rattrape ensuite le groupe, se plante devant Uma (qu'il dépasse d'une tête et demie), s'étonne qu'ils soient encore vivants alors qu'ils auraient dû être exécutés, et révèle son vrai motif : les mercenaires avaient un prisonnier qu'il n'a jamais retrouvé, et il cherche des renseignements. Le groupe nie tout savoir ; il ne les croit pas mais les laisse partir, sûr de les revoir. La terreur qu'il dégage paralyse Uma (tremblante, en sueur) jusqu'à son départ.</p>
+<p>Il rattrape ensuite le groupe, se plante devant Uma (qu'il dépasse d'une tête et demie), s'étonne qu'ils soient encore vivants alors qu'ils auraient dû être exécutés, et révèle son vrai motif : les mercenaires avaient un prisonnier qu'il n'a jamais retrouvé, et il cherche des renseignements. Le groupe nie tout savoir ; il ne les croit pas mais les laisse partir, sûr de les revoir. La terreur qu'il dégage paralyse Lysandra (tremblante, en sueur) jusqu'à son départ.</p>
 <h3>Statut</h3>
 <p>À surveiller de très près — confirmé extrêmement dangereux et patient. Son commanditaire reste inconnu. Lysandra lui avait proposé 50 pièces d'or pour attaquer le camp gobelin — refus méprisant. Il l'a appelée "la rouquine" et évoqué son passé à Grand Trad avec hostilité.</p>`
         },
@@ -555,7 +555,7 @@ const CODEX = {
           image: "",
           discovered: "Session 4",
           group: "PNJ",
-          title: "Raho",
+          title: "Raou",
           subtitle: "Chef mercenaire Rhoag — Géomancien",
           tags: ["Rhoag", "mercenaire", "géomancien"],
           summary: "Chef d'un groupe de mercenaires, Rhoag géomancien capable d'invoquer deux golems de pierre. Mis KO par Shakka, interrogé en session 5, puis relâché.",
@@ -566,7 +566,7 @@ const CODEX = {
 <h3>Note tactique</h3>
 <p>Faiblesse absolue : ses golems disparaissent instantanément s'il perd conscience. Shakka l'a mis KO en priorité, neutralisant ses deux construits d'un seul coup. Toujours neutraliser le créateur en premier.</p>
 <h3>Mort (Session 6)</h3>
-<p>Sur la place de Corel, Hob/Telmona a massacré tout son groupe de mercenaires à mains nues. Raho figurait probablement parmi les victimes — le groupe a choisi de ne pas intervenir.</p>`
+<p>Sur la place de Corel, Hobb/Telmona a massacré tout son groupe de mercenaires à mains nues. Raou figurait probablement parmi les victimes — le groupe a choisi de ne pas intervenir.</p>`
         },
         {
           id: "lucie-lucifer",
@@ -580,9 +580,9 @@ const CODEX = {
           content: `<h3>Présentation</h3>
 <p>Roussainte aux cheveux blonds, prêtresse et cheffe d'un groupe de mercenaires. Elle utilise deux noms : <strong>Lucie</strong> en usage courant, <strong>Lucifer</strong> comme nom de guerre ou d'identité alternative.</p>
 <h3>Rôle</h3>
-<p>Dirige le groupe de mercenaires dont faisaient partie Raho (géomancien) et Obsidio Kotabbos. Ses commanditaires et objectifs précis restent à établir.</p>
+<p>Dirige le groupe de mercenaires dont faisaient partie Raou (géomancien) et Obsidio Kotabbos. Ses commanditaires et objectifs précis restent à établir.</p>
 <h3>Statut</h3>
-<p>Revue en session 6 sur la place de Corel : son groupe de mercenaires (dont Raho et l'Ishkia Nir) a été massacré sous ses yeux par Hob/Telmona, sans qu'elle parvienne à l'arrêter. Sort inconnu après cet événement.</p>`
+<p>Revue en session 6 sur la place de Corel : son groupe de mercenaires (dont Raou et l'Ishkia Nir) a été massacré sous ses yeux par Hobb/Telmona, sans qu'elle parvienne à l'arrêter. Sort inconnu après cet événement.</p>`
         },
         {
           id: "nir",
@@ -590,11 +590,11 @@ const CODEX = {
           discovered: "Session 6",
           group: "PNJ",
           title: "Nir",
-          subtitle: "Mercenaire Ishkia — groupe de Raho/Lucie",
-          tags: ["Ishkia", "mercenaire", "mort", "Hob"],
-          summary: "Mercenaire Ishkia du groupe de Raho et Lucie/Lucifer. Tente de fuir le massacre de Hob sur la place de Corel — rattrapé, soulevé d'une main et empalé après un bref interrogatoire.",
+          subtitle: "Mercenaire Ishkia — groupe de Raou/Lucie",
+          tags: ["Ishkia", "mercenaire", "mort", "Hobb"],
+          summary: "Mercenaire Ishkia du groupe de Raou et Lucie/Lucifer. Tente de fuir le massacre de Hobb sur la place de Corel — rattrapé, soulevé d'une main et empalé après un bref interrogatoire.",
           content: `<h3>Mort sur la place de Corel (Session 6)</h3>
-<p>Lors du massacre du groupe de mercenaires par <strong>Hob/Telmona</strong> sur la place centrale de Corel, Nir est le dernier à tenter de fuir. Hob le coince, le soulève d'une seule main, lui dit qu'il était payé pour ça, et l'empale de son épée avant de le laisser tomber sans vie — la seule victime que Hob achève à l'arme plutôt qu'à mains nues.</p>`
+<p>Lors du massacre du groupe de mercenaires par <strong>Hobb/Telmona</strong> sur la place centrale de Corel, Nir est le dernier à tenter de fuir. Hobb le coince, le soulève d'une seule main, lui dit qu'il était payé pour ça, et l'empale de son épée avant de le laisser tomber sans vie — la seule victime que Hobb achève à l'arme plutôt qu'à mains nues.</p>`
         },
         {
           id: "obsidio-kotabbos",
@@ -816,15 +816,15 @@ const CODEX = {
           title: "Corel",
           subtitle: "Ville minière — Principauté d'Oceana",
           tags: ["ville", "Oceana", "minière", "session 6"],
-          summary: "Ville ouvrière vivant du minerai de magla, à quarante miles de sa mine. Le groupe y a confié Obsidio aux soins du père Jida Brez, assisté à un massacre commis par Hob, et pris la route de la mine envahie par une chimère.",
+          summary: "Ville ouvrière vivant du minerai de magla, à quarante miles de sa mine. Le groupe y a confié Obsidio aux soins du père Jida Brez, assisté à un massacre commis par Hobb, et pris la route de la mine envahie par une chimère.",
           content: `<h3>Présentation</h3>
 <p>Ville de la Principauté d'Oceana, atteinte en session 6 après la route depuis la côte (kobold, araignées-loups géantes, sorcières vertes, bugbear et hobgoblins). La ville vit du minerai de <strong>magla</strong> et tourne grâce à une classe ouvrière venue de partout pour envoyer de l'argent à des familles restées ailleurs. Peu de voyageurs, peu de commerçants, presque pas de quartiers nobles, beaucoup de baraquements surpeuplés. Aucune garde, aucune force publique.</p>
 <h3>L'église et le père Jida Brez</h3>
 <p>Kael y connaît <strong>Jida Brez</strong>, prêtre Clemar et ami d'études, qui accepte de maintenir Obsidio Kotabbos stable (environ deux semaines) et de protéger le secret de Berzim, la fée de Kael. C'est aussi là que le groupe a vécu une violente dispute interne sur la direction à prendre (Altabury via Astori Hojo vs. Brilehaven), finalement tranchée : régler la mine, puis foncer vers Altabury.</p>
 <h3>La crise de la mine</h3>
 <p>Les chariots de cristaux de magla sont tous stationnés et une foule mécontente gronde sur la place : des créatures — une <strong>chimère</strong> — ont envahi la mine à quarante miles de la ville, tuant les mineurs et arrêtant toute production (donc tous les salaires). Le noble propriétaire refuse de payer pour la faire chasser.</p>
-<h3>La démonstration de force de Hob</h3>
-<p>Sur la place centrale, le groupe a vu <strong>Hob/Telmona</strong> massacrer à mains nues tout le groupe de mercenaires de Raho, avant de les interroger sur un prisonnier disparu.</p>
+<h3>La démonstration de force de Hobb</h3>
+<p>Sur la place centrale, le groupe a vu <strong>Hobb/Telmona</strong> massacrer à mains nues tout le groupe de mercenaires de Raou, avant de les interroger sur un prisonnier disparu.</p>
 <h3>État actuel</h3>
 <p>Le groupe a quitté la ville pour la mine, où l'attend la chimère — combat reporté à la session suivante.</p>`
         }
@@ -1390,10 +1390,10 @@ const CODEX = {
 <p>Veritas et Lysandra examinent les cadavres de gobelins. Le grimoire Buki révèle : les gobelins kidnappent des femmes pour les engrosser. La gestation dure une semaine et <strong>déchire la mère</strong>. Les <strong>ogres sont des gobelins nés de mères d'autres races</strong> — plus grands, plus costauds. Le groupe en voit la preuve directement sur les cadavres du fort.</p>
 <h3>Berzim présenté au groupe</h3>
 <p>Kael présente officiellement Berzim : une <strong>fée</strong>, alliée. Onyxus lui dit "Salut petit être" dans le vide et reçoit un coup de pied invisible dans la joue.</p>
-<h3>Retour à Malva — Hob / Telmona</h3>
-<p>Lysandra croise sur le parvis de l'église un Paripus imposant qui se présente comme <strong>Hob</strong>. Plus tard, Joren et Sœur Elwenne révèlent qu'il surveille le maître de quai et se rend à l'église pour des rendez-vous avec Belric. Lysandra se souvient alors : Hob s'appelle <strong>Telmona</strong>, tueur à gages de Grand Trad, jamais raté une cible.</p>
-<h3>Filature et interception de Hob</h3>
-<p>Le groupe intercepte Hob transportant des tonneaux depuis la plage. Il enlève sa capuche — Lysandra l'appelle par son vrai nom, il la reconnaît. Il a été payé pour livrer la cargaison. Ils le laissent passer. Il décharge tout dans une cabane à trois mètres de là et repart calmement. Dans la nuit, une vingtaine de cavaliers en armure d'Altabury récupèrent les tonneaux — direction Altabury via la côte.</p>
+<h3>Retour à Malva — Hobb / Telmona</h3>
+<p>Lysandra croise sur le parvis de l'église un Paripus imposant qui se présente comme <strong>Hobb</strong>. Plus tard, Joren et Sœur Elwenne révèlent qu'il surveille le maître de quai et se rend à l'église pour des rendez-vous avec Belric. Lysandra se souvient alors : Hobb s'appelle <strong>Telmona</strong>, tueur à gages de Grand Trad, jamais raté une cible.</p>
+<h3>Filature et interception de Hobb</h3>
+<p>Le groupe intercepte Hobb transportant des tonneaux depuis la plage. Il enlève sa capuche — Lysandra l'appelle par son vrai nom, il la reconnaît. Il a été payé pour livrer la cargaison. Ils le laissent passer. Il décharge tout dans une cabane à trois mètres de là et repart calmement. Dans la nuit, une vingtaine de cavaliers en armure d'Altabury récupèrent les tonneaux — direction Altabury via la côte.</p>
 <h3>La grotte côtière</h3>
 <p>Le groupe escalade 30 mètres de falaise. L'entrée s'ouvre <em>"comme une blessure dans la roche"</em>. Des cristaux de magla gigantesques émettent une lueur vert et bleu pâle. Picotements dans les doigts, odeur de sel et d'algues, humidité écrasante. Résolution d'une énigme de porte (réponse : un igniter) et entrée dans la cavité principale.</p>
 <h3>Confrontation avec Dren Solaria</h3>
@@ -1437,14 +1437,14 @@ const CODEX = {
 <h3>Évasion et pseudonymes</h3>
 <p>Un soldat de confiance guide le groupe par un tunnel souterrain de 30 minutes jusqu'en pleine nature. Leurs affaires les attendaient. Pseudonymes pour la route : Kael → <strong>Alek</strong>, Veritas → <strong>Astren</strong>, Lysandra → <strong>Meredith</strong> (en hommage à sa nourrice), Onyxus → <strong>Xyno</strong>, Uma → <strong>Aang</strong>. Shakka conserve son nom.</p>
 <h3>Le campement de mercenaires</h3>
-<p>Au deuxième jour de route, un campement : grande cage tirée par deux chevaux, un Ishkia encagoulé à l'intérieur, sept personnes armées. Chef : grand Rhoag aux longs cheveux blancs tressés (Raho). Il transporte un <em>"terroriste des <strong>Tantalus</strong>"</em> jusqu'à Grand Trad, mais un human bloque la route. Il propose un échange — escorte contre cheval. Le groupe refuse.</p>
-<p>Onyxus reconnaît immédiatement la pochette que Raho tient : cuir brodé d'une spirale, identique à celle de son père. Raho finit par cracher : <em>"Cette pochette, c'était la sienne. Donc son père, c'est un terroriste."</em> Onyxus court vers la cage en appelant son père. Veritas lance Reduce sur une roue de charrette — la cage bascule, les chevaux paniquent.</p>
+<p>Au deuxième jour de route, un campement : grande cage tirée par deux chevaux, un Ishkia encagoulé à l'intérieur, sept personnes armées. Chef : grand Rhoag aux longs cheveux blancs tressés (Raou). Il transporte un <em>"terroriste des <strong>Tantalus</strong>"</em> jusqu'à Grand Trad, mais un human bloque la route. Il propose un échange — escorte contre cheval. Le groupe refuse.</p>
+<p>Onyxus reconnaît immédiatement la pochette que Raou tient : cuir brodé d'une spirale, identique à celle de son père. Raou finit par cracher : <em>"Cette pochette, c'était la sienne. Donc son père, c'est un terroriste."</em> Onyxus court vers la cage en appelant son père. Veritas lance Reduce sur une roue de charrette — la cage bascule, les chevaux paniquent.</p>
 <h3>Combat des golems</h3>
-<p>Raho pose les deux mains au sol : deux golems de pierre surgissent. Kael lance Silence sur lui. Lysandra attaque les golems. Onyxus s'effondre inconscient sous les coups de mercenaires (~25 dégâts). Il réussit son save contre la mort au <strong>20 naturel</strong> et se relève immédiatement. Veritas lance Chromatic Orb (Onyxus lui offre une relance critique en criant <em>"ils ont pris mon père !"</em>) : 15 acide sur Raho + rebond 14 sur le golem. Shakka assomme Raho. Les golems → tas de cailloux. Kael : Mass Cure Wounds (38 HP).</p>
-<p>Raho ligoté, tête plongée dans l'eau pour le réveiller. Shakka : <em>"Qui était ton prisonnier ?"</em></p>
+<p>Raou pose les deux mains au sol : deux golems de pierre surgissent. Kael lance Silence sur lui. Lysandra attaque les golems. Onyxus s'effondre inconscient sous les coups de mercenaires (~25 dégâts). Il réussit son save contre la mort au <strong>20 naturel</strong> et se relève immédiatement. Veritas lance Chromatic Orb (Onyxus lui offre une relance critique en criant <em>"ils ont pris mon père !"</em>) : 15 acide sur Raou + rebond 14 sur le golem. Shakka assomme Raou. Les golems → tas de cailloux. Kael : Mass Cure Wounds (38 HP).</p>
+<p>Raou ligoté, tête plongée dans l'eau pour le réveiller. Shakka : <em>"Qui était ton prisonnier ?"</em></p>
 <h3>Statistiques</h3>
 <ul>
-<li><strong>Kills :</strong> Aucun PNJ tué (mercenaires en fuite, Raho inconscient pour interrogatoire)</li>
+<li><strong>Kills :</strong> Aucun PNJ tué (mercenaires en fuite, Raou inconscient pour interrogatoire)</li>
 <li><strong>Critique :</strong> Onyxus — save contre la mort (20 naturel, relevé à 1 HP)</li>
 <li><strong>Échecs :</strong> Shakka ×2 (attaques), mercenaire ennemi ×1</li>
 </ul>`
@@ -1457,11 +1457,11 @@ const CODEX = {
           title: "Session 5",
           subtitle: "Les Tantalus, la malédiction d'Obsidio et la route vers Corel",
           tags: ["session 5", "Obsidio", "Tantalus", "Corel", "araignées"],
-          summary: "Raho révèle Astori Hojo. Obsidio est récupéré — maudit. Berzim maintient la stase. Le groupe prend la route vers Corel, traversant sorcières, kobold et araignées-loups géantes.",
-          content: `<h3>Interrogatoire de Raho</h3>
-<p>Raho révèle : le prisonnier s'appelle <strong>Obsidio</strong>, destiné à Grand Trad. Commanditaire : <strong>Astori Hojo</strong>, mage Nidia influente au service de l'armée à Altabury, spécialiste des malédictions. Prix : 1500 po. Pour négocier la libération, il faut parler à <strong>Lucie</strong> (alias Lucifer), prêtresse Roussainte blonde cheffe du groupe.</p>
+          summary: "Raou révèle Astori Hojo. Obsidio est récupéré — maudit. Berzim maintient la stase. Le groupe prend la route vers Corel, traversant sorcières, kobold et araignées-loups géantes.",
+          content: `<h3>Interrogatoire de Raou</h3>
+<p>Raou révèle : le prisonnier s'appelle <strong>Obsidio</strong>, destiné à Grand Trad. Commanditaire : <strong>Astori Hojo</strong>, mage Nidia influente au service de l'armée à Altabury, spécialiste des malédictions. Prix : 1500 po. Pour négocier la libération, il faut parler à <strong>Lucie</strong> (alias Lucifer), prêtresse Roussainte blonde cheffe du groupe.</p>
 <h3>Négociation avec Lucie</h3>
-<p>Uma part en éclaireur dans des ruines et confirme que le groupe est gérable. Lysandra négocie : 300 po + libération de Raho contre Obsidio. Lucie accepte sous condition d'une bonne couverture pour sa réputation. Lysandra improvise : un human les a attaqués sur la route, ils ont tout perdu dans la lutte. Jet de persuasion réussi. L'échange se conclut.</p>
+<p>Uma part en éclaireur dans des ruines et confirme que le groupe est gérable. Lysandra négocie : 300 po + libération de Raou contre Obsidio. Lucie accepte sous condition d'une bonne couverture pour sa réputation. Lysandra improvise : un human les a attaqués sur la route, ils ont tout perdu dans la lutte. Jet de persuasion réussi. L'échange se conclut.</p>
 <h3>Obsidio — Les Tantalus</h3>
 <p>Obsidio est dans un état critique : liquide noir suintant sous ses bandages aux yeux, peau marquée, marchant à peine. Veritas lance Detect Magic : flux de magla extrêmement perturbé. Shakka reconnaît le type de malédiction fortement modifiée : pour la défaire, il faut soit que le lanceur l'annule, soit qu'il meure. Ce n'est pas mortel — c'est de la torture pure.</p>
 <p>Kael lance Resistance sur Obsidio. Le liquide reflue brièvement. Obsidio reprend conscience, attrape Onyxus par les cheveux et raconte :</p>
@@ -1497,9 +1497,9 @@ const CODEX = {
           month: "Juin",
           discovered: "07 Juin",
           title: "Session 6",
-          subtitle: "Corel, Jida Brez, Hob et la chimère de la mine",
-          tags: ["session 6", "Corel", "Jida Brez", "Hob", "tricératops", "chimère"],
-          summary: "Le groupe atteint Corel, confie Obsidio au père Jida Brez, traverse une violente dispute interne, assiste au massacre du groupe de Raho par Hob, abat un tricératops sur la route, et entre dans la mine envahie par une chimère.",
+          subtitle: "Corel, Jida Brez, Hobb et la chimère de la mine",
+          tags: ["session 6", "Corel", "Jida Brez", "Hobb", "tricératops", "chimère"],
+          summary: "Le groupe atteint Corel, confie Obsidio au père Jida Brez, traverse une violente dispute interne, assiste au massacre du groupe de Raou par Hobb, abat un tricératops sur la route, et entre dans la mine envahie par une chimère.",
           content: `<h3>Arrivée à Corel</h3>
 <p>Après une longue route avec Obsidio dans la charrette, le groupe approche de Corel. Veritas a changé d'apparence pour passer pour un Nidia (cheveux recolorés, yeux iridescents, tenue sobre sans signe de l'Ordre). Ville ouvrière vivant du minerai de magla, sans quartiers nobles, pleine de baraquements. Deux anomalies frappent le groupe à l'entrée : les chariots de magla sont tous stationnés, et une foule mécontente gronde sur la place. Kael lance Resistance sur Obsidio pour masquer temporairement sa malédiction.</p>
 <h3>L'église et Jida Brez</h3>
@@ -1509,18 +1509,18 @@ const CODEX = {
 <h3>Le différend dans le groupe</h3>
 <p>Le repas dégénère en dispute sur la direction à prendre : Altabury (Astori Hojo, soin d'Obsidio) contre Brilehaven (laver leur nom). Le ton monte entre Veritas, Lysandra et Uma — accusations d'hypocrisie, vieux reproches (le javelot sur Berzim). Lysandra quitte l'église en colère froide. Shakka tranche : repos, on en reparle à l'aube.</p>
 <h3>La nuit à Corel</h3>
-<p>Onyxus veille son père et demande à apprendre à prier le Tout-Puissant. Lysandra erre seule pour pleurer. Shakka fait sortir <strong>Zar</strong> de la lanterne : l'esprit, affamé après la grosse dose de magla reçue à Malva, révèle être bien plus ancien qu'il n'y paraît, confié autrefois à la mère de Shakka, et menace à mots couverts de se servir si on ne le nourrit pas. Kael obtient l'accord de Berzim pour veiller sur Obsidio en secret.</p>
+<p>Onyxus veille son père et demande à apprendre à prier le Tout-Puissant. Lysandra erre seule pour pleurer, puis passe la nuit dehors et écope d'un point de fatigue faute de repos correct. Shakka fait sortir <strong>Zar</strong> de la lanterne : l'esprit, affamé après la grosse dose de magla reçue à Malva, révèle être bien plus ancien qu'il n'y paraît, confié autrefois à la mère de Shakka, et menace à mots couverts de se servir si on ne le nourrit pas. Kael obtient l'accord de Berzim pour veiller sur Obsidio en secret.</p>
 <h3>Décision et présentation de Berzim</h3>
-<p>Au matin, Uma apprend des ouvriers la description de la créature : corps et tête de lion, queue de scorpion, ailes de chauve-souris — une <strong>chimère</strong>, identifie Kael. Onyxus et Lysandra se réconcilient et décident de filer vers Altabury. Kael présente Berzim à Jida, qui accepte de garder le secret malgré son dégoût ("hérétique"). Le groupe se dispute encore sur l'opportunité de régler la mine d'abord — Uma conteste même l'idée qu'ils forment un vrai groupe. Compromis trouvé : la mine, puis Altabury.</p>
-<h3>La démonstration de force de Hob</h3>
-<p>En quittant l'église, le groupe assiste, sur la place centrale, au massacre méthodique du groupe de mercenaires de Raho par <strong>Hob/Telmona</strong> à mains nues — suplex, nez et oreilles arrachés, l'Ishkia Nir empalé d'un coup d'épée après interrogation. Le groupe choisit de ne pas intervenir. Hob les rattrape ensuite, s'étonne qu'ils soient vivants, cherche des renseignements sur un prisonnier disparu, ne les croit pas mais les laisse partir en jurant qu'ils se reverront. Sa terreur paralyse Uma.</p>
+<p>Au matin, Lysandra apprend des ouvriers à la taverne la description de la créature : corps et tête de lion, queue de scorpion, ailes de chauve-souris — une <strong>chimère</strong>, identifie Kael. Onyxus et Uma se réconcilient au chevet d'Obsidio — Uma confie qu'elle a longtemps été guidée par sa vengeance contre Dren et qu'il vaut sans doute mieux que le groupe se sépare — et décident de filer vers Altabury. Kael présente Berzim à Jida, qui le qualifie d'impur et d'hérétique mais accepte de garder le secret. Le groupe se dispute encore sur l'opportunité de régler la mine d'abord — Uma conteste même l'idée qu'ils forment un vrai groupe, et le vieux reproche du saut sur Dren refait surface. Compromis trouvé : la mine, puis Altabury.</p>
+<h3>La démonstration de force de Hobb</h3>
+<p>En quittant l'église, le groupe assiste, sur la place centrale, au massacre méthodique du groupe de mercenaires de Raou par <strong>Hobb/Telmona</strong> à mains nues — suplex, nez et oreilles arrachés, l'Ishkia Nir empalé d'un coup d'épée après interrogation. Lucifer tente vainement de l'arrêter. Le groupe choisit de ne pas intervenir. Hobb les rattrape ensuite, s'étonne qu'ils soient vivants, cherche des renseignements sur un prisonnier disparu ; Uma tente de désamorcer la situation, mais il ne les croit pas et les laisse partir en jurant qu'ils se reverront. Sa terreur paralyse Lysandra.</p>
 <h3>Le tricératops</h3>
 <p>Sur la route de la mine (40 miles), une bête naturelle dépourvue de magla charge le groupe : un <strong>tricératops</strong>. Shakka plante sa lance sur sa trajectoire, Veritas l'agrandit (Enlarge) pour la faire trébucher, Onyxus l'illumine de Faerie Fire. Elle empale Shakka (inconscient, ramené par Onyxus) avant d'être achevée en combiné par tout le groupe — Shakka portant le coup de grâce avec sa lance.</p>
 <h3>Entrée dans la mine</h3>
 <p>Un cercle de pierre naturel intrigue brièvement Veritas et Kael sans rien révéler de magique. La mine apparaît : palissades, porte défoncée de l'intérieur, odeur de pourriture, flaque corrosive violette près d'un tonneau de poudre vide, traces d'une bête aux membres avant puissants. Au moment d'entrer, un rugissement résonne dans la montagne, puis un gros boom claque derrière eux à l'entrée. Le combat contre la chimère est reporté à la prochaine séance.</p>
 <h3>Statistiques</h3>
 <ul>
-<li><strong>Kills :</strong> Shakka ×1 (tricératops, coup de grâce à la lance) ; hors-groupe — Hob a massacré seul tout le groupe de mercenaires de Raho, dont Nir achevé à l'épée</li>
+<li><strong>Kills :</strong> Shakka ×1 (tricératops, coup de grâce à la lance) ; hors-groupe — Hobb a massacré seul tout le groupe de mercenaires de Raou, dont Nir achevé à l'épée</li>
 <li><strong>Dégâts (tricératops) :</strong> Uma ~34 (Flurry of Blows, corne brisée + œil crevé), Lysandra ~18 (épée sous la mâchoire + Lay on Hands sur le groupe), Onyxus 12 (arbalète + Faerie Fire + Healing Word sur Shakka), Kael 12 (Guiding Bolt + Bless + Cure Wounds), Veritas 6 (Fire Bolt + Enlarge ×2 + Dancing Lights), Shakka 13 (lance, coup fatal — mais mis inconscient par la bête, 28 dégâts subis)</li>
 <li><strong>Échec critique (1 naturel) :</strong> Shakka — Perception devant l'église (4ᵉ échec critique d'affilée selon le joueur)</li>
 <li><strong>Réussites critiques (20 naturel) :</strong> Kael (Connaissance/Histoire sur le cercle de pierre), Onyxus (initiative, sans effet)</li>
