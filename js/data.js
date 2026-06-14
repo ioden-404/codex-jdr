@@ -477,7 +477,7 @@ const CODEX = {
         },
         {
           id: "hob-telmona",
-          image: "",
+          image: "img/Hobb.png",
           discovered: "Session 3",
           group: "PNJ",
           title: "Hobb / Telmona",
@@ -636,7 +636,7 @@ const CODEX = {
         },
         {
           id: "jida-brez",
-          image: "",
+          image: "img/Jida Brez.png",
           discovered: "Session 6",
           group: "PNJ",
           title: "Jida Brez",
@@ -724,6 +724,7 @@ const CODEX = {
         },
         {
           id: "grand-trad",
+          image: "img/Grand Trad.png",
           title: "Grand Trad",
           subtitle: "Capitale du Royaume d'Euchronia",
           tags: ["capitale", "politique", "religion"],
@@ -746,6 +747,7 @@ const CODEX = {
         },
         {
           id: "altabury",
+          image: "img/Altabury.png",
           title: "Altabury",
           subtitle: "Centre spirituel — Principauté de Montario",
           tags: ["religion", "Sanctisme", "Montario"],
@@ -777,6 +779,7 @@ const CODEX = {
         },
         {
           id: "brilehaven",
+          image: "img/Brilhaven.png",
           title: "Brilehaven",
           subtitle: "Grand port — Principauté d'Oceana",
           tags: ["port", "commerce", "Oceana"],
@@ -947,7 +950,7 @@ const CODEX = {
         },
         {
           id: "creature-ailee",
-          image: "",
+          image: "img/Berzim.png",
           discovered: "Session 2",
           group: "observe",
           title: "Berzim — La Fée",
