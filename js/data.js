@@ -814,7 +814,7 @@ const CODEX = {
         },
         {
           id: "corel",
-          image: "",
+          image: "img/Corel.png",
           discovered: "Session 5",
           title: "Corel",
           subtitle: "Ville minière — Principauté d'Oceana",
